@@ -97,6 +97,9 @@
 		0F562DF21CE0BED1001F0477 /* lesson_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9E1CE0BED1001F0477 /* lesson_9.png */; };
 		0F562DF31CE0BED1001F0477 /* lesson_9_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9F1CE0BED1001F0477 /* lesson_9_tap.png */; };
 		0F562DF41CE0BED1001F0477 /* main_bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562DA01CE0BED1001F0477 /* main_bg_image.png */; };
+		0F6ADB571CE1B418001134A5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6ADB561CE1B418001134A5 /* back.png */; };
+		0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */; };
+		0F6ADB5B1CE1B6E7001134A5 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +195,9 @@
 		0F562D9E1CE0BED1001F0477 /* lesson_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_9.png; sourceTree = "<group>"; };
 		0F562D9F1CE0BED1001F0477 /* lesson_9_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_9_tap.png; sourceTree = "<group>"; };
 		0F562DA01CE0BED1001F0477 /* main_bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_bg_image.png; sourceTree = "<group>"; };
+		0F6ADB561CE1B418001134A5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		1A50601B8FC66FA183CA210E /* libPods-ielts-listening.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ielts-listening.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig"; sourceTree = "<group>"; };
 		E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,11 +239,13 @@
 				0F562D4C1CE0BED1001F0477 /* Resources */,
 				0F562D391CE0B1D4001F0477 /* AppDelegate.swift */,
 				0F562D3B1CE0B1D4001F0477 /* ViewController.swift */,
+				0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */,
 				0F562D3D1CE0B1D4001F0477 /* Main.storyboard */,
 				0F562D401CE0B1D4001F0477 /* Assets.xcassets */,
 				0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */,
 				0F562D451CE0B1D4001F0477 /* Info.plist */,
 				0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */,
+				0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 		0F562D4C1CE0BED1001F0477 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F6ADB561CE1B418001134A5 /* back.png */,
 				0F562D4D1CE0BED1001F0477 /* advanced_level_button.png */,
 				0F562D4E1CE0BED1001F0477 /* basic_level_button.png */,
 				0F562D4F1CE0BED1001F0477 /* bg_dialog_item.png */,
@@ -496,6 +505,7 @@
 				0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */,
 				0F562DD71CE0BED1001F0477 /* lesson_28.png in Resources */,
 				0F562DAD1CE0BED1001F0477 /* icon_play.png in Resources */,
+				0F6ADB571CE1B418001134A5 /* back.png in Resources */,
 				0F562DB71CE0BED1001F0477 /* lesson_13.png in Resources */,
 				0F562DB51CE0BED1001F0477 /* lesson_12.png in Resources */,
 				0F562DA61CE0BED1001F0477 /* conversation_button.png in Resources */,
@@ -558,7 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */,
+				0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */,
 				0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */,
+				0F6ADB5B1CE1B6E7001134A5 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
