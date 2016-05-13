@@ -26,13 +26,15 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SEGUE_PARENT_CATEGORY" {
-            let viewController = segue.destinationViewController as! CategoryViewController
-            viewController.selectedAction = self.selectedAction
+//            let viewController = segue.destinationViewController as! CategoryViewController
+//            viewController.levelObject =
         }
     }
     
     @IBAction func basicAction(sender: UIButton) {
         self.selectedAction = 1
+        let levelParser = LevelParser()
+        levelParser.beginParsing()
         self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
     }
     
