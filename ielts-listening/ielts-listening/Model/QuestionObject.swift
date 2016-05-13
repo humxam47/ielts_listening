@@ -6,4 +6,13 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
-import Foundation
+class QuestionObject {
+    
+    let questionText:String
+    let questionArray:[AnswerObject]
+    
+    init(questionText:String, questionArray:[AnswerObject]) {
+        self.questionText = questionText
+        self.questionArray = questionArray
+    }
+}

@@ -6,4 +6,20 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
-import Foundation
+class LessonObject {
+    
+    let lessonId:String
+    let lessonName:String
+    let lessonPath:String
+    let conversationArray:[String]
+    let questionArray:[QuestionObject]
+    
+    init(lessonId:String, lessonName:String, lessonPath:String, conversationArray:[String], questionArray:[QuestionObject]) {
+        self.lessonId = lessonId
+        self.lessonName = lessonName
+        self.lessonPath = lessonPath
+        self.conversationArray = conversationArray
+        self.questionArray = questionArray
+    }
+    
+}

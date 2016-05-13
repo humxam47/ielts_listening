@@ -6,4 +6,13 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
-import Foundation
+class AnswerObject {
+    
+    let answerText:String
+    let answerValue:Int
+    
+    init(answerText:String, answerValue:Int) {
+        self.answerText = answerText
+        self.answerValue = answerValue
+    }
+}

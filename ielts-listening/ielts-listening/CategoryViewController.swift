@@ -8,11 +8,12 @@
 
 import Foundation
 
-class CategoryViewController: UIViewController {
+class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var selectedAction:Int?
     @IBOutlet weak var backButton:UIButton!
     @IBOutlet weak var categoryTitle:UILabel!
+    @IBOutlet weak var lessonCollection:UICollectionView!
     
     override func viewDidLoad() {
         
@@ -23,20 +24,26 @@ class CategoryViewController: UIViewController {
         self.addSwipeGesture()
     }
     
+    @IBAction func backAction() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     func initUI()  {
         
-        switch self.selectedAction! {
-        case 1:
-            self.categoryTitle.text = "Basic Level"
-            break
-        case 2:
-            self.categoryTitle.text = "Intermediate Level"
-            break
-        case 3:
-            self.categoryTitle.text = "Advanced Level"
-            break
-        default:
-            self.categoryTitle.text = "Basic Level"
+        if let selectionLevel = self.selectedAction {
+            switch selectionLevel {
+            case 1:
+                self.categoryTitle.text = "Basic Level"
+                break
+            case 2:
+                self.categoryTitle.text = "Intermediate Level"
+                break
+            case 3:
+                self.categoryTitle.text = "Advanced Level"
+                break
+            default:
+                self.categoryTitle.text = "Basic Level"
+            }
         }
         
     }
@@ -62,8 +69,22 @@ class CategoryViewController: UIViewController {
         }
     }
     
-    @IBAction func backAction() {
-        self.navigationController?.popViewControllerAnimated(true)
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 30
     }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+
+
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+//
+//
+//    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+//        
+//    }
     
 }
