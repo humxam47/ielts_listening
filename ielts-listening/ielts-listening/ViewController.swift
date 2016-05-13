@@ -24,17 +24,36 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getLessonList(actionIndex:Int) -> LevelObject {
+        let levelObject = LevelObject()
+        let levelParser = LevelParser()
+        if actionIndex == 1 {
+            levelObject.levelId = "1"
+            levelObject.levelName = "Basic Level"
+            levelObject.lessonArray = levelParser.getLessonList("1")
+            return levelObject
+        }
+        else if actionIndex == 2 {
+            levelObject.levelId = "2"
+            levelObject.levelName = "Intermediate Level"
+            levelObject.lessonArray = levelParser.getLessonList("2")
+            return levelObject
+        }
+        levelObject.levelId = "3"
+        levelObject.levelName = "Advanced Level"
+        levelObject.lessonArray = levelParser.getLessonList("3")
+        return levelObject
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SEGUE_PARENT_CATEGORY" {
-//            let viewController = segue.destinationViewController as! CategoryViewController
-//            viewController.levelObject =
+            let viewController = segue.destinationViewController as! CategoryViewController
+            viewController.levelObject = self.getLessonList(self.selectedAction!)
         }
     }
     
     @IBAction func basicAction(sender: UIButton) {
         self.selectedAction = 1
-        let levelParser = LevelParser()
-        levelParser.beginParsing()
         self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
     }
     
@@ -54,10 +73,6 @@ class ViewController: UIViewController {
     @IBAction func irregularVerbAction(sender: UIButton) {
         self.selectedAction = 4
     }
-    
-    
-    
-    
 
 }
 

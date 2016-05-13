@@ -8,14 +8,8 @@
 
 class LevelObject {
     
-    let levelId:String
-    let levelName:String
-    let lessonArray:[LessonObject]
-    
-    init(levelId:String, levelName:String, lessonArray:[LessonObject]) {
-        self.levelId = levelId
-        self.levelName = levelName
-        self.lessonArray = lessonArray
-    }
+    var levelId:String?
+    var levelName:String?
+    var lessonArray:NSMutableArray?
     
 }

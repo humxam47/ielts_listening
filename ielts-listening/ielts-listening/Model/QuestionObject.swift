@@ -8,11 +8,7 @@
 
 class QuestionObject {
     
-    let questionText:String
-    let questionArray:[AnswerObject]
+    var questionText:String?
+    var answerArray:NSMutableArray?
     
-    init(questionText:String, questionArray:[AnswerObject]) {
-        self.questionText = questionText
-        self.questionArray = questionArray
-    }
 }

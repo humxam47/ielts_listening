@@ -8,52 +8,142 @@
 
 class LevelParser:NSObject, NSXMLParserDelegate {
     
-    var parser = NSXMLParser()
-    var posts = NSMutableArray()
-    var elements = NSMutableDictionary()
-    var element = NSString()
-    var title1 = NSMutableString()
-    var date = NSMutableString()
+    var lessonObject:LessonObject?
+    var questionObject:QuestionObject?
+    var answerObject:AnswerObject?
     
-    func beginParsing()
-    {
-        posts = []
-        parser = NSXMLParser(contentsOfURL:(NSURL(string:"http://images.apple.com/main/rss/hotnews/hotnews.rss"))!)!
+    var lessonArray = NSMutableArray()
+    var lesson:String?
+    var lessonId:String?
+    var lessonName:String?
+    var lessonPath:String?
+    var sentences = NSMutableArray()
+    var sentence:String?
+    var questions = NSMutableArray()
+    var question:String?
+    var answers = NSMutableArray()
+    var answer:String?
+    
+    func getLessonList(levelId:String) -> NSMutableArray {
+        return self.beginParsing(levelId)
+    }
+    
+    func beginParsing(selectedLevel:String) -> NSMutableArray {
+        var level:String = "basic"
+        if selectedLevel == "2" {
+            level = "intermediate"
+        }
+        else if selectedLevel == "3" {
+            level = "advance"
+        }
+        let path = NSBundle.mainBundle().pathForResource(level, ofType: "xml")
+        let parser = NSXMLParser(contentsOfURL: NSURL(fileURLWithPath: path!))!
         parser.delegate = self
         parser.parse()
+        return self.lessonArray
     }
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        element = elementName
-        if (elementName as NSString).isEqualToString("item")
-        {
-            elements = NSMutableDictionary()
-            elements = [:]
-            title1 = NSMutableString()
-            title1 = ""
-            date = NSMutableString()
-            date = ""
+        lesson = elementName
+        if elementName == "lessions" {
+            self.lessonArray = NSMutableArray()
+        }
+        else if elementName == "lession" {
+            self.lessonObject = LessonObject()
+            self.lessonId = ""
+            self.lessonName = ""
+            self.lessonPath = ""
+        }
+        else if elementName == "sentences_list" {
+            self.sentences = NSMutableArray()
+        }
+        else if elementName == "sentence" {
+            self.sentence = ""
+        }
+        else if elementName == "questionaire" {
+            self.questions = NSMutableArray()
+        }
+        else if elementName == "questions" {
+            self.questionObject = QuestionObject()
+            self.question = ""
+        }
+        else if elementName == "answers" {
+            self.answers = NSMutableArray()
+        }
+        else if elementName == "answer" {
+            self.answerObject = AnswerObject()
+            self.answer = ""
         }
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-        if element.isEqualToString("title") {
-            title1.appendString(string)
-        } else if element.isEqualToString("pubDate") {
-            date.appendString(string)
+        if lesson! == "id" {
+            self.lessonId! += string
+        }
+        else if lesson! == "name" {
+            self.lessonName! += string
+        }
+        else if lesson! == "sound" {
+            self.lessonPath! += string
+        }
+        else if lesson! == "sentence" {
+            self.sentence! += string
+        }
+        else if lesson! == "question" {
+            self.question! += string
+        }
+        else if lesson! == "answer" {
+            self.answer! += string
         }
     }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if (elementName as NSString).isEqualToString("item") {
-            if !title1.isEqual(nil) {
-                elements.setObject(title1, forKey: "title")
-            }
-            if !date.isEqual(nil) {
-                elements.setObject(date, forKey: "date")
-            }
-            posts.addObject(elements)
+        if elementName == "lession" {
+            self.lessonObject!.lessonId = self.stringProcessing(self.lessonId!)
+            self.lessonObject!.lessonName = self.stringProcessing(self.lessonName!)
+            self.lessonObject!.lessonPath = self.stringProcessing(self.lessonPath!)
+            self.lessonArray.addObject(self.lessonObject!)
         }
+        else if elementName == "sentence" {
+            self.sentences.addObject(self.stringProcessing(self.sentence!))
+        }
+        else if elementName == "sentences_list" {
+            self.lessonObject!.conversationArray = self.sentences
+        }
+        else if elementName == "questions" {
+            self.questionObject?.questionText = self.stringProcessing(self.question!)
+            self.questions.addObject(self.questionObject!)
+        }
+        else if elementName == "answer" {
+            self.answerObject?.answerText = self.stringProcessing(self.answer!)
+            self.answers.addObject(self.answerObject!)
+        }
+        else if elementName == "answers" {
+            self.questionObject?.answerArray = self.answers
+        }
+        else if elementName == "questionaire" {
+            self.lessonObject?.questionArray = self.questions
+        }
+        else if elementName == "lessions" {
+            for i in 0...self.lessonArray.count - 1 {
+                let theObject:LessonObject = self.lessonArray[i] as! LessonObject
+                for j in 0...(theObject.questionArray?.count)! - 1 {
+                    let theQuestion:QuestionObject = theObject.questionArray![j] as! QuestionObject
+                    print("\(theQuestion.questionText)")
+                    for k in 0...(theQuestion.answerArray?.count)! - 1 {
+                        let theAnswer:AnswerObject = theQuestion.answerArray![k] as! AnswerObject
+                        print("\(theAnswer.answerText)")
+                    }
+                }
+            }
+        }
+    }
+    
+    func stringProcessing(string:String) -> String {
+        var trimmedString = string.stringByReplacingOccurrencesOfString("\n", withString: "")
+        trimmedString = trimmedString.stringByReplacingOccurrencesOfString("\t", withString: "")
+        trimmedString = trimmedString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        return trimmedString
     }
     
 }
