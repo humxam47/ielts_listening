@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0580679AE10650E85B29711E'
+               BlueprintIdentifier = '0F51F84DFC289AD83DD5B7A3'
                BlueprintName = 'Pods-ielts-listening'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-ielts-listening.a'>
+               BuildableName = 'Pods_ielts_listening.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

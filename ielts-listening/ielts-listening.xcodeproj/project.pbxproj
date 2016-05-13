@@ -1,736 +1,2685 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0B4582A6FF6C4DEED723DA40 /* libPods-ielts-listening.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A50601B8FC66FA183CA210E /* libPods-ielts-listening.a */; };
-		0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D391CE0B1D4001F0477 /* AppDelegate.swift */; };
-		0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D3B1CE0B1D4001F0477 /* ViewController.swift */; };
-		0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D3D1CE0B1D4001F0477 /* Main.storyboard */; };
-		0F562D411CE0B1D4001F0477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D401CE0B1D4001F0477 /* Assets.xcassets */; };
-		0F562D441CE0B1D4001F0477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */; };
-		0F562DA11CE0BED1001F0477 /* advanced_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D4D1CE0BED1001F0477 /* advanced_level_button.png */; };
-		0F562DA21CE0BED1001F0477 /* basic_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D4E1CE0BED1001F0477 /* basic_level_button.png */; };
-		0F562DA31CE0BED1001F0477 /* bg_dialog_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D4F1CE0BED1001F0477 /* bg_dialog_item.png */; };
-		0F562DA41CE0BED1001F0477 /* bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D501CE0BED1001F0477 /* bg_image.png */; };
-		0F562DA51CE0BED1001F0477 /* check_answer_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D511CE0BED1001F0477 /* check_answer_button.png */; };
-		0F562DA61CE0BED1001F0477 /* conversation_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D521CE0BED1001F0477 /* conversation_button.png */; };
-		0F562DA71CE0BED1001F0477 /* do_again_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D531CE0BED1001F0477 /* do_again_button.png */; };
-		0F562DA81CE0BED1001F0477 /* download_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D541CE0BED1001F0477 /* download_button.png */; };
-		0F562DA91CE0BED1001F0477 /* excercises_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D551CE0BED1001F0477 /* excercises_button.png */; };
-		0F562DAA1CE0BED1001F0477 /* icon_backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D561CE0BED1001F0477 /* icon_backward.png */; };
-		0F562DAB1CE0BED1001F0477 /* icon_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D571CE0BED1001F0477 /* icon_forward.png */; };
-		0F562DAC1CE0BED1001F0477 /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D581CE0BED1001F0477 /* icon_pause.png */; };
-		0F562DAD1CE0BED1001F0477 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D591CE0BED1001F0477 /* icon_play.png */; };
-		0F562DAE1CE0BED1001F0477 /* intermediate_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5A1CE0BED1001F0477 /* intermediate_level_button.png */; };
-		0F562DAF1CE0BED1001F0477 /* irregular_verbs_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5B1CE0BED1001F0477 /* irregular_verbs_button.png */; };
-		0F562DB01CE0BED1001F0477 /* lesson_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5C1CE0BED1001F0477 /* lesson_1.png */; };
-		0F562DB11CE0BED1001F0477 /* lesson_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5D1CE0BED1001F0477 /* lesson_10.png */; };
-		0F562DB21CE0BED1001F0477 /* lesson_10_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5E1CE0BED1001F0477 /* lesson_10_tap.png */; };
-		0F562DB31CE0BED1001F0477 /* lesson_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D5F1CE0BED1001F0477 /* lesson_11.png */; };
-		0F562DB41CE0BED1001F0477 /* lesson_11_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D601CE0BED1001F0477 /* lesson_11_tap.png */; };
-		0F562DB51CE0BED1001F0477 /* lesson_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D611CE0BED1001F0477 /* lesson_12.png */; };
-		0F562DB61CE0BED1001F0477 /* lesson_12_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D621CE0BED1001F0477 /* lesson_12_tap.png */; };
-		0F562DB71CE0BED1001F0477 /* lesson_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D631CE0BED1001F0477 /* lesson_13.png */; };
-		0F562DB81CE0BED1001F0477 /* lesson_13_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D641CE0BED1001F0477 /* lesson_13_tap.png */; };
-		0F562DB91CE0BED1001F0477 /* lesson_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D651CE0BED1001F0477 /* lesson_14.png */; };
-		0F562DBA1CE0BED1001F0477 /* lesson_14_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D661CE0BED1001F0477 /* lesson_14_tap.png */; };
-		0F562DBB1CE0BED1001F0477 /* lesson_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D671CE0BED1001F0477 /* lesson_15.png */; };
-		0F562DBC1CE0BED1001F0477 /* lesson_15_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D681CE0BED1001F0477 /* lesson_15_tap.png */; };
-		0F562DBD1CE0BED1001F0477 /* lesson_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D691CE0BED1001F0477 /* lesson_16.png */; };
-		0F562DBE1CE0BED1001F0477 /* lesson_16_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6A1CE0BED1001F0477 /* lesson_16_tap.png */; };
-		0F562DBF1CE0BED1001F0477 /* lesson_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6B1CE0BED1001F0477 /* lesson_17.png */; };
-		0F562DC01CE0BED1001F0477 /* lesson_17_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6C1CE0BED1001F0477 /* lesson_17_tap.png */; };
-		0F562DC11CE0BED1001F0477 /* lesson_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6D1CE0BED1001F0477 /* lesson_18.png */; };
-		0F562DC21CE0BED1001F0477 /* lesson_18_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6E1CE0BED1001F0477 /* lesson_18_tap.png */; };
-		0F562DC31CE0BED1001F0477 /* lesson_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D6F1CE0BED1001F0477 /* lesson_19.png */; };
-		0F562DC41CE0BED1001F0477 /* lesson_19_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D701CE0BED1001F0477 /* lesson_19_tap.png */; };
-		0F562DC51CE0BED1001F0477 /* lesson_1_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D711CE0BED1001F0477 /* lesson_1_tap.png */; };
-		0F562DC61CE0BED1001F0477 /* lesson_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D721CE0BED1001F0477 /* lesson_2.png */; };
-		0F562DC71CE0BED1001F0477 /* lesson_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D731CE0BED1001F0477 /* lesson_20.png */; };
-		0F562DC81CE0BED1001F0477 /* lesson_20_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D741CE0BED1001F0477 /* lesson_20_tap.png */; };
-		0F562DC91CE0BED1001F0477 /* lesson_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D751CE0BED1001F0477 /* lesson_21.png */; };
-		0F562DCA1CE0BED1001F0477 /* lesson_21_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D761CE0BED1001F0477 /* lesson_21_tap.png */; };
-		0F562DCB1CE0BED1001F0477 /* lesson_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D771CE0BED1001F0477 /* lesson_22.png */; };
-		0F562DCC1CE0BED1001F0477 /* lesson_22_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D781CE0BED1001F0477 /* lesson_22_tap.png */; };
-		0F562DCD1CE0BED1001F0477 /* lesson_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D791CE0BED1001F0477 /* lesson_23.png */; };
-		0F562DCE1CE0BED1001F0477 /* lesson_23_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7A1CE0BED1001F0477 /* lesson_23_tap.png */; };
-		0F562DCF1CE0BED1001F0477 /* lesson_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7B1CE0BED1001F0477 /* lesson_24.png */; };
-		0F562DD01CE0BED1001F0477 /* lesson_24_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7C1CE0BED1001F0477 /* lesson_24_tap.png */; };
-		0F562DD11CE0BED1001F0477 /* lesson_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7D1CE0BED1001F0477 /* lesson_25.png */; };
-		0F562DD21CE0BED1001F0477 /* lesson_25_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7E1CE0BED1001F0477 /* lesson_25_tap.png */; };
-		0F562DD31CE0BED1001F0477 /* lesson_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D7F1CE0BED1001F0477 /* lesson_26.png */; };
-		0F562DD41CE0BED1001F0477 /* lesson_26_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D801CE0BED1001F0477 /* lesson_26_tap.png */; };
-		0F562DD51CE0BED1001F0477 /* lesson_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D811CE0BED1001F0477 /* lesson_27.png */; };
-		0F562DD61CE0BED1001F0477 /* lesson_27_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D821CE0BED1001F0477 /* lesson_27_tap.png */; };
-		0F562DD71CE0BED1001F0477 /* lesson_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D831CE0BED1001F0477 /* lesson_28.png */; };
-		0F562DD81CE0BED1001F0477 /* lesson_28_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D841CE0BED1001F0477 /* lesson_28_tap.png */; };
-		0F562DD91CE0BED1001F0477 /* lesson_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D851CE0BED1001F0477 /* lesson_29.png */; };
-		0F562DDA1CE0BED1001F0477 /* lesson_29_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D861CE0BED1001F0477 /* lesson_29_tap.png */; };
-		0F562DDB1CE0BED1001F0477 /* lesson_2_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D871CE0BED1001F0477 /* lesson_2_tap.png */; };
-		0F562DDC1CE0BED1001F0477 /* lesson_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D881CE0BED1001F0477 /* lesson_3.png */; };
-		0F562DDD1CE0BED1001F0477 /* lesson_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D891CE0BED1001F0477 /* lesson_30.png */; };
-		0F562DDE1CE0BED1001F0477 /* lesson_30_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8A1CE0BED1001F0477 /* lesson_30_tap.png */; };
-		0F562DDF1CE0BED1001F0477 /* lesson_31.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8B1CE0BED1001F0477 /* lesson_31.png */; };
-		0F562DE01CE0BED1001F0477 /* lesson_31_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8C1CE0BED1001F0477 /* lesson_31_tap.png */; };
-		0F562DE11CE0BED1001F0477 /* lesson_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8D1CE0BED1001F0477 /* lesson_32.png */; };
-		0F562DE21CE0BED1001F0477 /* lesson_32_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8E1CE0BED1001F0477 /* lesson_32_tap.png */; };
-		0F562DE31CE0BED1001F0477 /* lesson_33.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D8F1CE0BED1001F0477 /* lesson_33.png */; };
-		0F562DE41CE0BED1001F0477 /* lesson_33_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D901CE0BED1001F0477 /* lesson_33_tap.png */; };
-		0F562DE51CE0BED1001F0477 /* lesson_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D911CE0BED1001F0477 /* lesson_34.png */; };
-		0F562DE61CE0BED1001F0477 /* lesson_34_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D921CE0BED1001F0477 /* lesson_34_tap.png */; };
-		0F562DE71CE0BED1001F0477 /* lesson_3_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D931CE0BED1001F0477 /* lesson_3_tap.png */; };
-		0F562DE81CE0BED1001F0477 /* lesson_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D941CE0BED1001F0477 /* lesson_4.png */; };
-		0F562DE91CE0BED1001F0477 /* lesson_4_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D951CE0BED1001F0477 /* lesson_4_tap.png */; };
-		0F562DEA1CE0BED1001F0477 /* lesson_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D961CE0BED1001F0477 /* lesson_5.png */; };
-		0F562DEB1CE0BED1001F0477 /* lesson_5_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D971CE0BED1001F0477 /* lesson_5_tap.png */; };
-		0F562DEC1CE0BED1001F0477 /* lesson_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D981CE0BED1001F0477 /* lesson_6.png */; };
-		0F562DED1CE0BED1001F0477 /* lesson_6_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D991CE0BED1001F0477 /* lesson_6_tap.png */; };
-		0F562DEE1CE0BED1001F0477 /* lesson_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9A1CE0BED1001F0477 /* lesson_7.png */; };
-		0F562DEF1CE0BED1001F0477 /* lesson_7_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9B1CE0BED1001F0477 /* lesson_7_tap.png */; };
-		0F562DF01CE0BED1001F0477 /* lesson_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9C1CE0BED1001F0477 /* lesson_8.png */; };
-		0F562DF11CE0BED1001F0477 /* lesson_8_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9D1CE0BED1001F0477 /* lesson_8_tap.png */; };
-		0F562DF21CE0BED1001F0477 /* lesson_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9E1CE0BED1001F0477 /* lesson_9.png */; };
-		0F562DF31CE0BED1001F0477 /* lesson_9_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D9F1CE0BED1001F0477 /* lesson_9_tap.png */; };
-		0F562DF41CE0BED1001F0477 /* main_bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F562DA01CE0BED1001F0477 /* main_bg_image.png */; };
-		0F6ADB571CE1B418001134A5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6ADB561CE1B418001134A5 /* back.png */; };
-		0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */; };
-		0F6ADB5B1CE1B6E7001134A5 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		0F562D361CE0B1D3001F0477 /* ielts-listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ielts-listening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F562D391CE0B1D4001F0477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F562D3B1CE0B1D4001F0477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F562D3E1CE0B1D4001F0477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0F562D401CE0B1D4001F0477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0F562D431CE0B1D4001F0477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0F562D451CE0B1D4001F0477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IELTSListening-Bridging-Header.h"; sourceTree = "<group>"; };
-		0F562D4D1CE0BED1001F0477 /* advanced_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = advanced_level_button.png; sourceTree = "<group>"; };
-		0F562D4E1CE0BED1001F0477 /* basic_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_level_button.png; sourceTree = "<group>"; };
-		0F562D4F1CE0BED1001F0477 /* bg_dialog_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_dialog_item.png; sourceTree = "<group>"; };
-		0F562D501CE0BED1001F0477 /* bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_image.png; sourceTree = "<group>"; };
-		0F562D511CE0BED1001F0477 /* check_answer_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_answer_button.png; sourceTree = "<group>"; };
-		0F562D521CE0BED1001F0477 /* conversation_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conversation_button.png; sourceTree = "<group>"; };
-		0F562D531CE0BED1001F0477 /* do_again_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = do_again_button.png; sourceTree = "<group>"; };
-		0F562D541CE0BED1001F0477 /* download_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_button.png; sourceTree = "<group>"; };
-		0F562D551CE0BED1001F0477 /* excercises_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excercises_button.png; sourceTree = "<group>"; };
-		0F562D561CE0BED1001F0477 /* icon_backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_backward.png; sourceTree = "<group>"; };
-		0F562D571CE0BED1001F0477 /* icon_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_forward.png; sourceTree = "<group>"; };
-		0F562D581CE0BED1001F0477 /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
-		0F562D591CE0BED1001F0477 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
-		0F562D5A1CE0BED1001F0477 /* intermediate_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intermediate_level_button.png; sourceTree = "<group>"; };
-		0F562D5B1CE0BED1001F0477 /* irregular_verbs_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irregular_verbs_button.png; sourceTree = "<group>"; };
-		0F562D5C1CE0BED1001F0477 /* lesson_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_1.png; sourceTree = "<group>"; };
-		0F562D5D1CE0BED1001F0477 /* lesson_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_10.png; sourceTree = "<group>"; };
-		0F562D5E1CE0BED1001F0477 /* lesson_10_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_10_tap.png; sourceTree = "<group>"; };
-		0F562D5F1CE0BED1001F0477 /* lesson_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_11.png; sourceTree = "<group>"; };
-		0F562D601CE0BED1001F0477 /* lesson_11_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_11_tap.png; sourceTree = "<group>"; };
-		0F562D611CE0BED1001F0477 /* lesson_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_12.png; sourceTree = "<group>"; };
-		0F562D621CE0BED1001F0477 /* lesson_12_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_12_tap.png; sourceTree = "<group>"; };
-		0F562D631CE0BED1001F0477 /* lesson_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_13.png; sourceTree = "<group>"; };
-		0F562D641CE0BED1001F0477 /* lesson_13_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_13_tap.png; sourceTree = "<group>"; };
-		0F562D651CE0BED1001F0477 /* lesson_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_14.png; sourceTree = "<group>"; };
-		0F562D661CE0BED1001F0477 /* lesson_14_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_14_tap.png; sourceTree = "<group>"; };
-		0F562D671CE0BED1001F0477 /* lesson_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_15.png; sourceTree = "<group>"; };
-		0F562D681CE0BED1001F0477 /* lesson_15_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_15_tap.png; sourceTree = "<group>"; };
-		0F562D691CE0BED1001F0477 /* lesson_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_16.png; sourceTree = "<group>"; };
-		0F562D6A1CE0BED1001F0477 /* lesson_16_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_16_tap.png; sourceTree = "<group>"; };
-		0F562D6B1CE0BED1001F0477 /* lesson_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_17.png; sourceTree = "<group>"; };
-		0F562D6C1CE0BED1001F0477 /* lesson_17_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_17_tap.png; sourceTree = "<group>"; };
-		0F562D6D1CE0BED1001F0477 /* lesson_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_18.png; sourceTree = "<group>"; };
-		0F562D6E1CE0BED1001F0477 /* lesson_18_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_18_tap.png; sourceTree = "<group>"; };
-		0F562D6F1CE0BED1001F0477 /* lesson_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_19.png; sourceTree = "<group>"; };
-		0F562D701CE0BED1001F0477 /* lesson_19_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_19_tap.png; sourceTree = "<group>"; };
-		0F562D711CE0BED1001F0477 /* lesson_1_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_1_tap.png; sourceTree = "<group>"; };
-		0F562D721CE0BED1001F0477 /* lesson_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_2.png; sourceTree = "<group>"; };
-		0F562D731CE0BED1001F0477 /* lesson_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_20.png; sourceTree = "<group>"; };
-		0F562D741CE0BED1001F0477 /* lesson_20_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_20_tap.png; sourceTree = "<group>"; };
-		0F562D751CE0BED1001F0477 /* lesson_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_21.png; sourceTree = "<group>"; };
-		0F562D761CE0BED1001F0477 /* lesson_21_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_21_tap.png; sourceTree = "<group>"; };
-		0F562D771CE0BED1001F0477 /* lesson_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_22.png; sourceTree = "<group>"; };
-		0F562D781CE0BED1001F0477 /* lesson_22_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_22_tap.png; sourceTree = "<group>"; };
-		0F562D791CE0BED1001F0477 /* lesson_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_23.png; sourceTree = "<group>"; };
-		0F562D7A1CE0BED1001F0477 /* lesson_23_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_23_tap.png; sourceTree = "<group>"; };
-		0F562D7B1CE0BED1001F0477 /* lesson_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_24.png; sourceTree = "<group>"; };
-		0F562D7C1CE0BED1001F0477 /* lesson_24_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_24_tap.png; sourceTree = "<group>"; };
-		0F562D7D1CE0BED1001F0477 /* lesson_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_25.png; sourceTree = "<group>"; };
-		0F562D7E1CE0BED1001F0477 /* lesson_25_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_25_tap.png; sourceTree = "<group>"; };
-		0F562D7F1CE0BED1001F0477 /* lesson_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_26.png; sourceTree = "<group>"; };
-		0F562D801CE0BED1001F0477 /* lesson_26_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_26_tap.png; sourceTree = "<group>"; };
-		0F562D811CE0BED1001F0477 /* lesson_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_27.png; sourceTree = "<group>"; };
-		0F562D821CE0BED1001F0477 /* lesson_27_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_27_tap.png; sourceTree = "<group>"; };
-		0F562D831CE0BED1001F0477 /* lesson_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_28.png; sourceTree = "<group>"; };
-		0F562D841CE0BED1001F0477 /* lesson_28_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_28_tap.png; sourceTree = "<group>"; };
-		0F562D851CE0BED1001F0477 /* lesson_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_29.png; sourceTree = "<group>"; };
-		0F562D861CE0BED1001F0477 /* lesson_29_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_29_tap.png; sourceTree = "<group>"; };
-		0F562D871CE0BED1001F0477 /* lesson_2_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_2_tap.png; sourceTree = "<group>"; };
-		0F562D881CE0BED1001F0477 /* lesson_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_3.png; sourceTree = "<group>"; };
-		0F562D891CE0BED1001F0477 /* lesson_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_30.png; sourceTree = "<group>"; };
-		0F562D8A1CE0BED1001F0477 /* lesson_30_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_30_tap.png; sourceTree = "<group>"; };
-		0F562D8B1CE0BED1001F0477 /* lesson_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_31.png; sourceTree = "<group>"; };
-		0F562D8C1CE0BED1001F0477 /* lesson_31_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_31_tap.png; sourceTree = "<group>"; };
-		0F562D8D1CE0BED1001F0477 /* lesson_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_32.png; sourceTree = "<group>"; };
-		0F562D8E1CE0BED1001F0477 /* lesson_32_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_32_tap.png; sourceTree = "<group>"; };
-		0F562D8F1CE0BED1001F0477 /* lesson_33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_33.png; sourceTree = "<group>"; };
-		0F562D901CE0BED1001F0477 /* lesson_33_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_33_tap.png; sourceTree = "<group>"; };
-		0F562D911CE0BED1001F0477 /* lesson_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_34.png; sourceTree = "<group>"; };
-		0F562D921CE0BED1001F0477 /* lesson_34_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_34_tap.png; sourceTree = "<group>"; };
-		0F562D931CE0BED1001F0477 /* lesson_3_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_3_tap.png; sourceTree = "<group>"; };
-		0F562D941CE0BED1001F0477 /* lesson_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_4.png; sourceTree = "<group>"; };
-		0F562D951CE0BED1001F0477 /* lesson_4_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_4_tap.png; sourceTree = "<group>"; };
-		0F562D961CE0BED1001F0477 /* lesson_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_5.png; sourceTree = "<group>"; };
-		0F562D971CE0BED1001F0477 /* lesson_5_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_5_tap.png; sourceTree = "<group>"; };
-		0F562D981CE0BED1001F0477 /* lesson_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_6.png; sourceTree = "<group>"; };
-		0F562D991CE0BED1001F0477 /* lesson_6_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_6_tap.png; sourceTree = "<group>"; };
-		0F562D9A1CE0BED1001F0477 /* lesson_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_7.png; sourceTree = "<group>"; };
-		0F562D9B1CE0BED1001F0477 /* lesson_7_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_7_tap.png; sourceTree = "<group>"; };
-		0F562D9C1CE0BED1001F0477 /* lesson_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_8.png; sourceTree = "<group>"; };
-		0F562D9D1CE0BED1001F0477 /* lesson_8_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_8_tap.png; sourceTree = "<group>"; };
-		0F562D9E1CE0BED1001F0477 /* lesson_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_9.png; sourceTree = "<group>"; };
-		0F562D9F1CE0BED1001F0477 /* lesson_9_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_9_tap.png; sourceTree = "<group>"; };
-		0F562DA01CE0BED1001F0477 /* main_bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_bg_image.png; sourceTree = "<group>"; };
-		0F6ADB561CE1B418001134A5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
-		1A50601B8FC66FA183CA210E /* libPods-ielts-listening.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ielts-listening.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig"; sourceTree = "<group>"; };
-		E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0F562D331CE0B1D3001F0477 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B4582A6FF6C4DEED723DA40 /* libPods-ielts-listening.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0F562D2D1CE0B1D3001F0477 = {
-			isa = PBXGroup;
-			children = (
-				0F562D381CE0B1D4001F0477 /* ielts-listening */,
-				0F562D371CE0B1D3001F0477 /* Products */,
-				541875B5565B206301B3C770 /* Pods */,
-				B48A2AB20719578542BB5079 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		0F562D371CE0B1D3001F0477 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F562D361CE0B1D3001F0477 /* ielts-listening.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0F562D381CE0B1D4001F0477 /* ielts-listening */ = {
-			isa = PBXGroup;
-			children = (
-				0F562D4C1CE0BED1001F0477 /* Resources */,
-				0F562D391CE0B1D4001F0477 /* AppDelegate.swift */,
-				0F562D3B1CE0B1D4001F0477 /* ViewController.swift */,
-				0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */,
-				0F562D3D1CE0B1D4001F0477 /* Main.storyboard */,
-				0F562D401CE0B1D4001F0477 /* Assets.xcassets */,
-				0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */,
-				0F562D451CE0B1D4001F0477 /* Info.plist */,
-				0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */,
-				0F6ADB5A1CE1B6E7001134A5 /* Lesson.swift */,
-			);
-			path = "ielts-listening";
-			sourceTree = "<group>";
-		};
-		0F562D4C1CE0BED1001F0477 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0F6ADB561CE1B418001134A5 /* back.png */,
-				0F562D4D1CE0BED1001F0477 /* advanced_level_button.png */,
-				0F562D4E1CE0BED1001F0477 /* basic_level_button.png */,
-				0F562D4F1CE0BED1001F0477 /* bg_dialog_item.png */,
-				0F562D501CE0BED1001F0477 /* bg_image.png */,
-				0F562D511CE0BED1001F0477 /* check_answer_button.png */,
-				0F562D521CE0BED1001F0477 /* conversation_button.png */,
-				0F562D531CE0BED1001F0477 /* do_again_button.png */,
-				0F562D541CE0BED1001F0477 /* download_button.png */,
-				0F562D551CE0BED1001F0477 /* excercises_button.png */,
-				0F562D561CE0BED1001F0477 /* icon_backward.png */,
-				0F562D571CE0BED1001F0477 /* icon_forward.png */,
-				0F562D581CE0BED1001F0477 /* icon_pause.png */,
-				0F562D591CE0BED1001F0477 /* icon_play.png */,
-				0F562D5A1CE0BED1001F0477 /* intermediate_level_button.png */,
-				0F562D5B1CE0BED1001F0477 /* irregular_verbs_button.png */,
-				0F562D5C1CE0BED1001F0477 /* lesson_1.png */,
-				0F562D5D1CE0BED1001F0477 /* lesson_10.png */,
-				0F562D5E1CE0BED1001F0477 /* lesson_10_tap.png */,
-				0F562D5F1CE0BED1001F0477 /* lesson_11.png */,
-				0F562D601CE0BED1001F0477 /* lesson_11_tap.png */,
-				0F562D611CE0BED1001F0477 /* lesson_12.png */,
-				0F562D621CE0BED1001F0477 /* lesson_12_tap.png */,
-				0F562D631CE0BED1001F0477 /* lesson_13.png */,
-				0F562D641CE0BED1001F0477 /* lesson_13_tap.png */,
-				0F562D651CE0BED1001F0477 /* lesson_14.png */,
-				0F562D661CE0BED1001F0477 /* lesson_14_tap.png */,
-				0F562D671CE0BED1001F0477 /* lesson_15.png */,
-				0F562D681CE0BED1001F0477 /* lesson_15_tap.png */,
-				0F562D691CE0BED1001F0477 /* lesson_16.png */,
-				0F562D6A1CE0BED1001F0477 /* lesson_16_tap.png */,
-				0F562D6B1CE0BED1001F0477 /* lesson_17.png */,
-				0F562D6C1CE0BED1001F0477 /* lesson_17_tap.png */,
-				0F562D6D1CE0BED1001F0477 /* lesson_18.png */,
-				0F562D6E1CE0BED1001F0477 /* lesson_18_tap.png */,
-				0F562D6F1CE0BED1001F0477 /* lesson_19.png */,
-				0F562D701CE0BED1001F0477 /* lesson_19_tap.png */,
-				0F562D711CE0BED1001F0477 /* lesson_1_tap.png */,
-				0F562D721CE0BED1001F0477 /* lesson_2.png */,
-				0F562D731CE0BED1001F0477 /* lesson_20.png */,
-				0F562D741CE0BED1001F0477 /* lesson_20_tap.png */,
-				0F562D751CE0BED1001F0477 /* lesson_21.png */,
-				0F562D761CE0BED1001F0477 /* lesson_21_tap.png */,
-				0F562D771CE0BED1001F0477 /* lesson_22.png */,
-				0F562D781CE0BED1001F0477 /* lesson_22_tap.png */,
-				0F562D791CE0BED1001F0477 /* lesson_23.png */,
-				0F562D7A1CE0BED1001F0477 /* lesson_23_tap.png */,
-				0F562D7B1CE0BED1001F0477 /* lesson_24.png */,
-				0F562D7C1CE0BED1001F0477 /* lesson_24_tap.png */,
-				0F562D7D1CE0BED1001F0477 /* lesson_25.png */,
-				0F562D7E1CE0BED1001F0477 /* lesson_25_tap.png */,
-				0F562D7F1CE0BED1001F0477 /* lesson_26.png */,
-				0F562D801CE0BED1001F0477 /* lesson_26_tap.png */,
-				0F562D811CE0BED1001F0477 /* lesson_27.png */,
-				0F562D821CE0BED1001F0477 /* lesson_27_tap.png */,
-				0F562D831CE0BED1001F0477 /* lesson_28.png */,
-				0F562D841CE0BED1001F0477 /* lesson_28_tap.png */,
-				0F562D851CE0BED1001F0477 /* lesson_29.png */,
-				0F562D861CE0BED1001F0477 /* lesson_29_tap.png */,
-				0F562D871CE0BED1001F0477 /* lesson_2_tap.png */,
-				0F562D881CE0BED1001F0477 /* lesson_3.png */,
-				0F562D891CE0BED1001F0477 /* lesson_30.png */,
-				0F562D8A1CE0BED1001F0477 /* lesson_30_tap.png */,
-				0F562D8B1CE0BED1001F0477 /* lesson_31.png */,
-				0F562D8C1CE0BED1001F0477 /* lesson_31_tap.png */,
-				0F562D8D1CE0BED1001F0477 /* lesson_32.png */,
-				0F562D8E1CE0BED1001F0477 /* lesson_32_tap.png */,
-				0F562D8F1CE0BED1001F0477 /* lesson_33.png */,
-				0F562D901CE0BED1001F0477 /* lesson_33_tap.png */,
-				0F562D911CE0BED1001F0477 /* lesson_34.png */,
-				0F562D921CE0BED1001F0477 /* lesson_34_tap.png */,
-				0F562D931CE0BED1001F0477 /* lesson_3_tap.png */,
-				0F562D941CE0BED1001F0477 /* lesson_4.png */,
-				0F562D951CE0BED1001F0477 /* lesson_4_tap.png */,
-				0F562D961CE0BED1001F0477 /* lesson_5.png */,
-				0F562D971CE0BED1001F0477 /* lesson_5_tap.png */,
-				0F562D981CE0BED1001F0477 /* lesson_6.png */,
-				0F562D991CE0BED1001F0477 /* lesson_6_tap.png */,
-				0F562D9A1CE0BED1001F0477 /* lesson_7.png */,
-				0F562D9B1CE0BED1001F0477 /* lesson_7_tap.png */,
-				0F562D9C1CE0BED1001F0477 /* lesson_8.png */,
-				0F562D9D1CE0BED1001F0477 /* lesson_8_tap.png */,
-				0F562D9E1CE0BED1001F0477 /* lesson_9.png */,
-				0F562D9F1CE0BED1001F0477 /* lesson_9_tap.png */,
-				0F562DA01CE0BED1001F0477 /* main_bg_image.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		541875B5565B206301B3C770 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */,
-				44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B48A2AB20719578542BB5079 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A50601B8FC66FA183CA210E /* libPods-ielts-listening.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		0F562D351CE0B1D3001F0477 /* ielts-listening */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0F562D481CE0B1D4001F0477 /* Build configuration list for PBXNativeTarget "ielts-listening" */;
-			buildPhases = (
-				D1BE894E0AAE7F2A531F793A /* Check Pods Manifest.lock */,
-				0F562D321CE0B1D3001F0477 /* Sources */,
-				0F562D331CE0B1D3001F0477 /* Frameworks */,
-				0F562D341CE0B1D3001F0477 /* Resources */,
-				69E0DD723A437C109A6C3235 /* Embed Pods Frameworks */,
-				39414625BA2C11D85DB2B7AA /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ielts-listening";
-			productName = "ielts-listening";
-			productReference = 0F562D361CE0B1D3001F0477 /* ielts-listening.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		0F562D2E1CE0B1D3001F0477 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Binh Le";
-				TargetAttributes = {
-					0F562D351CE0B1D3001F0477 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UG999DM857;
-					};
-				};
-			};
-			buildConfigurationList = 0F562D311CE0B1D3001F0477 /* Build configuration list for PBXProject "ielts-listening" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 0F562D2D1CE0B1D3001F0477;
-			productRefGroup = 0F562D371CE0B1D3001F0477 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				0F562D351CE0B1D3001F0477 /* ielts-listening */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		0F562D341CE0B1D3001F0477 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F562DAB1CE0BED1001F0477 /* icon_forward.png in Resources */,
-				0F562DA11CE0BED1001F0477 /* advanced_level_button.png in Resources */,
-				0F562DA91CE0BED1001F0477 /* excercises_button.png in Resources */,
-				0F562DC21CE0BED1001F0477 /* lesson_18_tap.png in Resources */,
-				0F562DDA1CE0BED1001F0477 /* lesson_29_tap.png in Resources */,
-				0F562DD51CE0BED1001F0477 /* lesson_27.png in Resources */,
-				0F562DF11CE0BED1001F0477 /* lesson_8_tap.png in Resources */,
-				0F562DA81CE0BED1001F0477 /* download_button.png in Resources */,
-				0F562DC11CE0BED1001F0477 /* lesson_18.png in Resources */,
-				0F562DB21CE0BED1001F0477 /* lesson_10_tap.png in Resources */,
-				0F562DDE1CE0BED1001F0477 /* lesson_30_tap.png in Resources */,
-				0F562DE51CE0BED1001F0477 /* lesson_34.png in Resources */,
-				0F562DE21CE0BED1001F0477 /* lesson_32_tap.png in Resources */,
-				0F562DA71CE0BED1001F0477 /* do_again_button.png in Resources */,
-				0F562DA41CE0BED1001F0477 /* bg_image.png in Resources */,
-				0F562DE11CE0BED1001F0477 /* lesson_32.png in Resources */,
-				0F562DBB1CE0BED1001F0477 /* lesson_15.png in Resources */,
-				0F562DED1CE0BED1001F0477 /* lesson_6_tap.png in Resources */,
-				0F562DCC1CE0BED1001F0477 /* lesson_22_tap.png in Resources */,
-				0F562DA51CE0BED1001F0477 /* check_answer_button.png in Resources */,
-				0F562DDC1CE0BED1001F0477 /* lesson_3.png in Resources */,
-				0F562DBF1CE0BED1001F0477 /* lesson_17.png in Resources */,
-				0F562DF01CE0BED1001F0477 /* lesson_8.png in Resources */,
-				0F562DEA1CE0BED1001F0477 /* lesson_5.png in Resources */,
-				0F562DE81CE0BED1001F0477 /* lesson_4.png in Resources */,
-				0F562DAE1CE0BED1001F0477 /* intermediate_level_button.png in Resources */,
-				0F562DBA1CE0BED1001F0477 /* lesson_14_tap.png in Resources */,
-				0F562DAA1CE0BED1001F0477 /* icon_backward.png in Resources */,
-				0F562DB01CE0BED1001F0477 /* lesson_1.png in Resources */,
-				0F562DC01CE0BED1001F0477 /* lesson_17_tap.png in Resources */,
-				0F562DEB1CE0BED1001F0477 /* lesson_5_tap.png in Resources */,
-				0F562DB31CE0BED1001F0477 /* lesson_11.png in Resources */,
-				0F562DDD1CE0BED1001F0477 /* lesson_30.png in Resources */,
-				0F562DCF1CE0BED1001F0477 /* lesson_24.png in Resources */,
-				0F562DB81CE0BED1001F0477 /* lesson_13_tap.png in Resources */,
-				0F562DEF1CE0BED1001F0477 /* lesson_7_tap.png in Resources */,
-				0F562DBC1CE0BED1001F0477 /* lesson_15_tap.png in Resources */,
-				0F562DF41CE0BED1001F0477 /* main_bg_image.png in Resources */,
-				0F562DAC1CE0BED1001F0477 /* icon_pause.png in Resources */,
-				0F562DBE1CE0BED1001F0477 /* lesson_16_tap.png in Resources */,
-				0F562DCA1CE0BED1001F0477 /* lesson_21_tap.png in Resources */,
-				0F562DD61CE0BED1001F0477 /* lesson_27_tap.png in Resources */,
-				0F562DD31CE0BED1001F0477 /* lesson_26.png in Resources */,
-				0F562DB41CE0BED1001F0477 /* lesson_11_tap.png in Resources */,
-				0F562DAF1CE0BED1001F0477 /* irregular_verbs_button.png in Resources */,
-				0F562DB91CE0BED1001F0477 /* lesson_14.png in Resources */,
-				0F562DF31CE0BED1001F0477 /* lesson_9_tap.png in Resources */,
-				0F562DF21CE0BED1001F0477 /* lesson_9.png in Resources */,
-				0F562DC81CE0BED1001F0477 /* lesson_20_tap.png in Resources */,
-				0F562DCB1CE0BED1001F0477 /* lesson_22.png in Resources */,
-				0F562DD81CE0BED1001F0477 /* lesson_28_tap.png in Resources */,
-				0F562DD91CE0BED1001F0477 /* lesson_29.png in Resources */,
-				0F562DE31CE0BED1001F0477 /* lesson_33.png in Resources */,
-				0F562DD11CE0BED1001F0477 /* lesson_25.png in Resources */,
-				0F562DC71CE0BED1001F0477 /* lesson_20.png in Resources */,
-				0F562DB11CE0BED1001F0477 /* lesson_10.png in Resources */,
-				0F562DB61CE0BED1001F0477 /* lesson_12_tap.png in Resources */,
-				0F562DD41CE0BED1001F0477 /* lesson_26_tap.png in Resources */,
-				0F562DD21CE0BED1001F0477 /* lesson_25_tap.png in Resources */,
-				0F562DE01CE0BED1001F0477 /* lesson_31_tap.png in Resources */,
-				0F562DC51CE0BED1001F0477 /* lesson_1_tap.png in Resources */,
-				0F562DC91CE0BED1001F0477 /* lesson_21.png in Resources */,
-				0F562DE61CE0BED1001F0477 /* lesson_34_tap.png in Resources */,
-				0F562DA31CE0BED1001F0477 /* bg_dialog_item.png in Resources */,
-				0F562DC61CE0BED1001F0477 /* lesson_2.png in Resources */,
-				0F562DDF1CE0BED1001F0477 /* lesson_31.png in Resources */,
-				0F562D441CE0B1D4001F0477 /* LaunchScreen.storyboard in Resources */,
-				0F562DA21CE0BED1001F0477 /* basic_level_button.png in Resources */,
-				0F562DCE1CE0BED1001F0477 /* lesson_23_tap.png in Resources */,
-				0F562D411CE0B1D4001F0477 /* Assets.xcassets in Resources */,
-				0F562DEC1CE0BED1001F0477 /* lesson_6.png in Resources */,
-				0F562DC41CE0BED1001F0477 /* lesson_19_tap.png in Resources */,
-				0F562DE91CE0BED1001F0477 /* lesson_4_tap.png in Resources */,
-				0F562DD01CE0BED1001F0477 /* lesson_24_tap.png in Resources */,
-				0F562DEE1CE0BED1001F0477 /* lesson_7.png in Resources */,
-				0F562DCD1CE0BED1001F0477 /* lesson_23.png in Resources */,
-				0F562DC31CE0BED1001F0477 /* lesson_19.png in Resources */,
-				0F562DE41CE0BED1001F0477 /* lesson_33_tap.png in Resources */,
-				0F562DE71CE0BED1001F0477 /* lesson_3_tap.png in Resources */,
-				0F562DDB1CE0BED1001F0477 /* lesson_2_tap.png in Resources */,
-				0F562DBD1CE0BED1001F0477 /* lesson_16.png in Resources */,
-				0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */,
-				0F562DD71CE0BED1001F0477 /* lesson_28.png in Resources */,
-				0F562DAD1CE0BED1001F0477 /* icon_play.png in Resources */,
-				0F6ADB571CE1B418001134A5 /* back.png in Resources */,
-				0F562DB71CE0BED1001F0477 /* lesson_13.png in Resources */,
-				0F562DB51CE0BED1001F0477 /* lesson_12.png in Resources */,
-				0F562DA61CE0BED1001F0477 /* conversation_button.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		39414625BA2C11D85DB2B7AA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69E0DD723A437C109A6C3235 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1BE894E0AAE7F2A531F793A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		0F562D321CE0B1D3001F0477 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */,
-				0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */,
-				0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */,
-				0F6ADB5B1CE1B6E7001134A5 /* Lesson.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0F562D3D1CE0B1D4001F0477 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F562D3E1CE0B1D4001F0477 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F562D431CE0B1D4001F0477 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		0F562D461CE0B1D4001F0477 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0F562D471CE0B1D4001F0477 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0F562D491CE0B1D4001F0477 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "ielts-listening/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "./ielts-listening/IELTSListening-Bridging-Header.h";
-			};
-			name = Debug;
-		};
-		0F562D4A1CE0B1D4001F0477 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "ielts-listening/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "./ielts-listening/IELTSListening-Bridging-Header.h";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		0F562D311CE0B1D3001F0477 /* Build configuration list for PBXProject "ielts-listening" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F562D461CE0B1D4001F0477 /* Debug */,
-				0F562D471CE0B1D4001F0477 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0F562D481CE0B1D4001F0477 /* Build configuration list for PBXNativeTarget "ielts-listening" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F562D491CE0B1D4001F0477 /* Debug */,
-				0F562D4A1CE0B1D4001F0477 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 0F562D2E1CE0B1D3001F0477 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0F0D3CC91CE5AF3B00565D23</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F0D3CCA1CE5AF5700565D23</string>
+				<string>0F0D3CCC1CE5B02300565D23</string>
+				<string>0F0D3CCE1CE5B0BA00565D23</string>
+				<string>0F0D3CD01CE5B33000565D23</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F0D3CCA1CE5AF5700565D23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>LevelObject.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F0D3CCB1CE5AF5700565D23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F0D3CCA1CE5AF5700565D23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F0D3CCC1CE5B02300565D23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>QuestionObject.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F0D3CCD1CE5B02300565D23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F0D3CCC1CE5B02300565D23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F0D3CCE1CE5B0BA00565D23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AnswerObject.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F0D3CCF1CE5B0BA00565D23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F0D3CCE1CE5B0BA00565D23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F0D3CD01CE5B33000565D23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>LessonObject.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F0D3CD11CE5B33000565D23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F0D3CD01CE5B33000565D23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D2D1CE0B1D3001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F562D381CE0B1D4001F0477</string>
+				<string>0F562D371CE0B1D3001F0477</string>
+				<string>541875B5565B206301B3C770</string>
+				<string>B48A2AB20719578542BB5079</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D2E1CE0B1D3001F0477</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Binh Le</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>0F562D351CE0B1D3001F0477</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>UG999DM857</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>0F562D311CE0B1D3001F0477</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>0F562D2D1CE0B1D3001F0477</string>
+			<key>productRefGroup</key>
+			<string>0F562D371CE0B1D3001F0477</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>0F562D351CE0B1D3001F0477</string>
+			</array>
+		</dict>
+		<key>0F562D311CE0B1D3001F0477</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0F562D461CE0B1D4001F0477</string>
+				<string>0F562D471CE0B1D4001F0477</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0F562D321CE0B1D3001F0477</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0F0D3CD11CE5B33000565D23</string>
+				<string>0F562D3C1CE0B1D4001F0477</string>
+				<string>0F0D3CCF1CE5B0BA00565D23</string>
+				<string>0F0D3CCB1CE5AF5700565D23</string>
+				<string>0F0D3CCD1CE5B02300565D23</string>
+				<string>0F6ADB591CE1B594001134A5</string>
+				<string>0F562D3A1CE0B1D4001F0477</string>
+				<string>0F6ADB5B1CE1B6E7001134A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0F562D331CE0B1D3001F0477</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>73FF24F6F29B05C7EE9E9CD6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0F562D341CE0B1D3001F0477</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0F562DAB1CE0BED1001F0477</string>
+				<string>0F562DA11CE0BED1001F0477</string>
+				<string>0F562DA91CE0BED1001F0477</string>
+				<string>0F562DC21CE0BED1001F0477</string>
+				<string>0F562DDA1CE0BED1001F0477</string>
+				<string>0F562DD51CE0BED1001F0477</string>
+				<string>0F562DF11CE0BED1001F0477</string>
+				<string>0F562DA81CE0BED1001F0477</string>
+				<string>0F562DC11CE0BED1001F0477</string>
+				<string>0F562DB21CE0BED1001F0477</string>
+				<string>0F562DDE1CE0BED1001F0477</string>
+				<string>0F562DE51CE0BED1001F0477</string>
+				<string>0F562DE21CE0BED1001F0477</string>
+				<string>0F562DA71CE0BED1001F0477</string>
+				<string>0F562DA41CE0BED1001F0477</string>
+				<string>0F562DE11CE0BED1001F0477</string>
+				<string>0F67C6CB1CE4A11F00419AE5</string>
+				<string>0F562DBB1CE0BED1001F0477</string>
+				<string>0F562DED1CE0BED1001F0477</string>
+				<string>0F562DCC1CE0BED1001F0477</string>
+				<string>0F562DA51CE0BED1001F0477</string>
+				<string>0F562DDC1CE0BED1001F0477</string>
+				<string>0F562DBF1CE0BED1001F0477</string>
+				<string>0F562DF01CE0BED1001F0477</string>
+				<string>0F562DEA1CE0BED1001F0477</string>
+				<string>0F562DE81CE0BED1001F0477</string>
+				<string>0F562DAE1CE0BED1001F0477</string>
+				<string>0F562DBA1CE0BED1001F0477</string>
+				<string>0F562DAA1CE0BED1001F0477</string>
+				<string>0F562DB01CE0BED1001F0477</string>
+				<string>0F562DC01CE0BED1001F0477</string>
+				<string>0F562DEB1CE0BED1001F0477</string>
+				<string>0F562DB31CE0BED1001F0477</string>
+				<string>0F562DDD1CE0BED1001F0477</string>
+				<string>0F562DCF1CE0BED1001F0477</string>
+				<string>0F562DB81CE0BED1001F0477</string>
+				<string>0F562DEF1CE0BED1001F0477</string>
+				<string>0F67C6CA1CE4A11F00419AE5</string>
+				<string>0F562DBC1CE0BED1001F0477</string>
+				<string>0F562DF41CE0BED1001F0477</string>
+				<string>0F562DAC1CE0BED1001F0477</string>
+				<string>0F562DBE1CE0BED1001F0477</string>
+				<string>0F562DCA1CE0BED1001F0477</string>
+				<string>0F562DD61CE0BED1001F0477</string>
+				<string>0F562DD31CE0BED1001F0477</string>
+				<string>0F562DB41CE0BED1001F0477</string>
+				<string>0F562DAF1CE0BED1001F0477</string>
+				<string>0F562DB91CE0BED1001F0477</string>
+				<string>0F562DF31CE0BED1001F0477</string>
+				<string>0F562DF21CE0BED1001F0477</string>
+				<string>0F562DC81CE0BED1001F0477</string>
+				<string>0F562DCB1CE0BED1001F0477</string>
+				<string>0F562DD81CE0BED1001F0477</string>
+				<string>0F562DD91CE0BED1001F0477</string>
+				<string>0F562DE31CE0BED1001F0477</string>
+				<string>0F562DD11CE0BED1001F0477</string>
+				<string>0F562DC71CE0BED1001F0477</string>
+				<string>0F562DB11CE0BED1001F0477</string>
+				<string>0F562DB61CE0BED1001F0477</string>
+				<string>0F562DD41CE0BED1001F0477</string>
+				<string>0F562DD21CE0BED1001F0477</string>
+				<string>0F562DE01CE0BED1001F0477</string>
+				<string>0F562DC51CE0BED1001F0477</string>
+				<string>0F562DC91CE0BED1001F0477</string>
+				<string>0F67C6C91CE4A11F00419AE5</string>
+				<string>0F562DE61CE0BED1001F0477</string>
+				<string>0F562DA31CE0BED1001F0477</string>
+				<string>0F562DC61CE0BED1001F0477</string>
+				<string>0F562DDF1CE0BED1001F0477</string>
+				<string>0F562D441CE0B1D4001F0477</string>
+				<string>0F562DA21CE0BED1001F0477</string>
+				<string>0F562DCE1CE0BED1001F0477</string>
+				<string>0F562D411CE0B1D4001F0477</string>
+				<string>0F562DEC1CE0BED1001F0477</string>
+				<string>0F562DC41CE0BED1001F0477</string>
+				<string>0F562DE91CE0BED1001F0477</string>
+				<string>0F562DD01CE0BED1001F0477</string>
+				<string>0F562DEE1CE0BED1001F0477</string>
+				<string>0F562DCD1CE0BED1001F0477</string>
+				<string>0F562DC31CE0BED1001F0477</string>
+				<string>0F562DE41CE0BED1001F0477</string>
+				<string>0F562DE71CE0BED1001F0477</string>
+				<string>0F562DDB1CE0BED1001F0477</string>
+				<string>0F562DBD1CE0BED1001F0477</string>
+				<string>0F562D3F1CE0B1D4001F0477</string>
+				<string>0F562DD71CE0BED1001F0477</string>
+				<string>0F562DAD1CE0BED1001F0477</string>
+				<string>0F6ADB571CE1B418001134A5</string>
+				<string>0F67C6CC1CE4A11F00419AE5</string>
+				<string>0F562DB71CE0BED1001F0477</string>
+				<string>0F562DB51CE0BED1001F0477</string>
+				<string>0F562DA61CE0BED1001F0477</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0F562D351CE0B1D3001F0477</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0F562D481CE0B1D4001F0477</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D1BE894E0AAE7F2A531F793A</string>
+				<string>0F562D321CE0B1D3001F0477</string>
+				<string>0F562D331CE0B1D3001F0477</string>
+				<string>0F562D341CE0B1D3001F0477</string>
+				<string>69E0DD723A437C109A6C3235</string>
+				<string>39414625BA2C11D85DB2B7AA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ielts-listening</string>
+			<key>productName</key>
+			<string>ielts-listening</string>
+			<key>productReference</key>
+			<string>0F562D361CE0B1D3001F0477</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>0F562D361CE0B1D3001F0477</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ielts-listening.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0F562D371CE0B1D3001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F562D361CE0B1D3001F0477</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D381CE0B1D4001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F0D3CC91CE5AF3B00565D23</string>
+				<string>0F562D4C1CE0BED1001F0477</string>
+				<string>0F562D391CE0B1D4001F0477</string>
+				<string>0F562D3B1CE0B1D4001F0477</string>
+				<string>0F6ADB581CE1B594001134A5</string>
+				<string>0F562D3D1CE0B1D4001F0477</string>
+				<string>0F562D401CE0B1D4001F0477</string>
+				<string>0F562D421CE0B1D4001F0477</string>
+				<string>0F562D451CE0B1D4001F0477</string>
+				<string>0F562D4B1CE0B6CF001F0477</string>
+				<string>0F6ADB5A1CE1B6E7001134A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ielts-listening</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D391CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D3A1CE0B1D4001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D391CE0B1D4001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D3B1CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D3C1CE0B1D4001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D3B1CE0B1D4001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D3D1CE0B1D4001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F562D3E1CE0B1D4001F0477</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D3E1CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D3F1CE0B1D4001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D3D1CE0B1D4001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D401CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D411CE0B1D4001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D401CE0B1D4001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D421CE0B1D4001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F562D431CE0B1D4001F0477</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D431CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D441CE0B1D4001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D421CE0B1D4001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562D451CE0B1D4001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D461CE0B1D4001F0477</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0F562D471CE0B1D4001F0477</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>0F562D481CE0B1D4001F0477</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0F562D491CE0B1D4001F0477</string>
+				<string>0F562D4A1CE0B1D4001F0477</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0F562D491CE0B1D4001F0477</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E54993777342FB884ECF5908</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ielts-listening/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.bile.ielts-listening</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>./ielts-listening/IELTSListening-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0F562D4A1CE0B1D4001F0477</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>44D630359FCB5C9BAAD75F19</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ielts-listening/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.bile.ielts-listening</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>./ielts-listening/IELTSListening-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>0F562D4B1CE0B6CF001F0477</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IELTSListening-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D4C1CE0BED1001F0477</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F67C6C51CE4A11F00419AE5</string>
+				<string>0F67C6C61CE4A11F00419AE5</string>
+				<string>0F67C6C71CE4A11F00419AE5</string>
+				<string>0F67C6C81CE4A11F00419AE5</string>
+				<string>0F6ADB561CE1B418001134A5</string>
+				<string>0F562D4D1CE0BED1001F0477</string>
+				<string>0F562D4E1CE0BED1001F0477</string>
+				<string>0F562D4F1CE0BED1001F0477</string>
+				<string>0F562D501CE0BED1001F0477</string>
+				<string>0F562D511CE0BED1001F0477</string>
+				<string>0F562D521CE0BED1001F0477</string>
+				<string>0F562D531CE0BED1001F0477</string>
+				<string>0F562D541CE0BED1001F0477</string>
+				<string>0F562D551CE0BED1001F0477</string>
+				<string>0F562D561CE0BED1001F0477</string>
+				<string>0F562D571CE0BED1001F0477</string>
+				<string>0F562D581CE0BED1001F0477</string>
+				<string>0F562D591CE0BED1001F0477</string>
+				<string>0F562D5A1CE0BED1001F0477</string>
+				<string>0F562D5B1CE0BED1001F0477</string>
+				<string>0F562D5C1CE0BED1001F0477</string>
+				<string>0F562D5D1CE0BED1001F0477</string>
+				<string>0F562D5E1CE0BED1001F0477</string>
+				<string>0F562D5F1CE0BED1001F0477</string>
+				<string>0F562D601CE0BED1001F0477</string>
+				<string>0F562D611CE0BED1001F0477</string>
+				<string>0F562D621CE0BED1001F0477</string>
+				<string>0F562D631CE0BED1001F0477</string>
+				<string>0F562D641CE0BED1001F0477</string>
+				<string>0F562D651CE0BED1001F0477</string>
+				<string>0F562D661CE0BED1001F0477</string>
+				<string>0F562D671CE0BED1001F0477</string>
+				<string>0F562D681CE0BED1001F0477</string>
+				<string>0F562D691CE0BED1001F0477</string>
+				<string>0F562D6A1CE0BED1001F0477</string>
+				<string>0F562D6B1CE0BED1001F0477</string>
+				<string>0F562D6C1CE0BED1001F0477</string>
+				<string>0F562D6D1CE0BED1001F0477</string>
+				<string>0F562D6E1CE0BED1001F0477</string>
+				<string>0F562D6F1CE0BED1001F0477</string>
+				<string>0F562D701CE0BED1001F0477</string>
+				<string>0F562D711CE0BED1001F0477</string>
+				<string>0F562D721CE0BED1001F0477</string>
+				<string>0F562D731CE0BED1001F0477</string>
+				<string>0F562D741CE0BED1001F0477</string>
+				<string>0F562D751CE0BED1001F0477</string>
+				<string>0F562D761CE0BED1001F0477</string>
+				<string>0F562D771CE0BED1001F0477</string>
+				<string>0F562D781CE0BED1001F0477</string>
+				<string>0F562D791CE0BED1001F0477</string>
+				<string>0F562D7A1CE0BED1001F0477</string>
+				<string>0F562D7B1CE0BED1001F0477</string>
+				<string>0F562D7C1CE0BED1001F0477</string>
+				<string>0F562D7D1CE0BED1001F0477</string>
+				<string>0F562D7E1CE0BED1001F0477</string>
+				<string>0F562D7F1CE0BED1001F0477</string>
+				<string>0F562D801CE0BED1001F0477</string>
+				<string>0F562D811CE0BED1001F0477</string>
+				<string>0F562D821CE0BED1001F0477</string>
+				<string>0F562D831CE0BED1001F0477</string>
+				<string>0F562D841CE0BED1001F0477</string>
+				<string>0F562D851CE0BED1001F0477</string>
+				<string>0F562D861CE0BED1001F0477</string>
+				<string>0F562D871CE0BED1001F0477</string>
+				<string>0F562D881CE0BED1001F0477</string>
+				<string>0F562D891CE0BED1001F0477</string>
+				<string>0F562D8A1CE0BED1001F0477</string>
+				<string>0F562D8B1CE0BED1001F0477</string>
+				<string>0F562D8C1CE0BED1001F0477</string>
+				<string>0F562D8D1CE0BED1001F0477</string>
+				<string>0F562D8E1CE0BED1001F0477</string>
+				<string>0F562D8F1CE0BED1001F0477</string>
+				<string>0F562D901CE0BED1001F0477</string>
+				<string>0F562D911CE0BED1001F0477</string>
+				<string>0F562D921CE0BED1001F0477</string>
+				<string>0F562D931CE0BED1001F0477</string>
+				<string>0F562D941CE0BED1001F0477</string>
+				<string>0F562D951CE0BED1001F0477</string>
+				<string>0F562D961CE0BED1001F0477</string>
+				<string>0F562D971CE0BED1001F0477</string>
+				<string>0F562D981CE0BED1001F0477</string>
+				<string>0F562D991CE0BED1001F0477</string>
+				<string>0F562D9A1CE0BED1001F0477</string>
+				<string>0F562D9B1CE0BED1001F0477</string>
+				<string>0F562D9C1CE0BED1001F0477</string>
+				<string>0F562D9D1CE0BED1001F0477</string>
+				<string>0F562D9E1CE0BED1001F0477</string>
+				<string>0F562D9F1CE0BED1001F0477</string>
+				<string>0F562DA01CE0BED1001F0477</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D4D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>advanced_level_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D4E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>basic_level_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D4F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>bg_dialog_item.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D501CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>bg_image.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D511CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>check_answer_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D521CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>conversation_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D531CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>do_again_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D541CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>download_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D551CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>excercises_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D561CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>icon_backward.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D571CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>icon_forward.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D581CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>icon_pause.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D591CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>icon_play.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5A1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>intermediate_level_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5B1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>irregular_verbs_button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5C1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_1.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_10.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_10_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D5F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_11.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D601CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_11_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D611CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_12.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D621CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_12_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D631CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_13.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D641CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_13_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D651CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_14.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D661CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_14_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D671CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_15.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D681CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_15_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D691CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_16.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6A1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_16_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6B1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_17.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6C1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_17_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_18.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_18_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D6F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_19.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D701CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_19_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D711CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_1_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D721CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_2.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D731CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_20.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D741CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_20_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D751CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_21.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D761CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_21_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D771CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_22.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D781CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_22_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D791CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_23.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7A1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_23_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7B1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_24.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7C1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_24_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_25.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_25_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D7F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_26.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D801CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_26_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D811CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_27.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D821CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_27_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D831CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_28.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D841CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_28_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D851CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_29.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D861CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_29_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D871CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_2_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D881CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_3.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D891CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_30.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8A1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_30_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8B1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_31.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8C1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_31_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_32.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_32_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D8F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_33.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D901CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_33_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D911CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_34.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D921CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_34_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D931CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_3_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D941CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_4.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D951CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_4_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D961CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_5.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D971CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_5_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D981CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_6.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D991CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_6_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9A1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_7.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9B1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_7_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9C1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_8.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9D1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_8_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9E1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_9.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562D9F1CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>lesson_9_tap.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562DA01CE0BED1001F0477</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>main_bg_image.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F562DA11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D4D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D4E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D4F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D501CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA51CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D511CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA61CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D521CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA71CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D531CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA81CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D541CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DA91CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D551CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAA1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D561CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAB1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D571CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAC1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D581CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAD1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D591CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAE1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5A1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DAF1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5B1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB01CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5C1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D5F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D601CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB51CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D611CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB61CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D621CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB71CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D631CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB81CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D641CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DB91CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D651CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBA1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D661CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBB1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D671CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBC1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D681CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBD1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D691CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBE1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6A1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DBF1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6B1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC01CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6C1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D6F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D701CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC51CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D711CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC61CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D721CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC71CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D731CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC81CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D741CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DC91CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D751CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCA1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D761CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCB1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D771CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCC1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D781CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCD1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D791CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCE1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7A1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DCF1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7B1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD01CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7C1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D7F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D801CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD51CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D811CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD61CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D821CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD71CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D831CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD81CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D841CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DD91CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D851CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDA1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D861CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDB1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D871CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDC1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D881CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDD1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D891CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDE1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8A1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DDF1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8B1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE01CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8C1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D8F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D901CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE51CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D911CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE61CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D921CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE71CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D931CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE81CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D941CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DE91CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D951CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DEA1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D961CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DEB1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D971CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DEC1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D981CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DED1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D991CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DEE1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9A1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DEF1CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9B1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DF01CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9C1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DF11CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9D1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DF21CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9E1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DF31CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562D9F1CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F562DF41CE0BED1001F0477</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F562DA01CE0BED1001F0477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F67C6C51CE4A11F00419AE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>advance.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F67C6C61CE4A11F00419AE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>basic.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F67C6C71CE4A11F00419AE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>intermediate.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F67C6C81CE4A11F00419AE5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>irregular_verbs.xml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F67C6C91CE4A11F00419AE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F67C6C51CE4A11F00419AE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F67C6CA1CE4A11F00419AE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F67C6C61CE4A11F00419AE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F67C6CB1CE4A11F00419AE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F67C6C71CE4A11F00419AE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F67C6CC1CE4A11F00419AE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F67C6C81CE4A11F00419AE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F6ADB561CE1B418001134A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>back.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F6ADB571CE1B418001134A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F6ADB561CE1B418001134A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F6ADB581CE1B594001134A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CategoryViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F6ADB591CE1B594001134A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F6ADB581CE1B594001134A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F6ADB5A1CE1B6E7001134A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Lesson.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F6ADB5B1CE1B6E7001134A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F6ADB5A1CE1B6E7001134A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>39414625BA2C11D85DB2B7AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>44D630359FCB5C9BAAD75F19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ielts-listening.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>541875B5565B206301B3C770</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E54993777342FB884ECF5908</string>
+				<string>44D630359FCB5C9BAAD75F19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B5B10335833B31B99B76FB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_ielts_listening.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>69E0DD723A437C109A6C3235</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>73FF24F6F29B05C7EE9E9CD6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B5B10335833B31B99B76FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B48A2AB20719578542BB5079</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B5B10335833B31B99B76FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1BE894E0AAE7F2A531F793A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E54993777342FB884ECF5908</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ielts-listening.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>0F562D2E1CE0B1D3001F0477</string>
+</dict>
+</plist>
