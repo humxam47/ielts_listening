@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var playButton:UIButton!
     @IBOutlet weak var exerciseButton:UIButton!
     
+    @IBOutlet weak var conversationView:ConversationView!
+    
     var lessonObject:LessonObject!
     
     override func viewDidLoad() {
@@ -21,15 +23,20 @@ class DetailViewController: UIViewController {
         
         self.initUI()
         self.addSwipeGesture()
+        self.initConversation()
     }
     
     func initUI() {
         if let lessonObject = self.lessonObject {
             
-            self.titleLabel.text = lessonObject.lessonName
+            self.titleLabel.text = lessonObject.lessonName?.uppercaseString
             self.titleLabel.textColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
 
         }
+    }
+    
+    func initConversation() {
+        self.conversationView.initConversation(self.lessonObject.conversationArray!)
     }
     
     func addSwipeGesture() {
