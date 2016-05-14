@@ -73,6 +73,7 @@ class LevelParser:NSObject, NSXMLParserDelegate {
         else if elementName == "answer" {
             self.answerObject = AnswerObject()
             self.answer = ""
+            self.answerObject?.answerValue = Int(attributeDict["value"]!)
         }
     }
     

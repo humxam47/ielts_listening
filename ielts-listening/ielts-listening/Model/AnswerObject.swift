@@ -8,7 +8,7 @@
 
 class AnswerObject {
     
-    var answerText:String?
-    var answerValue:Int?
+    var answerText:String!
+    var answerValue:Int!
 
 }

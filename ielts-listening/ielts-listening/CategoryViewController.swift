@@ -80,10 +80,10 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cellIdentifier = "CELL_IDENTIFIER"
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CategoryCollectionViewCell
-        var imageName = "lesson_" + String((indexPath.row + 1)) + ".png"
-        if self.isPlayed(indexPath.row) {
-            imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
-        }
+        let imageName = "lesson_" + String((indexPath.row + 1)) + ".png"
+//        if self.isPlayed(indexPath.row) {
+//            imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
+//        }
         cell.imageView.image = UIImage(named: imageName)
         // Configure the cell
         return cell

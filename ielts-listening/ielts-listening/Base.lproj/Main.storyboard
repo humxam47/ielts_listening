@@ -455,7 +455,21 @@
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-J1-7Vg" userLabel="exercise_view" customClass="ExerciseView" customModule="ielts_listening" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-DF-PSK">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                            </scrollView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="R1q-DF-PSK" secondAttribute="trailing" id="Fhc-Ch-ntR"/>
+                                            <constraint firstAttribute="bottom" secondItem="R1q-DF-PSK" secondAttribute="bottom" id="Gv8-qb-ODO"/>
+                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="top" secondItem="2Dj-J1-7Vg" secondAttribute="top" id="Xef-A5-MMV"/>
+                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="leading" secondItem="2Dj-J1-7Vg" secondAttribute="leading" id="afs-yJ-3mi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="scrollView" destination="R1q-DF-PSK" id="j07-Zs-z2J"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

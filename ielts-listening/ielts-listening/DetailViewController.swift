@@ -23,8 +23,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.initUI()
-        self.addSwipeGesture()
         self.initConversation()
+        self.initExercise()
+        self.addSwipeGesture()
     }
     
     func initUI() {
@@ -38,6 +39,10 @@ class DetailViewController: UIViewController {
     
     func initConversation() {
         self.conversationView.initConversation(self.lessonObject.conversationArray!)
+    }
+    
+    func initExercise() {
+        self.exerciseView.initExersise(self.lessonObject.questionArray!)
     }
     
     func addSwipeGesture() {
