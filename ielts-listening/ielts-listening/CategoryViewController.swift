@@ -62,6 +62,13 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         return levelIndex%2 == 0
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SEGUE_CATEGORY_DETAIL" {
+            let viewController = segue.destinationViewController as! DetailViewController
+            viewController.lessonObject = sender as? LessonObject
+        }
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -85,12 +92,7 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let lessonObject:LessonObject = (self.levelObject.lessonArray![indexPath.row]) as! LessonObject
-        print("lesson name: \(lessonObject.lessonName)")
+        self.performSegueWithIdentifier("SEGUE_CATEGORY_DETAIL", sender: lessonObject)
     }
-//
-//
-//    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-//        
-//    }
     
 }

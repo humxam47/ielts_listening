@@ -20,7 +20,6 @@
 		0F0D3D341CE5B95200565D23 /* check_answer_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */; };
 		0F0D3D351CE5B95200565D23 /* conversation_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDB1CE5B95100565D23 /* conversation_button.png */; };
 		0F0D3D361CE5B95200565D23 /* do_again_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDC1CE5B95100565D23 /* do_again_button.png */; };
-		0F0D3D371CE5B95200565D23 /* download_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDD1CE5B95100565D23 /* download_button.png */; };
 		0F0D3D381CE5B95200565D23 /* excercises_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDE1CE5B95100565D23 /* excercises_button.png */; };
 		0F0D3D391CE5B95200565D23 /* icon_backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDF1CE5B95100565D23 /* icon_backward.png */; };
 		0F0D3D3A1CE5B95200565D23 /* icon_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE01CE5B95100565D23 /* icon_forward.png */; };
@@ -102,6 +101,8 @@
 		0F0D3D861CE5B95200565D23 /* intermediate.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2D1CE5B95200565D23 /* intermediate.xml */; };
 		0F0D3D871CE5B95200565D23 /* irregular_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */; };
 		0F0D3D8B1CE6E96800565D23 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */; };
+		0F0D3D8D1CE7117D00565D23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */; };
+		0F0D3D8F1CE7127700565D23 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8E1CE7127700565D23 /* download.png */; };
 		0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D391CE0B1D4001F0477 /* AppDelegate.swift */; };
 		0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D3B1CE0B1D4001F0477 /* ViewController.swift */; };
 		0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D3D1CE0B1D4001F0477 /* Main.storyboard */; };
@@ -125,7 +126,6 @@
 		0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_answer_button.png; sourceTree = "<group>"; };
 		0F0D3CDB1CE5B95100565D23 /* conversation_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conversation_button.png; sourceTree = "<group>"; };
 		0F0D3CDC1CE5B95100565D23 /* do_again_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = do_again_button.png; sourceTree = "<group>"; };
-		0F0D3CDD1CE5B95100565D23 /* download_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_button.png; sourceTree = "<group>"; };
 		0F0D3CDE1CE5B95100565D23 /* excercises_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excercises_button.png; sourceTree = "<group>"; };
 		0F0D3CDF1CE5B95100565D23 /* icon_backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_backward.png; sourceTree = "<group>"; };
 		0F0D3CE01CE5B95100565D23 /* icon_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_forward.png; sourceTree = "<group>"; };
@@ -207,6 +207,8 @@
 		0F0D3D2D1CE5B95200565D23 /* intermediate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intermediate.xml; sourceTree = "<group>"; };
 		0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = irregular_verbs.xml; sourceTree = "<group>"; };
 		0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0F0D3D8E1CE7127700565D23 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		0F562D361CE0B1D3001F0477 /* ielts-listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ielts-listening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F562D391CE0B1D4001F0477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F562D3B1CE0B1D4001F0477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		0F0D3CD41CE5B95100565D23 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0F0D3D8E1CE7127700565D23 /* download.png */,
 				0F0D3CD51CE5B95100565D23 /* advanced_level_button.png */,
 				0F0D3CD61CE5B95100565D23 /* back.png */,
 				0F0D3CD71CE5B95100565D23 /* basic_level_button.png */,
@@ -255,7 +258,6 @@
 				0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */,
 				0F0D3CDB1CE5B95100565D23 /* conversation_button.png */,
 				0F0D3CDC1CE5B95100565D23 /* do_again_button.png */,
-				0F0D3CDD1CE5B95100565D23 /* download_button.png */,
 				0F0D3CDE1CE5B95100565D23 /* excercises_button.png */,
 				0F0D3CDF1CE5B95100565D23 /* icon_backward.png */,
 				0F0D3CE01CE5B95100565D23 /* icon_forward.png */,
@@ -381,6 +383,7 @@
 				0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */,
 				0F0D3CD21CE5B6A700565D23 /* LevelParser.swift */,
 				0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */,
+				0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				0F0D3D651CE5B95200565D23 /* lesson_27_tap.png in Resources */,
 				0F0D3D7C1CE5B95200565D23 /* lesson_6_tap.png in Resources */,
 				0F0D3D7E1CE5B95200565D23 /* lesson_7_tap.png in Resources */,
+				0F0D3D8F1CE7127700565D23 /* download.png in Resources */,
 				0F0D3D681CE5B95200565D23 /* lesson_29.png in Resources */,
 				0F0D3D661CE5B95200565D23 /* lesson_28.png in Resources */,
 				0F0D3D7B1CE5B95200565D23 /* lesson_6.png in Resources */,
@@ -543,7 +547,6 @@
 				0F0D3D4C1CE5B95200565D23 /* lesson_16.png in Resources */,
 				0F0D3D3F1CE5B95200565D23 /* lesson_1.png in Resources */,
 				0F0D3D561CE5B95200565D23 /* lesson_20.png in Resources */,
-				0F0D3D371CE5B95200565D23 /* download_button.png in Resources */,
 				0F0D3D771CE5B95200565D23 /* lesson_4.png in Resources */,
 				0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */,
 				0F0D3D7D1CE5B95200565D23 /* lesson_7.png in Resources */,
@@ -621,6 +624,7 @@
 				0F0D3D8B1CE6E96800565D23 /* CategoryCollectionViewCell.swift in Sources */,
 				0F0D3CCD1CE5B02300565D23 /* QuestionObject.swift in Sources */,
 				0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */,
+				0F0D3D8D1CE7117D00565D23 /* DetailViewController.swift in Sources */,
 				0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */,
 				0F0D3CD31CE5B6A700565D23 /* LevelParser.swift in Sources */,
 			);
