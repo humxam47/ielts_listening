@@ -32,6 +32,7 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         if let levelObject = self.levelObject {
             self.categoryTitle.text = levelObject.levelName
+            self.categoryTitle.textColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
         }
         
     }

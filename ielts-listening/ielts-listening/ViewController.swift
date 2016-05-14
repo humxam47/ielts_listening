@@ -29,18 +29,18 @@ class ViewController: UIViewController {
         let levelParser = LevelParser()
         if actionIndex == 1 {
             levelObject.levelId = "1"
-            levelObject.levelName = "Basic Level"
+            levelObject.levelName = "BASIC LEVEL"
             levelObject.lessonArray = levelParser.getLessonList("1")
             return levelObject
         }
         else if actionIndex == 2 {
             levelObject.levelId = "2"
-            levelObject.levelName = "Intermediate Level"
+            levelObject.levelName = "INTERMEDIATE LEVEL"
             levelObject.lessonArray = levelParser.getLessonList("2")
             return levelObject
         }
         levelObject.levelId = "3"
-        levelObject.levelName = "Advanced Level"
+        levelObject.levelName = "ADVANCED LEVEL"
         levelObject.lessonArray = levelParser.getLessonList("3")
         return levelObject
     }
