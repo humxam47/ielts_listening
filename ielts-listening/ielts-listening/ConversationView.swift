@@ -20,38 +20,6 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    /*
-     - (void)calculateRowHeight{
-     if (!_rowHeightArray) {
-     _rowHeightArray = [[NSMutableArray alloc] init];
-     }
-     else{
-     [_rowHeightArray removeAllObjects];
-     }
-     if (_appDelegate.isIPhone) {
-     [self createExercise];
-     }
-     else {
-     [self createExerciseOnIPad];
-     }
-     for (NSString *textString in _selectedLession.conversationArray) {
-        UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 500)];
-        myLabel.numberOfLines = 0;
-        myLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        myLabel.text = textString;
-        CGSize labelSize = [myLabel.text sizeWithFont:myLabel.font constrainedToSize:myLabel.frame.size lineBreakMode:NSLineBreakByWordWrapping];
-        int delta = labelSize.height / 21;
-        int originalHeight = 35;
-        if (delta > 3) {
-            originalHeight += 20;
-        }
-        NSString *heightValue = [NSString stringWithFormat:@"%d",(delta * 12) + originalHeight];
-        [_rowHeightArray addObject:heightValue];
-     }
-     [_conversationTableView reloadData];
-     }
-     */
-    
     func cellHeightCalculation() {
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         for i in 0...self.conversationArray!.count - 1 {

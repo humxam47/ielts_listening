@@ -104,6 +104,7 @@
 		0F0D3D8D1CE7117D00565D23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */; };
 		0F0D3D8F1CE7127700565D23 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8E1CE7127700565D23 /* download.png */; };
 		0F0D3D931CE72CFF00565D23 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D921CE72CFF00565D23 /* ConversationView.swift */; };
+		0F0D3D951CE7409200565D23 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D941CE7409200565D23 /* ExerciseView.swift */; };
 		0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D391CE0B1D4001F0477 /* AppDelegate.swift */; };
 		0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D3B1CE0B1D4001F0477 /* ViewController.swift */; };
 		0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D3D1CE0B1D4001F0477 /* Main.storyboard */; };
@@ -211,6 +212,7 @@
 		0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0F0D3D8E1CE7127700565D23 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		0F0D3D921CE72CFF00565D23 /* ConversationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		0F0D3D941CE7409200565D23 /* ExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		0F562D361CE0B1D3001F0477 /* ielts-listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ielts-listening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F562D391CE0B1D4001F0477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F562D3B1CE0B1D4001F0477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */,
 				0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */,
 				0F0D3D921CE72CFF00565D23 /* ConversationView.swift */,
+				0F0D3D941CE7409200565D23 /* ExerciseView.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0D3D951CE7409200565D23 /* ExerciseView.swift in Sources */,
 				0F0D3CD11CE5B33000565D23 /* LessonObject.swift in Sources */,
 				0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */,
 				0F0D3CCF1CE5B0BA00565D23 /* AnswerObject.swift in Sources */,

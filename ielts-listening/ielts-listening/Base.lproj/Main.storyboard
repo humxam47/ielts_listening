@@ -353,7 +353,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPn-G3-U0n" userLabel="exercise_view">
                                                 <rect key="frame" x="215" y="0.0" width="105" height="53"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orv-E7-wgg">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orv-E7-wgg">
                                                         <rect key="frame" x="2" y="6" width="100" height="36"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="GyW-iD-xtM"/>
@@ -361,6 +361,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                         <state key="normal" title="Exercises" backgroundImage="bg_dialog_item.png"/>
+                                                        <connections>
+                                                            <action selector="exerciseAction:" destination="E5P-JI-6BP" eventType="touchUpInside" id="hS4-mv-V0w"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -450,9 +453,9 @@
                                             <outlet property="conversationTableView" destination="m0f-mY-fLH" id="rTh-D1-qV5"/>
                                         </connections>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-J1-7Vg" userLabel="exercise_view">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-J1-7Vg" userLabel="exercise_view" customClass="ExerciseView" customModule="ielts_listening" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -492,6 +495,7 @@
                     <connections>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="exerciseButton" destination="orv-E7-wgg" id="uSp-05-JSr"/>
+                        <outlet property="exerciseView" destination="2Dj-J1-7Vg" id="FUS-Gp-dTU"/>
                         <outlet property="playButton" destination="jTX-Qk-uG0" id="U9N-il-Cfj"/>
                         <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="eyi-JG-jWi"/>
                         <outlet property="timeSlider" destination="xbh-Ah-LDo" id="sns-fj-u7T"/>

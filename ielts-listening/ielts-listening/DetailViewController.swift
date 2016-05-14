@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var exerciseButton:UIButton!
     
     @IBOutlet weak var conversationView:ConversationView!
+    @IBOutlet weak var exerciseView:ExerciseView!
     
     var lessonObject:LessonObject!
     
@@ -62,5 +63,11 @@ class DetailViewController: UIViewController {
     
     @IBAction func backAction() {
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func exerciseAction(sender:UIButton) {
+        sender.tag *= -1
+        self.conversationView.hidden = !(sender.tag > 0)
+        self.exerciseView.hidden = (sender.tag > 0)
     }
 }
