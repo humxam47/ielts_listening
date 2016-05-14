@@ -101,6 +101,7 @@
 		0F0D3D851CE5B95200565D23 /* basic.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2C1CE5B95200565D23 /* basic.xml */; };
 		0F0D3D861CE5B95200565D23 /* intermediate.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2D1CE5B95200565D23 /* intermediate.xml */; };
 		0F0D3D871CE5B95200565D23 /* irregular_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */; };
+		0F0D3D8B1CE6E96800565D23 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */; };
 		0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D391CE0B1D4001F0477 /* AppDelegate.swift */; };
 		0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D3B1CE0B1D4001F0477 /* ViewController.swift */; };
 		0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D3D1CE0B1D4001F0477 /* Main.storyboard */; };
@@ -205,6 +206,7 @@
 		0F0D3D2C1CE5B95200565D23 /* basic.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = basic.xml; sourceTree = "<group>"; };
 		0F0D3D2D1CE5B95200565D23 /* intermediate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intermediate.xml; sourceTree = "<group>"; };
 		0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = irregular_verbs.xml; sourceTree = "<group>"; };
+		0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F562D361CE0B1D3001F0477 /* ielts-listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ielts-listening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F562D391CE0B1D4001F0477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F562D3B1CE0B1D4001F0477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 				0F562D451CE0B1D4001F0477 /* Info.plist */,
 				0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */,
 				0F0D3CD21CE5B6A700565D23 /* LevelParser.swift */,
+				0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */,
 				0F0D3CCF1CE5B0BA00565D23 /* AnswerObject.swift in Sources */,
 				0F0D3CCB1CE5AF5700565D23 /* LevelObject.swift in Sources */,
+				0F0D3D8B1CE6E96800565D23 /* CategoryCollectionViewCell.swift in Sources */,
 				0F0D3CCD1CE5B02300565D23 /* QuestionObject.swift in Sources */,
 				0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */,
 				0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */,

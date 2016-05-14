@@ -10,7 +10,7 @@ import Foundation
 
 class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var levelObject:LevelObject?
+    var levelObject:LevelObject!
     @IBOutlet weak var backButton:UIButton!
     @IBOutlet weak var categoryTitle:UILabel!
     @IBOutlet weak var lessonCollection:UICollectionView!
@@ -57,17 +57,34 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
+    func isPlayed(levelIndex:Int) -> Bool {
+        return levelIndex%2 == 0
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return self.levelObject.lessonArray!.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cellIdentifier = "CELL_IDENTIFIER"
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CategoryCollectionViewCell
+        var imageName = "lesson_" + String((indexPath.row + 1)) + ".png"
+        if self.isPlayed(indexPath.row) {
+            imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
+        }
+        cell.imageView.image = UIImage(named: imageName)
+        // Configure the cell
+        return cell
     }
 
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
+        let lessonObject:LessonObject = (self.levelObject.lessonArray![indexPath.row]) as! LessonObject
+        print("lesson name: \(lessonObject.lessonName)")
     }
 //
 //

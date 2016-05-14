@@ -124,19 +124,6 @@ class LevelParser:NSObject, NSXMLParserDelegate {
         else if elementName == "questionaire" {
             self.lessonObject?.questionArray = self.questions
         }
-        else if elementName == "lessions" {
-            for i in 0...self.lessonArray.count - 1 {
-                let theObject:LessonObject = self.lessonArray[i] as! LessonObject
-                for j in 0...(theObject.questionArray?.count)! - 1 {
-                    let theQuestion:QuestionObject = theObject.questionArray![j] as! QuestionObject
-                    print("\(theQuestion.questionText)")
-                    for k in 0...(theQuestion.answerArray?.count)! - 1 {
-                        let theAnswer:AnswerObject = theQuestion.answerArray![k] as! AnswerObject
-                        print("\(theAnswer.answerText)")
-                    }
-                }
-            }
-        }
     }
     
     func stringProcessing(string:String) -> String {
