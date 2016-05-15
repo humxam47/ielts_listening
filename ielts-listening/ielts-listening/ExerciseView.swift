@@ -26,13 +26,9 @@ class ExerciseView: UIView {
         self.keyArray = NSMutableArray()
         self.correctKeyArray = NSMutableArray()
         self.buttonArray = NSMutableArray()
-        print ("sss \(self.scrollView.subviews.count)")
-//        for i in 0...(self.scrollView.subviews.count - 2) {
-//            let removeView:UIView = self.scrollView.subviews[i]
-//            if let beRemovedView:UIView = removeView {
-//                beRemovedView.removeFromSuperview()
-//            }
-//        }
+        for subView in self.scrollView.subviews {
+            subView.removeFromSuperview()
+        }
     }
     
     func createExercise() {
@@ -55,7 +51,7 @@ class ExerciseView: UIView {
             questionBox.layer.borderColor = self.appColor.CGColor
             let questionLabel = UILabel(frame: CGRectMake(10, 10, questionBox.frame.size.width - 20, defaultHeight))
             questionLabel.backgroundColor = UIColor.clearColor()
-            questionLabel.font = UIFont(name: "HelveticaNeue-Light", size: 17)
+            questionLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
             questionLabel.numberOfLines = 0
             questionLabel.text = question.questionText
             questionLabel.sizeToFit()
@@ -70,8 +66,7 @@ class ExerciseView: UIView {
                 let answerButton = UIButton(type: UIButtonType.Custom)
                 answerButton.frame = CGRectMake(10, yAnswer, questionBox.frame.size.width - 20, defaultHeight)
                 answerButton.backgroundColor = UIColor.clearColor()
-                let tagValueString = "0"
-                self.keyArray.addObject(tagValueString)
+                self.keyArray.addObject("0")
                 self.correctKeyArray.addObject(String(answerObject.answerValue))
                 answerButton.tag = tagValue
                 self.buttonArray.addObject(answerButton)
@@ -231,7 +226,7 @@ class ExerciseView: UIView {
                     if keyString == "1" {
                         correctButton.backgroundColor = self.appColor
                     } else {
-                        correctButton.backgroundColor = UIColor.clearColor()
+                        correctButton.backgroundColor = UIColor.redColor()
                     }
                 } else {
                     correctButton.backgroundColor = UIColor.clearColor()
