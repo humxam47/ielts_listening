@@ -8,7 +8,7 @@
 
 class QuestionObject {
     
-    var questionText:String?
-    var answerArray:NSMutableArray?
+    var questionText:String!
+    var answerArray:NSMutableArray!
     
 }

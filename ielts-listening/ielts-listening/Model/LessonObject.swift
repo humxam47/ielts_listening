@@ -8,10 +8,10 @@
 
 class LessonObject {
     
-    var lessonId:String?
-    var lessonName:String?
-    var lessonPath:String?
-    var conversationArray:NSMutableArray?
-    var questionArray:NSMutableArray?
+    var lessonId:String!
+    var lessonName:String!
+    var lessonPath:String!
+    var conversationArray:NSMutableArray!
+    var questionArray:NSMutableArray!
     
 }

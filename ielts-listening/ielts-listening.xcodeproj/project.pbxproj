@@ -111,6 +111,8 @@
 		0F562D411CE0B1D4001F0477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D401CE0B1D4001F0477 /* Assets.xcassets */; };
 		0F562D441CE0B1D4001F0477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */; };
 		0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */; };
+		0FC007FD1CE8442200F61B0C /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FC1CE8442200F61B0C /* ControllerView.swift */; };
+		0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */; };
 		73FF24F6F29B05C7EE9E9CD6 /* Pods_ielts_listening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B5B10335833B31B99B76FB /* Pods_ielts_listening.framework */; };
 /* End PBXBuildFile section */
 
@@ -222,6 +224,8 @@
 		0F562D451CE0B1D4001F0477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IELTSListening-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		0FC007FC1CE8442200F61B0C /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig"; sourceTree = "<group>"; };
 		68B5B10335833B31B99B76FB /* Pods_ielts_listening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ielts_listening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.debug.xcconfig"; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 				0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */,
 				0F0D3D921CE72CFF00565D23 /* ConversationView.swift */,
 				0F0D3D941CE7409200565D23 /* ExerciseView.swift */,
+				0FC007FC1CE8442200F61B0C /* ControllerView.swift */,
+				0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */,
 				0F0D3D951CE7409200565D23 /* ExerciseView.swift in Sources */,
 				0F0D3CD11CE5B33000565D23 /* LessonObject.swift in Sources */,
 				0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */,
@@ -632,6 +639,7 @@
 				0F0D3CCD1CE5B02300565D23 /* QuestionObject.swift in Sources */,
 				0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */,
 				0F0D3D8D1CE7117D00565D23 /* DetailViewController.swift in Sources */,
+				0FC007FD1CE8442200F61B0C /* ControllerView.swift in Sources */,
 				0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */,
 				0F0D3D931CE72CFF00565D23 /* ConversationView.swift in Sources */,
 				0F0D3CD31CE5B6A700565D23 /* LevelParser.swift in Sources */,

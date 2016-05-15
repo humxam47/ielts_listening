@@ -64,8 +64,11 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SEGUE_CATEGORY_DETAIL" {
+            let dataDictionary:NSDictionary = sender as! NSDictionary
             let viewController = segue.destinationViewController as! DetailViewController
-            viewController.lessonObject = sender as? LessonObject
+            viewController.levelObject = dataDictionary["LEVEL_OBJECT"] as! LevelObject
+            viewController.lessonObject = dataDictionary["LESSON_OBJECT"] as! LessonObject
+            viewController.lessonIndex = dataDictionary["LESSON_INDEX"] as! Int
         }
     }
     
@@ -91,8 +94,13 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
 
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let lessonObject:LessonObject = (self.levelObject.lessonArray![indexPath.row]) as! LessonObject
-        self.performSegueWithIdentifier("SEGUE_CATEGORY_DETAIL", sender: lessonObject)
+        let lessonObject = (self.levelObject.lessonArray![indexPath.row]) as! LessonObject
+        let dataDictionary:NSDictionary = [
+            "LEVEL_OBJECT":self.levelObject,
+            "LESSON_OBJECT":lessonObject,
+            "LESSON_INDEX":indexPath.row
+        ]
+        self.performSegueWithIdentifier("SEGUE_CATEGORY_DETAIL", sender:dataDictionary)
     }
     
 }

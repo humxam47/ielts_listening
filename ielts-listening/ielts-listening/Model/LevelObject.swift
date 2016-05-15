@@ -8,8 +8,8 @@
 
 class LevelObject {
     
-    var levelId:String?
-    var levelName:String?
-    var lessonArray:NSMutableArray?
+    var levelId:String!
+    var levelName:String!
+    var lessonArray:NSMutableArray!
     
 }

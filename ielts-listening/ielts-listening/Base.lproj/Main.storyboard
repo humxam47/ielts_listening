@@ -298,7 +298,7 @@
                                     <constraint firstItem="aj4-TX-MFl" firstAttribute="leading" secondItem="YIF-Ud-x8j" secondAttribute="trailing" id="tQi-qK-Kka"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-7E-bMJ" userLabel="controll_view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-7E-bMJ" userLabel="controll_view" customClass="ControllerView" customModule="ielts_listening" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="423" width="320" height="95"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-Ah-LDo">
@@ -306,6 +306,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Ag4-tS-ARi"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="oz6-7E-bMJ" eventType="valueChanged" id="3wq-kV-eyq"/>
+                                        </connections>
                                     </slider>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgD-XX-Ym0" userLabel="controller">
                                         <rect key="frame" x="0.0" y="42" width="320" height="53"/>
@@ -320,6 +323,9 @@
                                                             <constraint firstAttribute="height" constant="50" id="pIc-lA-tUJ"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="icon_backward.png"/>
+                                                        <connections>
+                                                            <action selector="previousAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="XW9-56-CRJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKB-Uz-miU" userLabel="right_button">
                                                         <rect key="frame" x="157" y="0.0" width="50" height="50"/>
@@ -328,6 +334,9 @@
                                                             <constraint firstAttribute="height" constant="50" id="qZt-wM-u0S"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="icon_forward.png"/>
+                                                        <connections>
+                                                            <action selector="nextAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="XKK-4e-CW2"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTX-Qk-uG0" userLabel="center_button">
                                                         <rect key="frame" x="82" y="0.0" width="50" height="50"/>
@@ -336,6 +345,9 @@
                                                             <constraint firstAttribute="width" constant="50" id="WBa-rC-nBG"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="icon_play.png"/>
+                                                        <connections>
+                                                            <action selector="playAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="998-Gm-iIB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -362,7 +374,7 @@
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                         <state key="normal" title="Exercises" backgroundImage="bg_dialog_item.png"/>
                                                         <connections>
-                                                            <action selector="exerciseAction:" destination="E5P-JI-6BP" eventType="touchUpInside" id="hS4-mv-V0w"/>
+                                                            <action selector="exerciseAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="z4h-nr-CVI"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -407,6 +419,12 @@
                                     <constraint firstItem="xbh-Ah-LDo" firstAttribute="leading" secondItem="oz6-7E-bMJ" secondAttribute="leading" constant="8" id="hKn-Zg-TPa"/>
                                     <constraint firstItem="xbh-Ah-LDo" firstAttribute="top" secondItem="oz6-7E-bMJ" secondAttribute="top" constant="7" id="r4M-nb-9Ex"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="exerciseButton" destination="orv-E7-wgg" id="VJW-eT-yRn"/>
+                                    <outlet property="playButton" destination="jTX-Qk-uG0" id="qIU-14-NVu"/>
+                                    <outlet property="slider" destination="xbh-Ah-LDo" id="1eI-Mb-mKZ"/>
+                                    <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="ahD-b3-DRR"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
@@ -507,8 +525,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
-                        <outlet property="exerciseButton" destination="orv-E7-wgg" id="uSp-05-JSr"/>
                         <outlet property="exerciseView" destination="2Dj-J1-7Vg" id="FUS-Gp-dTU"/>
                         <outlet property="playButton" destination="jTX-Qk-uG0" id="U9N-il-Cfj"/>
                         <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="eyi-JG-jWi"/>
