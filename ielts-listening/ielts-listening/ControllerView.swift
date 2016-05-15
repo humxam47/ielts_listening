@@ -6,12 +6,16 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
-class ControllerView: UIView {
+import AVFoundation
+
+class ControllerView: UIView, AVAudioPlayerDelegate {
     
     @IBOutlet weak var slider:UISlider!
     @IBOutlet weak var timeLabel:UILabel!
     @IBOutlet weak var playButton:UIButton!
     @IBOutlet weak var exerciseButton:UIButton!
+    
+    var audioPlayer:AVAudioPlayer!
     
     var lessonArray:NSMutableArray!
     var selectedIndex:Int = 0
@@ -21,16 +25,26 @@ class ControllerView: UIView {
     func initController(lessonArray:NSMutableArray, selectedIndex:Int) {
         self.lessonArray = lessonArray
         self.selectedIndex = selectedIndex
-        self.playExecution()
+        let playThread = NSThread(target: self, selector: #selector(playExecution), object: nil)
+        playThread.start()
     }
     
     func playExecution() {
         let lessonObject:LessonObject = self.lessonArray[self.selectedIndex] as! LessonObject
-        print("lesson: \(lessonObject.lessonName)")
+        do {
+            let soundURL = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
+            let soundData = NSData(contentsOfURL:NSURL(string:soundURL)!)
+            self.audioPlayer = try AVAudioPlayer(data: soundData!)
+            audioPlayer.prepareToPlay()
+            audioPlayer.volume = 1.0
+            audioPlayer.delegate = self
+            audioPlayer.play()
+        } catch {
+            print("Error getting the audio file")
+        }
     }
     
     @IBAction func playAction(sender:UIButton) {
-        
     }
     
     @IBAction func nextAction(sender:UIButton) {
