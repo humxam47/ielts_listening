@@ -12,16 +12,13 @@ class ViewController: UIViewController {
     
     var selectedAction:Int?
 
-    //https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/advance_lession1.mp3
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         self.navigationController!.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func getLessonList(actionIndex:Int) -> LevelObject {

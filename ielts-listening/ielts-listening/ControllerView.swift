@@ -26,6 +26,10 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     func initController(lessonArray:NSMutableArray, selectedIndex:Int) {
         self.lessonArray = lessonArray
         self.selectedIndex = selectedIndex
+        self.playInThread()
+    }
+    
+    func playInThread() {
         let playThread = NSThread(target: self, selector: #selector(playExecution), object: nil)
         playThread.start()
     }
@@ -34,22 +38,45 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         let lessonObject:LessonObject = self.lessonArray[self.selectedIndex] as! LessonObject
         do {
             let soundURL = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
-            let soundData = NSData(contentsOfURL:NSURL(string:soundURL)!)
-            self.audioPlayer = try AVAudioPlayer(data: soundData!)
-            audioPlayer.prepareToPlay()
-            audioPlayer.volume = AVAudioSession.sharedInstance().outputVolume
-            audioPlayer.delegate = self
-            audioPlayer.play()
-            if self.audioPlayer != nil {
-                self.initProgress()
+            if let soundData = NSData(contentsOfURL:NSURL(string:soundURL)!) {
+                self.audioPlayer = try AVAudioPlayer(data: soundData)
+                audioPlayer.prepareToPlay()
+                audioPlayer.volume = AVAudioSession.sharedInstance().outputVolume
+                audioPlayer.delegate = self
+                audioPlayer.play()
+                if self.audioPlayer != nil {
+                    self.initProgress()
+                } else {
+                    self.audioErrorAction()
+                }
+            } else {
+                self.audioErrorAction()
             }
         } catch {
-            print("Error getting the audio file")
+            self.audioErrorAction()
         }
+    }
+    
+    func audioErrorAction() {
+        self.controllerDelegate.hideLoading()
+        self.controllerDelegate.showNotification("Error in getting audio file. Try again?", cancelString:"NO", actionString:"YES")
+    }
+    
+    func stopAudio() {
+        if let audioPlayer = self.audioPlayer {
+            audioPlayer.stop()
+        }
+        if let progressTimer = self.progressTimer {
+            progressTimer.invalidate()
+        }
+        self.progressTimer = nil
+        self.audioPlayer = nil
     }
     
     func initProgress() {
         dispatch_async(dispatch_get_main_queue()) {
+            self.userInteractionEnabled = true
+            self.controllerDelegate.hideLoading()
             self.slider.minimumValue = 0.0
             self.slider.maximumValue = Float(self.audioPlayer.duration)
             self.progressTimer = NSTimer.scheduledTimerWithTimeInterval(0.0, target: self, selector: #selector(self.updateProgress), userInfo: nil, repeats: true)

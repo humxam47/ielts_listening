@@ -6,7 +6,7 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
-class DetailViewController: UIViewController, ControllerDelegate {
+class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet weak var timeSlider:UISlider!
@@ -27,7 +27,6 @@ class DetailViewController: UIViewController, ControllerDelegate {
         self.initUI()
         self.initConversation()
         self.initExercise()
-        self.addSwipeGesture()
         self.initController()
     }
     
@@ -47,31 +46,23 @@ class DetailViewController: UIViewController, ControllerDelegate {
     func initController() {
         self.controllerView.initController(self.levelObject.lessonArray, selectedIndex: lessonIndex)
         self.controllerView.controllerDelegate = self
-    }
-    
-    func addSwipeGesture() {
-        
-        let rightGesture = UISwipeGestureRecognizer(target: self, action:#selector(responseRightGesture(_:)))
-        rightGesture.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(rightGesture)
-        
-    }
-    
-    func responseRightGesture(gesture:UIGestureRecognizer) {
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
-                self.backAction()
-                break
-            default:
-                break
-            }
-        }
+        self.controllerView.userInteractionEnabled = false
+        self.showProgressHUD("Loading...")
     }
     
     @IBAction func backAction() {
         self.navigationController?.popViewControllerAnimated(true)
+        if let controllerView = self.controllerView {
+            controllerView.stopAudio()
+        }
+    }
+    
+    func showProgressHUD(text:String) {
+        dispatch_async(dispatch_get_main_queue()) {
+            let showHUD = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            showHUD.mode = MBProgressHUDMode.Indeterminate
+            showHUD.labelText = text
+        }
     }
     
     func showExerciseView() {
@@ -82,5 +73,30 @@ class DetailViewController: UIViewController, ControllerDelegate {
     func showConversationView() {
         self.conversationView.hidden = false
         self.exerciseView.hidden = true
+    }
+    
+    func hideLoading() {
+        dispatch_async(dispatch_get_main_queue()) {
+            MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+        }
+    }
+    
+    func showNotification(message: String, cancelString: String, actionString: String) {
+        dispatch_async(dispatch_get_main_queue()) {
+            let alertView = UIAlertView.init(title:"", message: message, delegate: self, cancelButtonTitle: actionString, otherButtonTitles: cancelString)
+            alertView.show()
+        }
+    }
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        switch buttonIndex {
+        case 0:
+            if let controllerView = self.controllerView {
+                controllerView.playInThread()
+            }
+            break;
+        default:
+            break;
+        }
     }
 }
