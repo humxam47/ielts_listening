@@ -41,7 +41,6 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
             if let soundData = NSData(contentsOfURL:NSURL(string:soundURL)!) {
                 self.audioPlayer = try AVAudioPlayer(data: soundData)
                 audioPlayer.prepareToPlay()
-                audioPlayer.volume = AVAudioSession.sharedInstance().outputVolume
                 audioPlayer.delegate = self
                 audioPlayer.play()
                 if self.audioPlayer != nil {
@@ -138,8 +137,8 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         self.slider.value = 0.0
-        self.progressTimer.invalidate()
-        self.progressTimer = nil
+        self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
+        self.playButton.tag = -1
     }
     
 }

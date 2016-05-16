@@ -21,7 +21,6 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.navigationController!.navigationBar.hidden = true
         
         self.initUI()
-        self.addSwipeGesture()
     }
     
     @IBAction func backAction() {
@@ -35,27 +34,6 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
             self.categoryTitle.textColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
         }
         
-    }
-    
-    func addSwipeGesture() {
-        
-        let rightGesture = UISwipeGestureRecognizer(target: self, action:#selector(responseRightGesture(_:)))
-        rightGesture.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(rightGesture)
-        
-    }
-    
-    func responseRightGesture(gesture:UIGestureRecognizer) {
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
-                self.backAction()
-                break
-            default:
-                break
-            }
-        }
     }
     
     func isPlayed(levelIndex:Int) -> Bool {

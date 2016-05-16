@@ -6,6 +6,8 @@
 //  Copyright © 2016 Binh Le. All rights reserved.
 //
 
+import MBProgressHUD
+
 class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var titleLabel:UILabel!
@@ -28,6 +30,11 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.initConversation()
         self.initExercise()
         self.initController()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.backAction()
     }
     
     func initUI() {
