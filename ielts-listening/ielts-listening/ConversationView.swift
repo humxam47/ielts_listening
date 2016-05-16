@@ -8,16 +8,22 @@
 
 class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
     
-    var conversationArray:NSMutableArray?
-    var cellHeightArray = NSMutableArray()
+    var conversationArray:NSMutableArray!
+    var cellHeightArray:NSMutableArray!
     @IBOutlet weak var conversationTableView:UITableView!
     
     func initConversation(conversationArray:NSMutableArray) {
-        
+        self.cellHeightArray = NSMutableArray()
+        self.refreshConversation(conversationArray)
+    }
+    
+    func refreshConversation(conversationArray:NSMutableArray) {
         self.conversationArray = conversationArray
+        if let cellHeightArray = self.cellHeightArray {
+            cellHeightArray.removeAllObjects()
+        }
         self.cellHeightCalculation()
         self.conversationTableView.reloadData()
-        
     }
     
     func cellHeightCalculation() {

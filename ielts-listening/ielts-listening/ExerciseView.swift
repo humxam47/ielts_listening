@@ -18,21 +18,30 @@ class ExerciseView: UIView {
     var appColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
     
     func initExersise(questionArray:NSMutableArray) {
-        self.questionArray = questionArray
-        self.createExercise()
-    }
-    
-    func prepareContainer() {
         self.keyArray = NSMutableArray()
         self.correctKeyArray = NSMutableArray()
         self.buttonArray = NSMutableArray()
+        self.refreshExercise(questionArray)
+    }
+    
+    func refreshExercise(questionArray:NSMutableArray) {
+        self.questionArray = questionArray
+        if let keyArray = self.keyArray {
+            keyArray.removeAllObjects()
+        }
+        if let correctKeyArray = self.correctKeyArray {
+            correctKeyArray.removeAllObjects()
+        }
+        if let buttonArray = self.buttonArray {
+            buttonArray.removeAllObjects()
+        }
         for subView in self.scrollView.subviews {
             subView.removeFromSuperview()
         }
+        self.createExercise()
     }
     
     func createExercise() {
-        self.prepareContainer()
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let xCoordinate:CGFloat = 20.0
         var yCoordinate:CGFloat = 10.0
@@ -239,7 +248,7 @@ class ExerciseView: UIView {
             self.checkLabel.layer.borderColor = self.appColor.CGColor
             self.checkLabel.text = "Check Answers"
             self.checkLabel.textColor = self.appColor
-            self.createExercise()
+            self.refreshExercise(self.questionArray)
         }
     }
 }

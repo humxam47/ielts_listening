@@ -30,6 +30,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.initConversation()
         self.initExercise()
         self.initController()
+        self.storeLastAccessLesson()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -38,6 +39,10 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     func initUI() {
+        self.refreshUI()
+    }
+    
+    func refreshUI() {
         self.titleLabel.text = self.lessonObject.lessonName?.uppercaseString
         self.titleLabel.textColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
     }
@@ -51,10 +56,12 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     func initController() {
-        self.controllerView.initController(self.levelObject.lessonArray, selectedIndex: lessonIndex)
         self.controllerView.controllerDelegate = self
-        self.controllerView.userInteractionEnabled = false
-        self.showProgressHUD("Loading...")
+        self.controllerView.initController(self.levelObject.lessonArray, selectedIndex: lessonIndex)
+    }
+    
+    func storeLastAccessLesson() {
+        DataManager.sharedInstance.storeLastLesson(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
     }
     
     @IBAction func backAction() {
@@ -82,10 +89,24 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.exerciseView.hidden = true
     }
     
+    func showLoading() {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.showProgressHUD("Loading...")
+        }
+    }
+    
     func hideLoading() {
         dispatch_async(dispatch_get_main_queue()) {
             MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
         }
+    }
+    
+    func changeLessonWithIndex(lessonIndex: Int) {
+        self.lessonObject = self.levelObject.lessonArray[lessonIndex] as! LessonObject
+        self.refreshUI()
+        self.conversationView.refreshConversation(self.lessonObject.conversationArray)
+        self.exerciseView.initExersise(self.lessonObject.questionArray)
+        self.storeLastAccessLesson()
     }
     
     func showNotification(message: String, cancelString: String, actionString: String) {

@@ -30,11 +30,14 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func playInThread() {
-        let playThread = NSThread(target: self, selector: #selector(playExecution), object: nil)
+        self.userInteractionEnabled = false
+        self.controllerDelegate.showLoading()
+        let playThread = NSThread(target: self, selector: #selector(playAudio), object: nil)
         playThread.start()
     }
     
-    func playExecution() {
+    func playAudio() {
+        self.stopAudio()
         let lessonObject:LessonObject = self.lessonArray[self.selectedIndex] as! LessonObject
         do {
             let soundURL = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
@@ -108,14 +111,16 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     @IBAction func nextAction(sender:UIButton) {
         if self.selectedIndex < (self.lessonArray.count - 1) {
             self.selectedIndex += 1
-            self.playExecution()
+            self.playInThread()
+            self.controllerDelegate.changeLessonWithIndex(self.selectedIndex)
         }
     }
     
     @IBAction func previousAction(sender:UIButton) {
         if self.selectedIndex > 0 {
             self.selectedIndex -= 1
-            self.playExecution()
+            self.playInThread()
+            self.controllerDelegate.changeLessonWithIndex(self.selectedIndex)
         }
     }
     

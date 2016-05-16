@@ -23,6 +23,11 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.initUI()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.lessonCollection.reloadData()
+    }
+    
     @IBAction func backAction() {
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -36,8 +41,12 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         
     }
     
-    func isPlayed(levelIndex:Int) -> Bool {
-        return levelIndex%2 == 0
+    func isPlayed(lessonIndex:Int) -> Bool {
+        let dictionary:NSDictionary = DataManager.sharedInstance.getLastLesson()
+        let lastLevelIndex = dictionary["LEVEL_ID"] as! String
+        let lastLessonIndex = dictionary["LESSON_ID"] as! String
+        let lessonObject = self.levelObject.lessonArray[lessonIndex] as! LessonObject
+        return ((lastLevelIndex == self.levelObject.levelId) && (lastLessonIndex == lessonObject.lessonId))
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -61,10 +70,10 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cellIdentifier = "CELL_IDENTIFIER"
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CategoryCollectionViewCell
-        let imageName = "lesson_" + String((indexPath.row + 1)) + ".png"
-//        if self.isPlayed(indexPath.row) {
-//            imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
-//        }
+        var imageName = "lesson_" + String((indexPath.row + 1)) + ".png"
+        if self.isPlayed(indexPath.row) {
+            imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
+        }
         cell.imageView.image = UIImage(named: imageName)
         // Configure the cell
         return cell

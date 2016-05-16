@@ -9,6 +9,8 @@
 protocol ControllerDelegate:class {
     func showConversationView()
     func showExerciseView()
+    func showLoading()
     func hideLoading()
+    func changeLessonWithIndex(lessonIndex:Int)
     func showNotification(message:String, cancelString:String, actionString:String)
 }
