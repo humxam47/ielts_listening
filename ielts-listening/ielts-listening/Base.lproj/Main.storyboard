@@ -301,7 +301,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-7E-bMJ" userLabel="controll_view" customClass="ControllerView" customModule="ielts_listening" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="423" width="320" height="95"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-Ah-LDo">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-Ah-LDo">
                                         <rect key="frame" x="6" y="7" width="260" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Ag4-tS-ARi"/>
@@ -338,13 +338,13 @@
                                                             <action selector="nextAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="XKK-4e-CW2"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTX-Qk-uG0" userLabel="center_button">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTX-Qk-uG0" userLabel="center_button">
                                                         <rect key="frame" x="82" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="6Am-5V-GrV"/>
                                                             <constraint firstAttribute="width" constant="50" id="WBa-rC-nBG"/>
                                                         </constraints>
-                                                        <state key="normal" backgroundImage="icon_play.png"/>
+                                                        <state key="normal" backgroundImage="icon_pause.png"/>
                                                         <connections>
                                                             <action selector="playAction:" destination="oz6-7E-bMJ" eventType="touchUpInside" id="998-Gm-iIB"/>
                                                         </connections>
@@ -578,7 +578,7 @@
         <image name="download.png" width="256" height="256"/>
         <image name="icon_backward.png" width="128" height="128"/>
         <image name="icon_forward.png" width="128" height="128"/>
-        <image name="icon_play.png" width="128" height="128"/>
+        <image name="icon_pause.png" width="128" height="128"/>
         <image name="main_bg_image.png" width="1440" height="2560"/>
     </resources>
 </document>
