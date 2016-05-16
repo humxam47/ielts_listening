@@ -20,18 +20,28 @@ class DataManager {
     }
     
     func storeLastLesson(levelId:String, lessonId:String) {
+        
         let lessonUserDefault = NSUserDefaults.standardUserDefaults()
-        let dictionary = ["LEVEL_ID": levelId, "LESSON_ID": lessonId]
+        let dictionary = [
+            "LEVEL_ID": levelId,
+            "LESSON_ID": lessonId
+        ]
         lessonUserDefault.setObject(dictionary, forKey: "LESSON_USER_DEFAULT")
+        
     }
     
     func getLastLesson() -> NSDictionary {
+        
         let lessonUserDefault = NSUserDefaults.standardUserDefaults()
         let dictionary = lessonUserDefault.objectForKey("LESSON_USER_DEFAULT")
         if dictionary != nil {
             return dictionary as! NSDictionary
         }
-        return ["LEVEL_ID": "-1", "LESSON_ID": "-1"]
+        return [
+            "LEVEL_ID": "-1",
+            "LESSON_ID": "-1"
+        ]
+        
     }
     
 }

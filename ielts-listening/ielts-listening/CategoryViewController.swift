@@ -75,7 +75,6 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
             imageName = "lesson_" + String((indexPath.row + 1)) + "_tap.png"
         }
         cell.imageView.image = UIImage(named: imageName)
-        // Configure the cell
         return cell
     }
 
