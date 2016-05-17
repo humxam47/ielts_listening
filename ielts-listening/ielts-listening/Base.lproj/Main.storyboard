@@ -280,6 +280,7 @@
                                         <state key="normal" backgroundImage="download.png"/>
                                         <connections>
                                             <action selector="backAction" destination="8gr-0U-B1b" eventType="touchUpInside" id="c31-sf-GXa"/>
+                                            <action selector="downloadAction" destination="E5P-JI-6BP" eventType="touchUpInside" id="dv7-N3-yH7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -527,6 +528,7 @@
                     <connections>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
+                        <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>
                         <outlet property="exerciseView" destination="2Dj-J1-7Vg" id="FUS-Gp-dTU"/>
                         <outlet property="playButton" destination="jTX-Qk-uG0" id="U9N-il-Cfj"/>
                         <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="eyi-JG-jWi"/>

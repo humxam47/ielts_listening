@@ -7,6 +7,8 @@
 //
 
 import MBProgressHUD
+import SSZipArchive
+import AFNetworking
 
 class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
@@ -14,6 +16,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var timeSlider:UISlider!
     @IBOutlet weak var timeLabel:UILabel!
     @IBOutlet weak var playButton:UIButton!
+    @IBOutlet weak var downloadButton:UIButton!
     
     @IBOutlet weak var conversationView:ConversationView!
     @IBOutlet weak var exerciseView:ExerciseView!
@@ -45,6 +48,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     func refreshUI() {
         self.titleLabel.text = self.lessonObject.lessonName?.uppercaseString
         self.titleLabel.textColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
+        self.downloadButton.enabled = !DataManager.sharedInstance.isFileDownloaded(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
     }
     
     func initConversation() {
@@ -69,6 +73,10 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         if let controllerView = self.controllerView {
             controllerView.stopAudio()
         }
+    }
+    
+    @IBAction func downloadAction() {
+        DataManager.sharedInstance.storeDownloadedFile(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
     }
     
     func showProgressHUD(text:String) {

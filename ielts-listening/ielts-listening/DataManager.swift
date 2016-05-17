@@ -44,4 +44,28 @@ class DataManager {
         
     }
     
+    func storeDownloadedFile(levelId:String, lessonId:String) {
+        let lessonUserDefault:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let lessonsString:String! = lessonUserDefault.stringForKey("LESSON_DOWNLOAD_LIST")
+        if (lessonsString == nil || lessonsString!.characters.count == 0) {
+            lessonUserDefault.setObject("\(levelId)_\(lessonId)", forKey: "LESSON_DOWNLOAD_LIST")
+            return
+        }
+        lessonUserDefault.setObject("\(lessonsString)$$$\(levelId)_\(lessonId)", forKey: "LESSON_DOWNLOAD_LIST")
+    }
+    
+    func isFileDownloaded(levelId:String, lessonId:String) -> Bool {
+        let lessonUserDefault = NSUserDefaults.standardUserDefaults()
+        if let lessonsString = lessonUserDefault.stringForKey("LESSON_DOWNLOAD_LIST") {
+            let lessonArray = lessonsString.componentsSeparatedByString("$$$")
+            for lessonString:String in lessonArray {
+                let levelAndLesson:NSArray! = lessonString.componentsSeparatedByString("_")
+                if (levelAndLesson[0] as! String == levelId && levelAndLesson[1] as! String == lessonId) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
 }
