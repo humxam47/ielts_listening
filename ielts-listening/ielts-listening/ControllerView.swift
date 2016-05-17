@@ -60,7 +60,6 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func audioErrorAction() {
-        self.controllerDelegate?.hideLoading()
         self.controllerDelegate?.showNotification("Error in getting audio file. Try again?", cancelString:"NO", actionString:"YES")
     }
     

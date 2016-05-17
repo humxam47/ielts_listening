@@ -123,6 +123,9 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
                 controllerView.playInThread()
             }
             break;
+        case 1:
+            self.hideLoading()
+            break;
         default:
             break;
         }
