@@ -18,7 +18,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     var lessonArray:NSMutableArray!
     var selectedIndex:Int = 0
     
-    weak var controllerDelegate:ControllerDelegate!
+    weak var controllerDelegate:ControllerDelegate?
     
     var audioPlayer:AVAudioPlayer!
     var progressTimer:NSTimer!
@@ -31,7 +31,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     
     func playInThread() {
         self.userInteractionEnabled = false
-        self.controllerDelegate.showLoading()
+        self.controllerDelegate?.showLoading()
         let playThread = NSThread(target: self, selector: #selector(playAudio), object: nil)
         playThread.start()
     }
@@ -60,8 +60,8 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func audioErrorAction() {
-        self.controllerDelegate.hideLoading()
-        self.controllerDelegate.showNotification("Error in getting audio file. Try again?", cancelString:"NO", actionString:"YES")
+        self.controllerDelegate?.hideLoading()
+        self.controllerDelegate?.showNotification("Error in getting audio file. Try again?", cancelString:"NO", actionString:"YES")
     }
     
     func stopAudio() {
@@ -78,10 +78,10 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     func initProgress() {
         dispatch_async(dispatch_get_main_queue()) {
             self.userInteractionEnabled = true
-            self.controllerDelegate.hideLoading()
+            self.controllerDelegate?.hideLoading()
             self.slider.minimumValue = 0.0
             self.slider.maximumValue = Float(self.audioPlayer.duration)
-            self.progressTimer = NSTimer.scheduledTimerWithTimeInterval(0.0, target: self, selector: #selector(self.updateProgress), userInfo: nil, repeats: true)
+            self.progressTimer = NSTimer.scheduledTimerWithTimeInterval(0.0, target:self, selector: #selector(self.updateProgress), userInfo: nil, repeats: true)
             NSRunLoop.mainRunLoop().addTimer(self.progressTimer, forMode: NSRunLoopCommonModes)
         }
     }
@@ -112,7 +112,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         if self.selectedIndex < (self.lessonArray.count - 1) {
             self.selectedIndex += 1
             self.playInThread()
-            self.controllerDelegate.changeLessonWithIndex(self.selectedIndex)
+            self.controllerDelegate?.changeLessonWithIndex(self.selectedIndex)
         }
     }
     
@@ -120,7 +120,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         if self.selectedIndex > 0 {
             self.selectedIndex -= 1
             self.playInThread()
-            self.controllerDelegate.changeLessonWithIndex(self.selectedIndex)
+            self.controllerDelegate?.changeLessonWithIndex(self.selectedIndex)
         }
     }
     
