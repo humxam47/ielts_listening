@@ -79,6 +79,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func audioErrorAction() {
+        self.prepareReplayAudio()
         self.controllerDelegate?.showNotification("Error in getting audio file. Try again?", cancelString:"NO", actionString:"YES")
     }
     
@@ -91,6 +92,12 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         }
         self.progressTimer = nil
         self.audioPlayer = nil
+    }
+    
+    func prepareReplayAudio() {
+        self.slider.value = 0.0
+        self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
+        self.playButton.tag = -1
     }
     
     func initProgress() {
@@ -161,9 +168,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
-        self.slider.value = 0.0
-        self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
-        self.playButton.tag = -1
+        self.prepareReplayAudio()
     }
     
 }

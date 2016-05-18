@@ -87,7 +87,6 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         let soundURL:NSURL! = NSURL.init(string: fullPath)
         let documentsDirectoryURL =  NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
         let destinationUrl = documentsDirectoryURL.URLByAppendingPathComponent(soundURL.lastPathComponent!)
-        print(destinationUrl)
         NSURLSession.sharedSession().downloadTaskWithURL(soundURL, completionHandler: { (location, response, error) -> Void in
             guard let location = location where error == nil else {
                 dispatch_async(dispatch_get_main_queue()) {
