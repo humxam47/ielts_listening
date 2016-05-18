@@ -40,7 +40,7 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         self.stopAudio()
         let lessonObject:LessonObject = self.lessonArray[self.selectedIndex] as! LessonObject
         let fullPath:String! = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
-        let soundURL:NSURL! = NSURL.init(fileURLWithPath:fullPath)
+        let soundURL:NSURL! = NSURL.init(string:fullPath)
         let documentsDirectoryURL =  NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
         let destinationUrl = documentsDirectoryURL.URLByAppendingPathComponent(soundURL.lastPathComponent!)
         if NSFileManager().fileExistsAtPath(destinationUrl.path!) {
