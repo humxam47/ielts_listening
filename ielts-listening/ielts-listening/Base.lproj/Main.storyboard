@@ -233,7 +233,7 @@
             </objects>
             <point key="canvasLocation" x="741" y="308"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="oVE-gN-OOk">
             <objects>
                 <viewController id="E5P-JI-6BP" customClass="DetailViewController" customModule="ielts_listening" customModuleProvider="target" sceneMemberID="viewController">
@@ -445,12 +445,15 @@
                                     <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="ahD-b3-DRR"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hIL-He-pvt"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="rootViewController" destination="E5P-JI-6BP" id="Lyf-Ej-RTx"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-cn-PYA" userLabel="content_view">
                                 <rect key="frame" x="0.0" y="80" width="320" height="343"/>
@@ -544,6 +547,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="IWO-m5-hey" id="Fmc-WU-AKM"/>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>

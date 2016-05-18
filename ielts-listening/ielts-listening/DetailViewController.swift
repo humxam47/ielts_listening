@@ -7,6 +7,7 @@
 //
 
 import MBProgressHUD
+import GoogleMobileAds
 
 class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
@@ -16,6 +17,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var playButton:UIButton!
     @IBOutlet weak var downloadButton:UIButton!
     @IBOutlet weak var downloadIndicator:UIActivityIndicatorView!
+    @IBOutlet weak var bannerView:GADBannerView!
     
     @IBOutlet weak var conversationView:ConversationView!
     @IBOutlet weak var exerciseView:ExerciseView!
@@ -33,6 +35,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.initExercise()
         self.initController()
         self.storeLastAccessLesson()
+        self.initAdmob()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -65,6 +68,13 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     
     func storeLastAccessLesson() {
         DataManager.sharedInstance.storeLastLesson(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
+    }
+    
+    func initAdmob() {
+        let admobBanner = "ca-app-pub-4322965078780162/4717761535"
+        self.bannerView.adUnitID = admobBanner
+        self.bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        self.bannerView.loadRequest(GADRequest())
     }
     
     @IBAction func backAction() {

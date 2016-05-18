@@ -244,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="741" y="308"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="oVE-gN-OOk">
             <objects>
                 <viewController id="E5P-JI-6BP" customClass="DetailViewController" customModule="ielts_listening" customModuleProvider="target" sceneMemberID="viewController">
@@ -395,12 +395,15 @@
                                     <constraint firstItem="2Dj-J1-7Vg" firstAttribute="top" secondItem="WnA-cn-PYA" secondAttribute="top" id="lEY-7h-LYk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="934" width="768" height="90"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="BOr-c4-ay1"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="rootViewController" destination="E5P-JI-6BP" id="jM9-30-ZYH"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-7E-bMJ" userLabel="controll_view" customClass="ControllerView" customModule="ielts_listening" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="844" width="768" height="90"/>
@@ -554,6 +557,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="IWO-m5-hey" id="LFi-xh-DUh"/>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>

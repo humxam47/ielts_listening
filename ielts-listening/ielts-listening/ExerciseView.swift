@@ -27,8 +27,8 @@ class ExerciseView: UIView {
     }
     
     func prepareForPhone() {
-        self.questionFont = UIFont(name: "HelveticaNeue-Bold", size: 17)
-        self.answerFont = UIFont(name: "HelveticaNeue-Light", size: 17)
+        self.questionFont = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        self.answerFont = UIFont(name: "HelveticaNeue-Light", size: 16)
     }
     
     func prepareForPad() {
