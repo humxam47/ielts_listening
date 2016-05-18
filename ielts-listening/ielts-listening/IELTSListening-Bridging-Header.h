@@ -7,5 +7,3 @@
 //
 
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <SSZipArchive/SSZipArchive.h>
-#import <AFNetworking/AFNetworking.h>
