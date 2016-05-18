@@ -10,6 +10,9 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     var conversationArray:NSMutableArray!
     var cellHeightArray:NSMutableArray!
+    var cellHeight:Int!
+    var cellFont:UIFont!
+    var cellCalculationFont:UIFont!
     @IBOutlet weak var conversationTableView:UITableView!
     
     func initConversation(conversationArray:NSMutableArray) {
@@ -17,8 +20,33 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.refreshConversation(conversationArray)
     }
     
+    func prepareForPhone() {
+        self.cellHeight = 35
+        self.cellFont = UIFont(name: "HelveticaNeue-Light", size: 17)
+        self.cellCalculationFont = UIFont(name: "HelveticaNeue-Light", size: 20)
+    }
+    
+    func prepareForPad() {
+        self.cellHeight = 50
+        self.cellFont = UIFont(name: "HelveticaNeue-Light", size: 20)
+        self.cellCalculationFont = UIFont(name: "HelveticaNeue-Light", size: 23)
+    }
+    
     func refreshConversation(conversationArray:NSMutableArray) {
         self.conversationArray = conversationArray
+        
+        switch UIDevice.currentDevice().userInterfaceIdiom {
+        case .Phone:
+            self.prepareForPhone()
+            break
+        case .Pad:
+            self.prepareForPad()
+            break
+        default:
+            self.prepareForPhone()
+            break
+        }
+        
         if let cellHeightArray = self.cellHeightArray {
             cellHeightArray.removeAllObjects()
         }
@@ -34,10 +62,10 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
             label.numberOfLines = 0
             label.lineBreakMode = NSLineBreakMode.ByWordWrapping
             label.text = sentence
-            label.font = UIFont(name: "HelveticaNeue-Light", size: 20)
+            label.font = self.cellCalculationFont!
             label.sizeToFit()
             let delta = label.frame.size.height / 21
-            var originalHeight:Int = 35
+            var originalHeight:Int = self.cellHeight!
             if Int(delta) > 3 {
                 originalHeight += 20
             }
@@ -54,7 +82,7 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
         if let n = NSNumberFormatter().numberFromString(self.cellHeightArray[indexPath.row] as! String) {
             return CGFloat(n)
         }
-        return 35
+        return CGFloat(self.cellHeight!)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,7 +93,7 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
         
         let tableViewCell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("CELL_CONVERSATION", forIndexPath: indexPath)
         tableViewCell.textLabel?.text = self.conversationArray![indexPath.row] as? String
-        tableViewCell.textLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 17)
+        tableViewCell.textLabel?.font = self.cellFont
         tableViewCell.textLabel?.lineBreakMode = NSLineBreakMode.ByTruncatingTail
         tableViewCell.textLabel?.numberOfLines = 0
         return tableViewCell

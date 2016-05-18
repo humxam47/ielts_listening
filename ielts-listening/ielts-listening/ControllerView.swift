@@ -95,9 +95,11 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     }
     
     func prepareReplayAudio() {
-        self.slider.value = 0.0
-        self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
-        self.playButton.tag = -1
+        dispatch_async(dispatch_get_main_queue()) {
+            self.slider.value = 0.0
+            self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
+            self.playButton.tag = -1
+        }
     }
     
     func initProgress() {

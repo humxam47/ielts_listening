@@ -10,6 +10,8 @@ class ExerciseView: UIView {
     
     @IBOutlet weak var scrollView:UIScrollView!
     var checkLabel:UILabel!
+    var questionFont:UIFont!
+    var answerFont:UIFont!
     
     var questionArray:NSMutableArray!
     var keyArray:NSMutableArray!
@@ -22,6 +24,16 @@ class ExerciseView: UIView {
         self.correctKeyArray = NSMutableArray()
         self.buttonArray = NSMutableArray()
         self.refreshExercise(questionArray)
+    }
+    
+    func prepareForPhone() {
+        self.questionFont = UIFont(name: "HelveticaNeue-Bold", size: 17)
+        self.answerFont = UIFont(name: "HelveticaNeue-Light", size: 17)
+    }
+    
+    func prepareForPad() {
+        self.questionFont = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        self.answerFont = UIFont(name: "HelveticaNeue-Light", size: 20)
     }
     
     func refreshExercise(questionArray:NSMutableArray) {
@@ -38,6 +50,19 @@ class ExerciseView: UIView {
         for subView in self.scrollView.subviews {
             subView.removeFromSuperview()
         }
+        
+        switch UIDevice.currentDevice().userInterfaceIdiom {
+        case .Phone:
+            self.prepareForPhone()
+            break
+        case .Pad:
+            self.prepareForPad()
+            break
+        default:
+            self.prepareForPhone()
+            break
+        }
+        
         self.createExercise()
     }
     
@@ -60,7 +85,7 @@ class ExerciseView: UIView {
             questionBox.layer.borderColor = self.appColor.CGColor
             let questionLabel = UILabel(frame: CGRectMake(10, 10, questionBox.frame.size.width - 20, defaultHeight))
             questionLabel.backgroundColor = UIColor.clearColor()
-            questionLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+            questionLabel.font = self.questionFont
             questionLabel.numberOfLines = 0
             questionLabel.text = question.questionText
             questionLabel.sizeToFit()
@@ -83,7 +108,7 @@ class ExerciseView: UIView {
                 answerButton.addTarget(self, action:#selector(self.setButtonAnswer(_:)), forControlEvents:UIControlEvents.TouchUpInside)
                 let answerLabel = UILabel(frame:answerButton.bounds)
                 answerLabel.backgroundColor = UIColor.clearColor()
-                answerLabel.font = UIFont(name: "HelveticaNeue-Light", size: 16)
+                answerLabel.font = self.answerFont
                 var orderText:String
                 switch (j+1) {
                 case 1:
@@ -124,10 +149,10 @@ class ExerciseView: UIView {
             self.scrollView?.addSubview(questionBox)
             yCoordinate += yAnswer + 20
         }
-        self.checkLabel = UILabel(frame: CGRectMake(screenSize.width/2 - 70, yCoordinate, 140, 35))
+        self.checkLabel = UILabel(frame: CGRectMake(screenSize.width/2 - 100, yCoordinate, 200, 40))
         self.checkLabel.backgroundColor = UIColor.clearColor()
         self.checkLabel.textColor = self.appColor
-        self.checkLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        self.checkLabel.font = self.questionFont
         self.checkLabel.textAlignment = NSTextAlignment.Center
         self.checkLabel.clipsToBounds = true
         self.checkLabel.layer.cornerRadius = 5.0

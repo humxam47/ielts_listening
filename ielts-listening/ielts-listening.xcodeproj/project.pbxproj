@@ -112,6 +112,7 @@
 		0F562D441CE0B1D4001F0477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */; };
 		0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */; };
 		0F7747EE1CEA050B0003D71D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7747ED1CEA050B0003D71D /* DataManager.swift */; };
+		0FA8B3A01CEC3FDC002595BF /* Main_Pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA8B39E1CEC3FDC002595BF /* Main_Pad.storyboard */; };
 		0FC007FD1CE8442200F61B0C /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FC1CE8442200F61B0C /* ControllerView.swift */; };
 		0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */; };
 		73FF24F6F29B05C7EE9E9CD6 /* Pods_ielts_listening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B5B10335833B31B99B76FB /* Pods_ielts_listening.framework */; };
@@ -226,6 +227,7 @@
 		0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IELTSListening-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0F7747ED1CEA050B0003D71D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0FA8B39F1CEC3FDC002595BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Pad.storyboard; sourceTree = "<group>"; };
 		0FC007FC1CE8442200F61B0C /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig"; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				0F562D3B1CE0B1D4001F0477 /* ViewController.swift */,
 				0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */,
 				0F562D3D1CE0B1D4001F0477 /* Main.storyboard */,
+				0FA8B39E1CEC3FDC002595BF /* Main_Pad.storyboard */,
 				0F562D401CE0B1D4001F0477 /* Assets.xcassets */,
 				0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */,
 				0F562D451CE0B1D4001F0477 /* Info.plist */,
@@ -524,6 +527,7 @@
 				0F0D3D701CE5B95200565D23 /* lesson_32.png in Resources */,
 				0F0D3D791CE5B95200565D23 /* lesson_5.png in Resources */,
 				0F0D3D651CE5B95200565D23 /* lesson_27_tap.png in Resources */,
+				0FA8B3A01CEC3FDC002595BF /* Main_Pad.storyboard in Resources */,
 				0F0D3D7C1CE5B95200565D23 /* lesson_6_tap.png in Resources */,
 				0F0D3D7E1CE5B95200565D23 /* lesson_7_tap.png in Resources */,
 				0F0D3D8F1CE7127700565D23 /* download.png in Resources */,
@@ -667,6 +671,14 @@
 				0F562D431CE0B1D4001F0477 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0FA8B39E1CEC3FDC002595BF /* Main_Pad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FA8B39F1CEC3FDC002595BF /* Base */,
+			);
+			name = Main_Pad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

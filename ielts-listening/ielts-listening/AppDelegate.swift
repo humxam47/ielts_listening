@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var storyBoard:UIStoryboard
+        switch UIDevice.currentDevice().userInterfaceIdiom {
+            case .Phone:
+                storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+                break
+            case .Pad:
+                storyBoard = UIStoryboard.init(name: "Main_Pad", bundle: nil)
+                break
+            default:
+                storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+                break
+        }
+        let viewController = storyBoard.instantiateInitialViewController()
+        self.window?.rootViewController = viewController
         return true
     }
 
