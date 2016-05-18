@@ -154,11 +154,13 @@ class ExerciseView: UIView {
                     if keyString == "0" {
                         keyString = "1"
                         selectedButton.backgroundColor = self.appColor
-                    } else {
+                    }
+                    else {
                         keyString = "0"
                         selectedButton.backgroundColor = UIColor.clearColor()
                     }
-                } else {
+                }
+                else {
                     keyString = "0"
                     selectedButton.backgroundColor = UIColor.clearColor()
                 }
@@ -173,11 +175,13 @@ class ExerciseView: UIView {
                     if keyString == "0" {
                         keyString = "1"
                         selectedButton.backgroundColor = self.appColor
-                    } else {
+                    }
+                    else {
                         keyString = "0"
                         selectedButton.backgroundColor = UIColor.clearColor()
                     }
-                } else {
+                }
+                else {
                     keyString = "0"
                     selectedButton.backgroundColor = UIColor.clearColor()
                 }
@@ -192,11 +196,13 @@ class ExerciseView: UIView {
                     if keyString == "0" {
                         keyString = "1"
                         selectedButton.backgroundColor = self.appColor
-                    } else {
+                    }
+                    else {
                         keyString = "0"
                         selectedButton.backgroundColor = UIColor.clearColor()
                     }
-                } else {
+                }
+                else {
                     keyString = "0"
                     selectedButton.backgroundColor = UIColor.clearColor()
                 }
@@ -211,11 +217,13 @@ class ExerciseView: UIView {
                     if keyString == "0" {
                         keyString = "1"
                         selectedButton.backgroundColor = self.appColor
-                    } else {
+                    }
+                    else {
                         keyString = "0"
                         selectedButton.backgroundColor = UIColor.clearColor()
                     }
-                } else {
+                }
+                else {
                     keyString = "0"
                     selectedButton.backgroundColor = UIColor.clearColor()
                 }
@@ -234,10 +242,12 @@ class ExerciseView: UIView {
                     let keyString = self.keyArray[i] as! String
                     if keyString == "1" {
                         correctButton.backgroundColor = self.appColor
-                    } else {
+                    }
+                    else {
                         correctButton.backgroundColor = UIColor.redColor()
                     }
-                } else {
+                }
+                else {
                     correctButton.backgroundColor = UIColor.clearColor()
                 }
             }

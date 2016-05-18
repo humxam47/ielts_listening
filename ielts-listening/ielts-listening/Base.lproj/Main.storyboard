@@ -271,30 +271,48 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8t-Iz-qNY" userLabel="download_button">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOr-hC-8ga" userLabel="download_view">
                                         <rect key="frame" x="272" y="10" width="40" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8t-Iz-qNY" userLabel="download_button">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="68u-a8-beK"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Z2i-4x-Bon"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="download.png"/>
+                                                <connections>
+                                                    <action selector="backAction" destination="8gr-0U-B1b" eventType="touchUpInside" id="c31-sf-GXa"/>
+                                                    <action selector="downloadAction" destination="E5P-JI-6BP" eventType="touchUpInside" id="dv7-N3-yH7"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lAr-QX-7y6">
+                                                <rect key="frame" x="2" y="1" width="37" height="37"/>
+                                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="68u-a8-beK"/>
-                                            <constraint firstAttribute="width" constant="40" id="Z2i-4x-Bon"/>
+                                            <constraint firstAttribute="width" constant="40" id="7CC-78-T3W"/>
+                                            <constraint firstAttribute="height" constant="40" id="GcK-ZY-dYI"/>
+                                            <constraint firstItem="lAr-QX-7y6" firstAttribute="centerX" secondItem="XOr-hC-8ga" secondAttribute="centerX" id="LZQ-WA-D5F"/>
+                                            <constraint firstItem="V8t-Iz-qNY" firstAttribute="centerX" secondItem="XOr-hC-8ga" secondAttribute="centerX" id="gr9-xx-cI5"/>
+                                            <constraint firstItem="V8t-Iz-qNY" firstAttribute="centerY" secondItem="XOr-hC-8ga" secondAttribute="centerY" id="uph-uC-n8a"/>
+                                            <constraint firstItem="lAr-QX-7y6" firstAttribute="centerY" secondItem="XOr-hC-8ga" secondAttribute="centerY" id="z7J-rf-6iT"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="download.png"/>
-                                        <connections>
-                                            <action selector="backAction" destination="8gr-0U-B1b" eventType="touchUpInside" id="c31-sf-GXa"/>
-                                            <action selector="downloadAction" destination="E5P-JI-6BP" eventType="touchUpInside" id="dv7-N3-yH7"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="V8t-Iz-qNY" firstAttribute="top" secondItem="Hse-Qa-aHl" secondAttribute="top" constant="10" id="7tC-Je-91w"/>
+                                    <constraint firstItem="XOr-hC-8ga" firstAttribute="leading" secondItem="aj4-TX-MFl" secondAttribute="trailing" id="0MB-kJ-WqN"/>
+                                    <constraint firstAttribute="trailing" secondItem="XOr-hC-8ga" secondAttribute="trailing" constant="8" id="4Xx-36-dfm"/>
                                     <constraint firstAttribute="bottom" secondItem="aj4-TX-MFl" secondAttribute="bottom" id="GTD-Wr-Np1"/>
-                                    <constraint firstItem="V8t-Iz-qNY" firstAttribute="leading" secondItem="aj4-TX-MFl" secondAttribute="trailing" id="K9m-00-s5c"/>
-                                    <constraint firstAttribute="trailing" secondItem="V8t-Iz-qNY" secondAttribute="trailing" constant="8" id="Mkx-vM-kp1"/>
                                     <constraint firstAttribute="height" constant="60" id="PC3-fa-aE2"/>
+                                    <constraint firstItem="XOr-hC-8ga" firstAttribute="top" secondItem="Hse-Qa-aHl" secondAttribute="top" constant="10" id="PEf-lQ-nym"/>
+                                    <constraint firstAttribute="bottom" secondItem="XOr-hC-8ga" secondAttribute="bottom" constant="10" id="QL8-hg-3Rd"/>
                                     <constraint firstAttribute="bottom" secondItem="YIF-Ud-x8j" secondAttribute="bottom" constant="13" id="Wmt-iY-g00"/>
                                     <constraint firstItem="YIF-Ud-x8j" firstAttribute="top" secondItem="Hse-Qa-aHl" secondAttribute="top" constant="12" id="dSE-a0-zLO"/>
                                     <constraint firstItem="YIF-Ud-x8j" firstAttribute="leading" secondItem="Hse-Qa-aHl" secondAttribute="leading" constant="10" id="oDz-Am-Izp"/>
-                                    <constraint firstAttribute="bottom" secondItem="V8t-Iz-qNY" secondAttribute="bottom" constant="10" id="p6g-H5-FSn"/>
                                     <constraint firstItem="aj4-TX-MFl" firstAttribute="top" secondItem="Hse-Qa-aHl" secondAttribute="top" id="pJL-yi-RWq"/>
                                     <constraint firstItem="aj4-TX-MFl" firstAttribute="leading" secondItem="YIF-Ud-x8j" secondAttribute="trailing" id="tQi-qK-Kka"/>
                                 </constraints>
@@ -529,6 +547,7 @@
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>
+                        <outlet property="downloadIndicator" destination="lAr-QX-7y6" id="lQg-C9-qQF"/>
                         <outlet property="exerciseView" destination="2Dj-J1-7Vg" id="FUS-Gp-dTU"/>
                         <outlet property="playButton" destination="jTX-Qk-uG0" id="U9N-il-Cfj"/>
                         <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="eyi-JG-jWi"/>

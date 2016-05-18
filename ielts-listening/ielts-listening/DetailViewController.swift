@@ -7,8 +7,6 @@
 //
 
 import MBProgressHUD
-import SSZipArchive
-import AFNetworking
 
 class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
@@ -17,6 +15,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var timeLabel:UILabel!
     @IBOutlet weak var playButton:UIButton!
     @IBOutlet weak var downloadButton:UIButton!
+    @IBOutlet weak var downloadIndicator:UIActivityIndicatorView!
     
     @IBOutlet weak var conversationView:ConversationView!
     @IBOutlet weak var exerciseView:ExerciseView!
@@ -76,7 +75,41 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     @IBAction func downloadAction() {
-        DataManager.sharedInstance.storeDownloadedFile(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
+        NSThread(target: self, selector: #selector(self.downloadAudioFile), object: nil).start()
+    }
+    
+    func downloadAudioFile() {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.downloadButton.enabled = false
+            self.downloadIndicator.startAnimating()
+        }
+        let fullPath:String! = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(self.lessonObject.lessonPath)"
+        let soundURL:NSURL! = NSURL.init(string: fullPath)
+        let documentsDirectoryURL =  NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+        let destinationUrl = documentsDirectoryURL.URLByAppendingPathComponent(soundURL.lastPathComponent!)
+        print(destinationUrl)
+        NSURLSession.sharedSession().downloadTaskWithURL(soundURL, completionHandler: { (location, response, error) -> Void in
+            guard let location = location where error == nil else {
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.downloadButton.enabled = true
+                    self.downloadIndicator.stopAnimating()
+                }
+                return
+            }
+            do {
+                try NSFileManager().moveItemAtURL(location, toURL: destinationUrl)
+                DataManager.sharedInstance.storeDownloadedFile(self.levelObject.levelId, lessonId: self.lessonObject.lessonId)
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.downloadIndicator.stopAnimating()
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.downloadButton.enabled = true
+                    self.downloadIndicator.stopAnimating()
+                }
+            }
+        }).resume()
     }
     
     func showProgressHUD(text:String) {

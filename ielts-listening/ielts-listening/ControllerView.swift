@@ -39,19 +39,38 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
     func playAudio() {
         self.stopAudio()
         let lessonObject:LessonObject = self.lessonArray[self.selectedIndex] as! LessonObject
+        let fullPath:String! = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
+        let soundURL:NSURL! = NSURL.init(fileURLWithPath:fullPath)
+        let documentsDirectoryURL =  NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+        let destinationUrl = documentsDirectoryURL.URLByAppendingPathComponent(soundURL.lastPathComponent!)
+        if NSFileManager().fileExistsAtPath(destinationUrl.path!) {
+            if let soundData = NSData(contentsOfFile: destinationUrl.path!) {
+                self.initAudioWithData(soundData)
+            }
+            else {
+                self.audioErrorAction()
+            }
+            return
+        }
+        
+        if let soundData = NSData(contentsOfURL:NSURL(string:fullPath)!) {
+            self.initAudioWithData(soundData)
+        }
+        else {
+            self.audioErrorAction()
+        }
+    }
+    
+    func initAudioWithData(data:NSData) {
         do {
-            let soundURL = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(lessonObject.lessonPath)"
-            if let soundData = NSData(contentsOfURL:NSURL(string:soundURL)!) {
-                self.audioPlayer = try AVAudioPlayer(data: soundData)
-                audioPlayer.prepareToPlay()
-                audioPlayer.delegate = self
-                audioPlayer.play()
-                if self.audioPlayer != nil {
-                    self.initProgress()
-                } else {
-                    self.audioErrorAction()
-                }
-            } else {
+            self.audioPlayer = try AVAudioPlayer(data:data)
+            audioPlayer.prepareToPlay()
+            audioPlayer.delegate = self
+            audioPlayer.play()
+            if self.audioPlayer != nil {
+                self.initProgress()
+            }
+            else {
                 self.audioErrorAction()
             }
         } catch {
@@ -101,7 +120,8 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         if sender.tag > 0 {
             self.playButton.setBackgroundImage(UIImage(named: "icon_pause.png"), forState:UIControlState.Normal)
             self.audioPlayer.play()
-        } else {
+        }
+        else {
             self.playButton.setBackgroundImage(UIImage(named: "icon_play.png"), forState:UIControlState.Normal)
             self.audioPlayer.pause()
         }
@@ -133,7 +153,8 @@ class ControllerView: UIView, AVAudioPlayerDelegate {
         if sender.tag > 0 {
             self.exerciseButton.setTitle("Exercises", forState: UIControlState.Normal)
             self.controllerDelegate?.showConversationView()
-        } else {
+        }
+        else {
             self.exerciseButton.setTitle("Transcript", forState: UIControlState.Normal)
             self.controllerDelegate?.showExerciseView()
         }
