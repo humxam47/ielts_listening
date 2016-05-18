@@ -17,16 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="PDj-wA-Z09">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_bg_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="PDj-wA-Z09">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-HC-6Ci">
-                                <rect key="frame" x="20" y="94" width="280" height="380"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-HC-6Ci">
+                                <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-cu-JER">
-                                        <rect key="frame" x="20" y="45" width="240" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-cu-JER">
+                                        <rect key="frame" x="20" y="35" width="240" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Pxt-hQ-6hj"/>
+                                            <constraint firstAttribute="height" constant="50" id="5hv-kx-vu2"/>
+                                            <constraint firstAttribute="width" constant="240" id="Zkk-8u-cQW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Basic Level" backgroundImage="bg_dialog_item.png"/>
@@ -34,10 +35,11 @@
                                             <action selector="basicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zf1-wd-egp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-zH-C1Z">
-                                        <rect key="frame" x="20" y="125" width="240" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-zH-C1Z">
+                                        <rect key="frame" x="20" y="115" width="240" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="s49-PZ-LJP"/>
+                                            <constraint firstAttribute="height" constant="50" id="G66-TW-rlH"/>
+                                            <constraint firstAttribute="width" constant="240" id="YcY-XO-aXD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Intermediate Level" backgroundImage="bg_dialog_item.png"/>
@@ -45,10 +47,11 @@
                                             <action selector="intermediateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1D-Th-N9d"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-P6-nru">
-                                        <rect key="frame" x="20" y="205" width="240" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-P6-nru">
+                                        <rect key="frame" x="20" y="195" width="240" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="PR1-4p-vSt"/>
+                                            <constraint firstAttribute="height" constant="50" id="CK2-8l-Xtj"/>
+                                            <constraint firstAttribute="width" constant="240" id="DF6-0Z-Cdy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Advanced Level" backgroundImage="bg_dialog_item.png"/>
@@ -56,45 +59,26 @@
                                             <action selector="advancedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SV8-Qh-cDy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH9-dz-MEu">
-                                        <rect key="frame" x="20" y="285" width="240" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Bhw-JR-iMZ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Irregular Verbs" backgroundImage="bg_dialog_item.png"/>
-                                        <connections>
-                                            <action selector="irregularVerbAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBB-d7-IOk"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="dH9-dz-MEu" firstAttribute="top" secondItem="mGP-P6-nru" secondAttribute="bottom" constant="30" id="1dU-p1-cHW"/>
-                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="top" secondItem="Hts-cu-JER" secondAttribute="bottom" constant="30" id="6bp-B4-YcL"/>
-                                    <constraint firstItem="mGP-P6-nru" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="82X-vo-GlS"/>
-                                    <constraint firstItem="dH9-dz-MEu" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="A0O-vI-ykv"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hts-cu-JER" secondAttribute="trailing" constant="20" id="FcS-gD-0CL"/>
-                                    <constraint firstAttribute="trailing" secondItem="ybh-zH-C1Z" secondAttribute="trailing" constant="20" id="HMv-tR-ih0"/>
-                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="KPc-Nv-uSW"/>
-                                    <constraint firstAttribute="trailing" secondItem="mGP-P6-nru" secondAttribute="trailing" constant="20" id="QFc-Qd-ptu"/>
-                                    <constraint firstItem="mGP-P6-nru" firstAttribute="top" secondItem="ybh-zH-C1Z" secondAttribute="bottom" constant="30" id="Y20-hd-rVP"/>
-                                    <constraint firstItem="Hts-cu-JER" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="Zqh-mv-ybk"/>
-                                    <constraint firstItem="Hts-cu-JER" firstAttribute="top" secondItem="sKI-HC-6Ci" secondAttribute="top" constant="45" id="tEa-EY-zNA"/>
-                                    <constraint firstAttribute="trailing" secondItem="dH9-dz-MEu" secondAttribute="trailing" constant="20" id="xX7-5D-ADb"/>
+                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="centerX" secondItem="sKI-HC-6Ci" secondAttribute="centerX" id="IQv-vk-sRD"/>
+                                    <constraint firstItem="Hts-cu-JER" firstAttribute="top" secondItem="sKI-HC-6Ci" secondAttribute="top" constant="35" id="MqN-xf-poJ"/>
+                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="centerY" secondItem="sKI-HC-6Ci" secondAttribute="centerY" id="OQe-02-eUM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hts-cu-JER" secondAttribute="trailing" constant="20" id="VuS-mG-xPS"/>
+                                    <constraint firstItem="Hts-cu-JER" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="XYI-FO-gUc"/>
+                                    <constraint firstAttribute="trailing" secondItem="mGP-P6-nru" secondAttribute="trailing" constant="20" id="ZM0-Mh-QPy"/>
+                                    <constraint firstAttribute="width" constant="280" id="a4n-lN-pb9"/>
+                                    <constraint firstAttribute="height" constant="280" id="jHs-iR-e07"/>
+                                    <constraint firstAttribute="bottom" secondItem="mGP-P6-nru" secondAttribute="bottom" constant="35" id="w5H-zc-0zw"/>
+                                    <constraint firstItem="mGP-P6-nru" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="20" id="z2M-cO-7Vs"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3jR-8G-ZhZ"/>
-                            <constraint firstAttribute="trailing" secondItem="sKI-HC-6Ci" secondAttribute="trailing" constant="20" id="MhG-Hd-ZEU"/>
-                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NLL-QP-ngC"/>
-                            <constraint firstItem="PDj-wA-Z09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NNU-OB-lCp"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PDj-wA-Z09" secondAttribute="bottom" id="WmX-Za-686"/>
-                            <constraint firstAttribute="trailing" secondItem="PDj-wA-Z09" secondAttribute="trailing" id="hRP-1Q-vzC"/>
-                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jC3-fW-WGk"/>
-                            <constraint firstItem="PDj-wA-Z09" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mg2-Ci-16P"/>
+                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3kj-6t-3rd"/>
+                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnd-lU-P4J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3el-4I-OS8"/>

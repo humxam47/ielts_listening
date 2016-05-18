@@ -65,11 +65,6 @@ class ViewController: UIViewController {
         self.selectedAction = 3
         self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
     }
-    
-    
-    @IBAction func irregularVerbAction(sender: UIButton) {
-        self.selectedAction = 4
-    }
 
 }
 

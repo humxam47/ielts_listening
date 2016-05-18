@@ -21,13 +21,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-HC-6Ci">
-                                <rect key="frame" x="144" y="222" width="480" height="580"/>
+                                <rect key="frame" x="134" y="262" width="500" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-cu-JER">
-                                        <rect key="frame" x="50" y="65" width="380" height="80"/>
+                                        <rect key="frame" x="50" y="65" width="400" height="85"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="R10-kd-EbH"/>
-                                            <constraint firstAttribute="width" constant="380" id="hdS-0s-5Ld"/>
+                                            <constraint firstAttribute="height" constant="85" id="A00-xa-2lU"/>
+                                            <constraint firstAttribute="width" constant="400" id="Tte-hl-VGA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                         <state key="normal" title="Basic Level" backgroundImage="bg_dialog_item.png"/>
@@ -35,23 +35,11 @@
                                             <action selector="basicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zf1-wd-egp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-zH-C1Z">
-                                        <rect key="frame" x="50" y="190" width="380" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="380" id="fpt-6e-pxh"/>
-                                            <constraint firstAttribute="height" constant="80" id="g45-BY-WxI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                        <state key="normal" title="Intermediate Level" backgroundImage="bg_dialog_item.png"/>
-                                        <connections>
-                                            <action selector="intermediateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1D-Th-N9d"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-P6-nru">
-                                        <rect key="frame" x="50" y="315" width="380" height="80"/>
+                                        <rect key="frame" x="50" y="345" width="400" height="85"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="UAB-FO-Y5G"/>
-                                            <constraint firstAttribute="width" constant="380" id="Znd-4g-SDR"/>
+                                            <constraint firstAttribute="height" constant="85" id="GpF-Tj-c9L"/>
+                                            <constraint firstAttribute="width" constant="400" id="hvB-Dk-foQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                         <state key="normal" title="Advanced Level" backgroundImage="bg_dialog_item.png"/>
@@ -59,45 +47,42 @@
                                             <action selector="advancedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SV8-Qh-cDy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH9-dz-MEu">
-                                        <rect key="frame" x="50" y="435" width="380" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-zH-C1Z">
+                                        <rect key="frame" x="50" y="207" width="400" height="85"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="380" id="Sjq-c7-K55"/>
-                                            <constraint firstAttribute="height" constant="80" id="kkS-cN-YkI"/>
+                                            <constraint firstAttribute="height" constant="85" id="QKr-jK-vuz"/>
+                                            <constraint firstAttribute="width" constant="400" id="t2Y-xg-uWL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                        <state key="normal" title="Irregular Verbs" backgroundImage="bg_dialog_item.png"/>
+                                        <state key="normal" title="Intermediate Level" backgroundImage="bg_dialog_item.png"/>
                                         <connections>
-                                            <action selector="irregularVerbAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBB-d7-IOk"/>
+                                            <action selector="intermediateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1D-Th-N9d"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="dH9-dz-MEu" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="6vL-ct-FU0"/>
-                                    <constraint firstItem="mGP-P6-nru" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="7Cr-hc-BQx"/>
-                                    <constraint firstAttribute="trailing" secondItem="mGP-P6-nru" secondAttribute="trailing" constant="50" id="7LC-bA-pSz"/>
-                                    <constraint firstItem="Hts-cu-JER" firstAttribute="top" secondItem="sKI-HC-6Ci" secondAttribute="top" constant="65" id="COO-UP-2gs"/>
-                                    <constraint firstAttribute="trailing" secondItem="ybh-zH-C1Z" secondAttribute="trailing" constant="50" id="Ha4-gC-RMj"/>
-                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="KYQ-Jl-2sm"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hts-cu-JER" secondAttribute="trailing" constant="50" id="PcX-Yc-gfL"/>
-                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="top" secondItem="Hts-cu-JER" secondAttribute="bottom" constant="45" id="T9B-AC-1jd"/>
-                                    <constraint firstItem="mGP-P6-nru" firstAttribute="top" secondItem="ybh-zH-C1Z" secondAttribute="bottom" constant="45" id="Yok-Ty-Q5T"/>
-                                    <constraint firstAttribute="bottom" secondItem="dH9-dz-MEu" secondAttribute="bottom" constant="65" id="a9l-wb-ngV"/>
-                                    <constraint firstItem="dH9-dz-MEu" firstAttribute="top" secondItem="mGP-P6-nru" secondAttribute="bottom" constant="40" id="dCM-16-UjB"/>
-                                    <constraint firstItem="Hts-cu-JER" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="pP6-vT-VyF"/>
-                                    <constraint firstAttribute="trailing" secondItem="dH9-dz-MEu" secondAttribute="trailing" constant="50" id="yWL-f6-nHz"/>
+                                    <constraint firstItem="mGP-P6-nru" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="4wt-CL-OoX"/>
+                                    <constraint firstItem="Hts-cu-JER" firstAttribute="leading" secondItem="sKI-HC-6Ci" secondAttribute="leading" constant="50" id="5nc-x3-Y3k"/>
+                                    <constraint firstItem="Hts-cu-JER" firstAttribute="top" secondItem="sKI-HC-6Ci" secondAttribute="top" constant="65" id="LIv-hb-VtB"/>
+                                    <constraint firstAttribute="bottom" secondItem="mGP-P6-nru" secondAttribute="bottom" constant="70" id="S8S-u6-y0i"/>
+                                    <constraint firstAttribute="width" constant="500" id="TVO-TY-Gim"/>
+                                    <constraint firstAttribute="trailing" secondItem="mGP-P6-nru" secondAttribute="trailing" constant="50" id="VsK-SM-qLZ"/>
+                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="centerX" secondItem="sKI-HC-6Ci" secondAttribute="centerX" id="W6W-SH-yy3"/>
+                                    <constraint firstItem="ybh-zH-C1Z" firstAttribute="centerY" secondItem="sKI-HC-6Ci" secondAttribute="centerY" id="bDJ-Mz-qY2"/>
+                                    <constraint firstAttribute="height" constant="500" id="eZB-eA-d6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hts-cu-JER" secondAttribute="trailing" constant="50" id="sxY-VI-j4n"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jei-vU-PnE"/>
-                            <constraint firstItem="PDj-wA-Z09" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NQi-Re-tSp"/>
-                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P1N-VQ-AXs"/>
-                            <constraint firstAttribute="trailing" secondItem="PDj-wA-Z09" secondAttribute="trailing" id="VCO-bV-NS2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PDj-wA-Z09" secondAttribute="bottom" id="eDt-Tr-pHc"/>
-                            <constraint firstItem="PDj-wA-Z09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lE4-hz-BK3"/>
+                            <constraint firstItem="PDj-wA-Z09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DCg-dw-uuU"/>
+                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E5U-dg-WEM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PDj-wA-Z09" secondAttribute="bottom" id="V5W-vr-mIM"/>
+                            <constraint firstItem="PDj-wA-Z09" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dcP-e2-Ynj"/>
+                            <constraint firstAttribute="trailing" secondItem="PDj-wA-Z09" secondAttribute="trailing" id="i2f-Ck-Jx5"/>
+                            <constraint firstItem="sKI-HC-6Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9K-14-Gba"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3el-4I-OS8"/>
@@ -108,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="328"/>
+            <point key="canvasLocation" x="404" y="207"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="JCB-Qc-2FR">
@@ -242,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQc-ym-yQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="308"/>
+            <point key="canvasLocation" x="1152" y="281"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="oVE-gN-OOk">
