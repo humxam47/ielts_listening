@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var selectedAction:Int?
+    var selectedAction:Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()

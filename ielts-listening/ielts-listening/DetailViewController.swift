@@ -73,7 +73,17 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     func initAdmob() {
         let admobBanner = "ca-app-pub-4322965078780162/4717761535"
         self.bannerView.adUnitID = admobBanner
-        self.bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        switch UIDevice.currentDevice().userInterfaceIdiom {
+        case .Phone:
+            self.bannerView.adSize = kGADAdSizeBanner
+            break
+        case .Pad:
+            self.bannerView.adSize = kGADAdSizeLeaderboard
+            break
+        default:
+            self.bannerView.adSize = kGADAdSizeBanner
+            break
+        }
         self.bannerView.loadRequest(GADRequest())
     }
     
