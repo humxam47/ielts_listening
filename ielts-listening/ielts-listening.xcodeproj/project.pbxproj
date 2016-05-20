@@ -12,21 +12,12 @@
 		0F0D3CCF1CE5B0BA00565D23 /* AnswerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3CCE1CE5B0BA00565D23 /* AnswerObject.swift */; };
 		0F0D3CD11CE5B33000565D23 /* LessonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD01CE5B33000565D23 /* LessonObject.swift */; };
 		0F0D3CD31CE5B6A700565D23 /* LevelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD21CE5B6A700565D23 /* LevelParser.swift */; };
-		0F0D3D2F1CE5B95200565D23 /* advanced_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD51CE5B95100565D23 /* advanced_level_button.png */; };
 		0F0D3D301CE5B95200565D23 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD61CE5B95100565D23 /* back.png */; };
-		0F0D3D311CE5B95200565D23 /* basic_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD71CE5B95100565D23 /* basic_level_button.png */; };
 		0F0D3D321CE5B95200565D23 /* bg_dialog_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD81CE5B95100565D23 /* bg_dialog_item.png */; };
-		0F0D3D331CE5B95200565D23 /* bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CD91CE5B95100565D23 /* bg_image.png */; };
-		0F0D3D341CE5B95200565D23 /* check_answer_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */; };
-		0F0D3D351CE5B95200565D23 /* conversation_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDB1CE5B95100565D23 /* conversation_button.png */; };
-		0F0D3D361CE5B95200565D23 /* do_again_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDC1CE5B95100565D23 /* do_again_button.png */; };
-		0F0D3D381CE5B95200565D23 /* excercises_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDE1CE5B95100565D23 /* excercises_button.png */; };
 		0F0D3D391CE5B95200565D23 /* icon_backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CDF1CE5B95100565D23 /* icon_backward.png */; };
 		0F0D3D3A1CE5B95200565D23 /* icon_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE01CE5B95100565D23 /* icon_forward.png */; };
 		0F0D3D3B1CE5B95200565D23 /* icon_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE11CE5B95100565D23 /* icon_pause.png */; };
 		0F0D3D3C1CE5B95200565D23 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE21CE5B95100565D23 /* icon_play.png */; };
-		0F0D3D3D1CE5B95200565D23 /* intermediate_level_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE31CE5B95100565D23 /* intermediate_level_button.png */; };
-		0F0D3D3E1CE5B95200565D23 /* irregular_verbs_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE41CE5B95100565D23 /* irregular_verbs_button.png */; };
 		0F0D3D3F1CE5B95200565D23 /* lesson_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE51CE5B95100565D23 /* lesson_1.png */; };
 		0F0D3D401CE5B95200565D23 /* lesson_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE61CE5B95100565D23 /* lesson_10.png */; };
 		0F0D3D411CE5B95200565D23 /* lesson_10_tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3CE71CE5B95100565D23 /* lesson_10_tap.png */; };
@@ -99,7 +90,6 @@
 		0F0D3D841CE5B95200565D23 /* advance.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2B1CE5B95200565D23 /* advance.xml */; };
 		0F0D3D851CE5B95200565D23 /* basic.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2C1CE5B95200565D23 /* basic.xml */; };
 		0F0D3D861CE5B95200565D23 /* intermediate.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2D1CE5B95200565D23 /* intermediate.xml */; };
-		0F0D3D871CE5B95200565D23 /* irregular_verbs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */; };
 		0F0D3D8B1CE6E96800565D23 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */; };
 		0F0D3D8D1CE7117D00565D23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */; };
 		0F0D3D8F1CE7127700565D23 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8E1CE7127700565D23 /* download.png */; };
@@ -124,21 +114,12 @@
 		0F0D3CCE1CE5B0BA00565D23 /* AnswerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerObject.swift; sourceTree = "<group>"; };
 		0F0D3CD01CE5B33000565D23 /* LessonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonObject.swift; sourceTree = "<group>"; };
 		0F0D3CD21CE5B6A700565D23 /* LevelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelParser.swift; sourceTree = "<group>"; };
-		0F0D3CD51CE5B95100565D23 /* advanced_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = advanced_level_button.png; sourceTree = "<group>"; };
 		0F0D3CD61CE5B95100565D23 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		0F0D3CD71CE5B95100565D23 /* basic_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_level_button.png; sourceTree = "<group>"; };
 		0F0D3CD81CE5B95100565D23 /* bg_dialog_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_dialog_item.png; sourceTree = "<group>"; };
-		0F0D3CD91CE5B95100565D23 /* bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_image.png; sourceTree = "<group>"; };
-		0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_answer_button.png; sourceTree = "<group>"; };
-		0F0D3CDB1CE5B95100565D23 /* conversation_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conversation_button.png; sourceTree = "<group>"; };
-		0F0D3CDC1CE5B95100565D23 /* do_again_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = do_again_button.png; sourceTree = "<group>"; };
-		0F0D3CDE1CE5B95100565D23 /* excercises_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excercises_button.png; sourceTree = "<group>"; };
 		0F0D3CDF1CE5B95100565D23 /* icon_backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_backward.png; sourceTree = "<group>"; };
 		0F0D3CE01CE5B95100565D23 /* icon_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_forward.png; sourceTree = "<group>"; };
 		0F0D3CE11CE5B95100565D23 /* icon_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pause.png; sourceTree = "<group>"; };
 		0F0D3CE21CE5B95100565D23 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
-		0F0D3CE31CE5B95100565D23 /* intermediate_level_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intermediate_level_button.png; sourceTree = "<group>"; };
-		0F0D3CE41CE5B95100565D23 /* irregular_verbs_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irregular_verbs_button.png; sourceTree = "<group>"; };
 		0F0D3CE51CE5B95100565D23 /* lesson_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_1.png; sourceTree = "<group>"; };
 		0F0D3CE61CE5B95100565D23 /* lesson_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_10.png; sourceTree = "<group>"; };
 		0F0D3CE71CE5B95100565D23 /* lesson_10_tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lesson_10_tap.png; sourceTree = "<group>"; };
@@ -211,7 +192,6 @@
 		0F0D3D2B1CE5B95200565D23 /* advance.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = advance.xml; sourceTree = "<group>"; };
 		0F0D3D2C1CE5B95200565D23 /* basic.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = basic.xml; sourceTree = "<group>"; };
 		0F0D3D2D1CE5B95200565D23 /* intermediate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intermediate.xml; sourceTree = "<group>"; };
-		0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = irregular_verbs.xml; sourceTree = "<group>"; };
 		0F0D3D8A1CE6E96800565D23 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F0D3D8C1CE7117D00565D23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0F0D3D8E1CE7127700565D23 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
@@ -262,21 +242,12 @@
 			isa = PBXGroup;
 			children = (
 				0F0D3D8E1CE7127700565D23 /* download.png */,
-				0F0D3CD51CE5B95100565D23 /* advanced_level_button.png */,
 				0F0D3CD61CE5B95100565D23 /* back.png */,
-				0F0D3CD71CE5B95100565D23 /* basic_level_button.png */,
 				0F0D3CD81CE5B95100565D23 /* bg_dialog_item.png */,
-				0F0D3CD91CE5B95100565D23 /* bg_image.png */,
-				0F0D3CDA1CE5B95100565D23 /* check_answer_button.png */,
-				0F0D3CDB1CE5B95100565D23 /* conversation_button.png */,
-				0F0D3CDC1CE5B95100565D23 /* do_again_button.png */,
-				0F0D3CDE1CE5B95100565D23 /* excercises_button.png */,
 				0F0D3CDF1CE5B95100565D23 /* icon_backward.png */,
 				0F0D3CE01CE5B95100565D23 /* icon_forward.png */,
 				0F0D3CE11CE5B95100565D23 /* icon_pause.png */,
 				0F0D3CE21CE5B95100565D23 /* icon_play.png */,
-				0F0D3CE31CE5B95100565D23 /* intermediate_level_button.png */,
-				0F0D3CE41CE5B95100565D23 /* irregular_verbs_button.png */,
 				0F0D3CE51CE5B95100565D23 /* lesson_1.png */,
 				0F0D3CE61CE5B95100565D23 /* lesson_10.png */,
 				0F0D3CE71CE5B95100565D23 /* lesson_10_tap.png */,
@@ -356,7 +327,6 @@
 				0F0D3D2B1CE5B95200565D23 /* advance.xml */,
 				0F0D3D2C1CE5B95200565D23 /* basic.xml */,
 				0F0D3D2D1CE5B95200565D23 /* intermediate.xml */,
-				0F0D3D2E1CE5B95200565D23 /* irregular_verbs.xml */,
 			);
 			path = XMLResources;
 			sourceTree = "<group>";
@@ -491,7 +461,6 @@
 				0F0D3D631CE5B95200565D23 /* lesson_26_tap.png in Resources */,
 				0F0D3D751CE5B95200565D23 /* lesson_34_tap.png in Resources */,
 				0F0D3D4B1CE5B95200565D23 /* lesson_15_tap.png in Resources */,
-				0F0D3D341CE5B95200565D23 /* check_answer_button.png in Resources */,
 				0F0D3D3C1CE5B95200565D23 /* icon_play.png in Resources */,
 				0F0D3D441CE5B95200565D23 /* lesson_12.png in Resources */,
 				0F0D3D451CE5B95200565D23 /* lesson_12_tap.png in Resources */,
@@ -506,16 +475,12 @@
 				0F0D3D581CE5B95200565D23 /* lesson_21.png in Resources */,
 				0F0D3D821CE5B95200565D23 /* lesson_9_tap.png in Resources */,
 				0F0D3D5A1CE5B95200565D23 /* lesson_22.png in Resources */,
-				0F0D3D361CE5B95200565D23 /* do_again_button.png in Resources */,
 				0F0D3D6A1CE5B95200565D23 /* lesson_2_tap.png in Resources */,
 				0F0D3D591CE5B95200565D23 /* lesson_21_tap.png in Resources */,
-				0F0D3D3D1CE5B95200565D23 /* intermediate_level_button.png in Resources */,
 				0F0D3D5B1CE5B95200565D23 /* lesson_22_tap.png in Resources */,
-				0F0D3D2F1CE5B95200565D23 /* advanced_level_button.png in Resources */,
 				0F0D3D421CE5B95200565D23 /* lesson_11.png in Resources */,
 				0F0D3D4E1CE5B95200565D23 /* lesson_17.png in Resources */,
 				0F0D3D471CE5B95200565D23 /* lesson_13_tap.png in Resources */,
-				0F0D3D3E1CE5B95200565D23 /* irregular_verbs_button.png in Resources */,
 				0F0D3D611CE5B95200565D23 /* lesson_25_tap.png in Resources */,
 				0F0D3D6F1CE5B95200565D23 /* lesson_31_tap.png in Resources */,
 				0F0D3D501CE5B95200565D23 /* lesson_18.png in Resources */,
@@ -534,11 +499,9 @@
 				0F0D3D681CE5B95200565D23 /* lesson_29.png in Resources */,
 				0F0D3D661CE5B95200565D23 /* lesson_28.png in Resources */,
 				0F0D3D7B1CE5B95200565D23 /* lesson_6.png in Resources */,
-				0F0D3D331CE5B95200565D23 /* bg_image.png in Resources */,
 				0F0D3D3B1CE5B95200565D23 /* icon_pause.png in Resources */,
 				0F0D3D4F1CE5B95200565D23 /* lesson_17_tap.png in Resources */,
 				0F0D3D4D1CE5B95200565D23 /* lesson_16_tap.png in Resources */,
-				0F0D3D351CE5B95200565D23 /* conversation_button.png in Resources */,
 				0F0D3D6B1CE5B95200565D23 /* lesson_3.png in Resources */,
 				0F0D3D801CE5B95200565D23 /* lesson_8_tap.png in Resources */,
 				0F0D3D731CE5B95200565D23 /* lesson_33_tap.png in Resources */,
@@ -574,10 +537,7 @@
 				0F0D3D511CE5B95200565D23 /* lesson_18_tap.png in Resources */,
 				0F0D3D431CE5B95200565D23 /* lesson_11_tap.png in Resources */,
 				0F0D3D5F1CE5B95200565D23 /* lesson_24_tap.png in Resources */,
-				0F0D3D871CE5B95200565D23 /* irregular_verbs.xml in Resources */,
-				0F0D3D311CE5B95200565D23 /* basic_level_button.png in Resources */,
 				0F0D3D741CE5B95200565D23 /* lesson_34.png in Resources */,
-				0F0D3D381CE5B95200565D23 /* excercises_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

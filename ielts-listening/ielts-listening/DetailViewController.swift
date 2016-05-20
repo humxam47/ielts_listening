@@ -43,6 +43,10 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.backAction()
     }
     
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        self.exerciseView.initExersise(self.lessonObject.questionArray, widthFrame: size.width)
+    }
+    
     func initUI() {
         self.refreshUI()
     }
@@ -58,7 +62,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     func initExercise() {
-        self.exerciseView.initExersise(self.lessonObject.questionArray!)
+        self.exerciseView.initExersise(self.lessonObject.questionArray!, widthFrame: 0)
     }
     
     func initController() {
@@ -165,7 +169,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         self.lessonObject = self.levelObject.lessonArray[lessonIndex] as! LessonObject
         self.refreshUI()
         self.conversationView.refreshConversation(self.lessonObject.conversationArray)
-        self.exerciseView.initExersise(self.lessonObject.questionArray)
+        self.exerciseView.initExersise(self.lessonObject.questionArray, widthFrame: 0)
         self.storeLastAccessLesson()
     }
     

@@ -19,11 +19,11 @@ class ExerciseView: UIView {
     var buttonArray:NSMutableArray!
     var appColor = UIColor(red: 30/255, green: 159/255, blue: 243/255, alpha: 1)
     
-    func initExersise(questionArray:NSMutableArray) {
+    func initExersise(questionArray:NSMutableArray, widthFrame:CGFloat) {
         self.keyArray = NSMutableArray()
         self.correctKeyArray = NSMutableArray()
         self.buttonArray = NSMutableArray()
-        self.refreshExercise(questionArray)
+        self.refreshExercise(questionArray, widthFrame: widthFrame)
     }
     
     func prepareForPhone() {
@@ -36,7 +36,7 @@ class ExerciseView: UIView {
         self.answerFont = UIFont(name: "HelveticaNeue-Light", size: 20)
     }
     
-    func refreshExercise(questionArray:NSMutableArray) {
+    func refreshExercise(questionArray:NSMutableArray, widthFrame:CGFloat) {
         self.questionArray = questionArray
         if let keyArray = self.keyArray {
             keyArray.removeAllObjects()
@@ -63,11 +63,15 @@ class ExerciseView: UIView {
             break
         }
         
-        self.createExercise()
+        self.createExercise(widthFrame)
     }
     
-    func createExercise() {
+    func createExercise(widthFrame:CGFloat) {
         let screenSize: CGRect = UIScreen.mainScreen().bounds
+        var widthBox = screenSize.width
+        if (widthFrame != 0) {
+            widthBox = widthFrame
+        }
         let xCoordinate:CGFloat = 20.0
         var yCoordinate:CGFloat = 10.0
         let width:CGFloat = 280.0
@@ -76,7 +80,7 @@ class ExerciseView: UIView {
         var tagValue:Int = 0
         for i in 0...(self.questionArray!.count - 1) {
             let question:QuestionObject = self.questionArray![i] as! QuestionObject
-            let questionBox:UIView = UIView(frame: CGRectMake(xCoordinate, yCoordinate, screenSize.width - (xCoordinate * 2), width))
+            let questionBox:UIView = UIView(frame: CGRectMake(xCoordinate, yCoordinate, widthBox - (xCoordinate * 2), width))
             questionBox.backgroundColor = UIColor.clearColor()
             questionBox.layer.cornerRadius = 10.0
             questionBox.layer.shadowOffset = CGSizeMake(1, 0)
@@ -149,7 +153,7 @@ class ExerciseView: UIView {
             self.scrollView?.addSubview(questionBox)
             yCoordinate += yAnswer + 20
         }
-        self.checkLabel = UILabel(frame: CGRectMake(screenSize.width/2 - 100, yCoordinate, 200, 40))
+        self.checkLabel = UILabel(frame: CGRectMake(widthBox/2 - 100, yCoordinate, 200, 40))
         self.checkLabel.backgroundColor = UIColor.clearColor()
         self.checkLabel.textColor = self.appColor
         self.checkLabel.font = self.questionFont
@@ -283,7 +287,7 @@ class ExerciseView: UIView {
             self.checkLabel.layer.borderColor = self.appColor.CGColor
             self.checkLabel.text = "Check Answers"
             self.checkLabel.textColor = self.appColor
-            self.refreshExercise(self.questionArray)
+            self.refreshExercise(self.questionArray, widthFrame: 0)
         }
     }
 }
