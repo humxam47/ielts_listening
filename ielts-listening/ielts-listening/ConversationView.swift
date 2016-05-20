@@ -96,6 +96,7 @@ class ConversationView: UIView, UITableViewDelegate, UITableViewDataSource {
         tableViewCell.textLabel?.font = self.cellFont
         tableViewCell.textLabel?.lineBreakMode = NSLineBreakMode.ByTruncatingTail
         tableViewCell.textLabel?.numberOfLines = 0
+        tableViewCell.backgroundColor = UIColor.clearColor()
         return tableViewCell
 
     }
