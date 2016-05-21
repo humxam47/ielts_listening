@@ -23,6 +23,9 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var exerciseView:ExerciseView!
     @IBOutlet weak var controllerView:ControllerView!
     
+    var alertView:UIAlertView!
+    var hudLoading:MBProgressHUD!
+    
     var levelObject:LevelObject!
     var lessonObject:LessonObject!
     var lessonIndex:Int!
@@ -137,9 +140,13 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     
     func showProgressHUD(text:String) {
         dispatch_async(dispatch_get_main_queue()) {
-            let showHUD = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-            showHUD.mode = MBProgressHUDMode.Indeterminate
-            showHUD.labelText = text
+            if let hudLoading = self.hudLoading {
+                hudLoading.labelText = text
+                return
+            }
+            self.hudLoading = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            self.hudLoading.mode = MBProgressHUDMode.Indeterminate
+            self.hudLoading.labelText = text
         }
     }
     
@@ -175,8 +182,15 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     
     func showNotification(message: String, cancelString: String, actionString: String) {
         dispatch_async(dispatch_get_main_queue()) {
-            let alertView = UIAlertView.init(title:"", message: message, delegate: self, cancelButtonTitle: actionString, otherButtonTitles: cancelString)
-            alertView.show()
+            if let alertView = self.alertView {
+                alertView.message = message
+                alertView.addButtonWithTitle(cancelString)
+                alertView.addButtonWithTitle(actionString)
+                alertView.show()
+                return
+            }
+            self.alertView = UIAlertView.init(title:"", message: message, delegate: self, cancelButtonTitle: actionString, otherButtonTitles: cancelString)
+            self.alertView.show()
         }
     }
     
