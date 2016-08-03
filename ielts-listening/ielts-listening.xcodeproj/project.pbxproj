@@ -95,6 +95,7 @@
 		0F0D3D8F1CE7127700565D23 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D3D8E1CE7127700565D23 /* download.png */; };
 		0F0D3D931CE72CFF00565D23 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D921CE72CFF00565D23 /* ConversationView.swift */; };
 		0F0D3D951CE7409200565D23 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D3D941CE7409200565D23 /* ExerciseView.swift */; };
+		0F4F06F91D44C10C001B5513 /* RatingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F06F81D44C10C001B5513 /* RatingHandler.swift */; };
 		0F562D3A1CE0B1D4001F0477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D391CE0B1D4001F0477 /* AppDelegate.swift */; };
 		0F562D3C1CE0B1D4001F0477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F562D3B1CE0B1D4001F0477 /* ViewController.swift */; };
 		0F562D3F1CE0B1D4001F0477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D3D1CE0B1D4001F0477 /* Main.storyboard */; };
@@ -105,6 +106,7 @@
 		0FA8B3A01CEC3FDC002595BF /* Main_Pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA8B39E1CEC3FDC002595BF /* Main_Pad.storyboard */; };
 		0FC007FD1CE8442200F61B0C /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FC1CE8442200F61B0C /* ControllerView.swift */; };
 		0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */; };
+		0FCA00FA1D47ACF1004B7482 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00F91D47ACF1004B7482 /* Constants.swift */; };
 		73FF24F6F29B05C7EE9E9CD6 /* Pods_ielts_listening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B5B10335833B31B99B76FB /* Pods_ielts_listening.framework */; };
 /* End PBXBuildFile section */
 
@@ -197,6 +199,7 @@
 		0F0D3D8E1CE7127700565D23 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		0F0D3D921CE72CFF00565D23 /* ConversationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		0F0D3D941CE7409200565D23 /* ExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		0F4F06F81D44C10C001B5513 /* RatingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingHandler.swift; sourceTree = "<group>"; };
 		0F562D361CE0B1D3001F0477 /* ielts-listening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ielts-listening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F562D391CE0B1D4001F0477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F562D3B1CE0B1D4001F0477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		0FA8B39F1CEC3FDC002595BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Pad.storyboard; sourceTree = "<group>"; };
 		0FC007FC1CE8442200F61B0C /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
+		0FCA00F91D47ACF1004B7482 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44D630359FCB5C9BAAD75F19 /* Pods-ielts-listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.release.xcconfig"; sourceTree = "<group>"; };
 		68B5B10335833B31B99B76FB /* Pods_ielts_listening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ielts_listening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54993777342FB884ECF5908 /* Pods-ielts-listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ielts-listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ielts-listening/Pods-ielts-listening.debug.xcconfig"; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 				0FC007FC1CE8442200F61B0C /* ControllerView.swift */,
 				0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */,
 				0F7747ED1CEA050B0003D71D /* DataManager.swift */,
+				0F4F06F81D44C10C001B5513 /* RatingHandler.swift */,
+				0FCA00F91D47ACF1004B7482 /* Constants.swift */,
 			);
 			path = "ielts-listening";
 			sourceTree = "<group>";
@@ -597,6 +603,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */,
+				0FCA00FA1D47ACF1004B7482 /* Constants.swift in Sources */,
+				0F4F06F91D44C10C001B5513 /* RatingHandler.swift in Sources */,
 				0F7747EE1CEA050B0003D71D /* DataManager.swift in Sources */,
 				0F0D3D951CE7409200565D23 /* ExerciseView.swift in Sources */,
 				0F0D3CD11CE5B33000565D23 /* LessonObject.swift in Sources */,

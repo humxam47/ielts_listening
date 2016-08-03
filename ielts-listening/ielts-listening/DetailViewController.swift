@@ -110,7 +110,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
             self.downloadButton.enabled = false
             self.downloadIndicator.startAnimating()
         }
-        let fullPath:String! = "https://raw.githubusercontent.com/ryanle-gamo/english-listening-data/master/\(self.lessonObject.lessonPath)"
+        let fullPath:String! = "https://raw.githubusercontent.com/humxam47/ielts_listening_data/master/\(self.lessonObject.lessonPath)"
         let soundURL:NSURL! = NSURL.init(string: fullPath)
         let documentsDirectoryURL =  NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
         let destinationUrl = documentsDirectoryURL.URLByAppendingPathComponent(soundURL.lastPathComponent!)
