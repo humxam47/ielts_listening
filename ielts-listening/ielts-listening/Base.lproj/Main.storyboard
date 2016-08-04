@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V5U-xp-gqR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V5U-xp-gqR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -436,13 +436,50 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI9-Pg-HF9" userLabel="admob_ads_view" customClass="GADBannerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dDw-YW-Hz6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="rootViewController" destination="E5P-JI-6BP" id="Yaw-EI-Ere"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OQ-mO-6EG" userLabel="bg_close_ads_view">
+                                        <rect key="frame" x="145" y="10" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="09n-Sm-PgG"/>
+                                            <constraint firstAttribute="width" constant="30" id="HRF-zM-e6F"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhe-tv-W5A" userLabel="close_ads_view">
+                                        <rect key="frame" x="135" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="KnI-bO-TMV"/>
+                                            <constraint firstAttribute="height" constant="50" id="NQk-1y-i0G"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="icon_close_ads.png"/>
+                                        <connections>
+                                            <action selector="buyFullVersion" destination="E5P-JI-6BP" eventType="touchUpInside" id="Esf-9L-aqA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qI9-Pg-HF9" secondAttribute="bottom" id="4Ce-eq-pFs"/>
+                                    <constraint firstItem="qI9-Pg-HF9" firstAttribute="leading" secondItem="IWO-m5-hey" secondAttribute="leading" id="Aca-lp-I2h"/>
+                                    <constraint firstItem="7OQ-mO-6EG" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="CH6-bi-Xox"/>
+                                    <constraint firstItem="7OQ-mO-6EG" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="JDW-zV-8Ld"/>
+                                    <constraint firstItem="mhe-tv-W5A" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="aIe-7l-1Mb"/>
                                     <constraint firstAttribute="height" constant="50" id="hIL-He-pvt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qI9-Pg-HF9" secondAttribute="trailing" id="jk6-im-WiF"/>
+                                    <constraint firstItem="qI9-Pg-HF9" firstAttribute="top" secondItem="IWO-m5-hey" secondAttribute="top" id="oGi-xW-O7M"/>
+                                    <constraint firstItem="mhe-tv-W5A" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="xCU-yM-bxC"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="rootViewController" destination="E5P-JI-6BP" id="Lyf-Ej-RTx"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-cn-PYA" userLabel="content_view">
                                 <rect key="frame" x="0.0" y="80" width="320" height="343"/>
@@ -536,7 +573,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bannerView" destination="IWO-m5-hey" id="Fmc-WU-AKM"/>
+                        <outlet property="bannerView" destination="qI9-Pg-HF9" id="dlg-9h-gb0"/>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>
@@ -574,6 +611,7 @@
         <image name="bg_dialog_item.png" width="1200" height="230"/>
         <image name="download.png" width="256" height="256"/>
         <image name="icon_backward.png" width="128" height="128"/>
+        <image name="icon_close_ads.png" width="128" height="128"/>
         <image name="icon_forward.png" width="128" height="128"/>
         <image name="icon_pause.png" width="128" height="128"/>
         <image name="main_bg_image.png" width="1440" height="2560"/>

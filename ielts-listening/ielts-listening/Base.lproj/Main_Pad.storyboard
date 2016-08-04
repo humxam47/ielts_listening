@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V5U-xp-gqR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V5U-xp-gqR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -383,9 +383,46 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="934" width="768" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sND-ec-Xxq" userLabel="ads_view">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="90"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="5fW-if-c8B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-Rn-hJq" userLabel="bg_ads_view">
+                                        <rect key="frame" x="364" y="25" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="OHL-gh-2xi"/>
+                                            <constraint firstAttribute="height" constant="40" id="TBU-7N-hY1"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAA-cW-mSi" userLabel="ads_close">
+                                        <rect key="frame" x="344" y="5" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="6NO-xx-Z9V"/>
+                                            <constraint firstAttribute="height" constant="80" id="XtD-bh-7hN"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="icon_close_ads.png"/>
+                                        <connections>
+                                            <action selector="buyFullVersion" destination="E5P-JI-6BP" eventType="touchUpInside" id="Ufb-wf-jC1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sND-ec-Xxq" secondAttribute="trailing" id="3Vx-s3-ZjK"/>
+                                    <constraint firstItem="cDy-Rn-hJq" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="98s-7W-P5W"/>
                                     <constraint firstAttribute="height" constant="90" id="BOr-c4-ay1"/>
+                                    <constraint firstItem="zAA-cW-mSi" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="Cbs-Ph-QfK"/>
+                                    <constraint firstAttribute="bottom" secondItem="sND-ec-Xxq" secondAttribute="bottom" id="Fbq-V3-Xt6"/>
+                                    <constraint firstItem="cDy-Rn-hJq" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="FhI-vr-bCm"/>
+                                    <constraint firstItem="sND-ec-Xxq" firstAttribute="top" secondItem="IWO-m5-hey" secondAttribute="top" id="WSE-rt-iqH"/>
+                                    <constraint firstItem="sND-ec-Xxq" firstAttribute="leading" secondItem="IWO-m5-hey" secondAttribute="leading" id="nAU-EW-mKA"/>
+                                    <constraint firstItem="zAA-cW-mSi" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="yGy-EU-Ukx"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="rootViewController" destination="E5P-JI-6BP" id="jM9-30-ZYH"/>
@@ -585,6 +622,7 @@
         <image name="bg_dialog_item.png" width="1200" height="230"/>
         <image name="download.png" width="256" height="256"/>
         <image name="icon_backward.png" width="128" height="128"/>
+        <image name="icon_close_ads.png" width="128" height="128"/>
         <image name="icon_forward.png" width="128" height="128"/>
         <image name="icon_pause.png" width="128" height="128"/>
         <image name="main_bg_image.png" width="1440" height="2560"/>

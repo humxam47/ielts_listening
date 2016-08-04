@@ -103,6 +103,7 @@
 		0F562D441CE0B1D4001F0477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F562D421CE0B1D4001F0477 /* LaunchScreen.storyboard */; };
 		0F6ADB591CE1B594001134A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */; };
 		0F7747EE1CEA050B0003D71D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7747ED1CEA050B0003D71D /* DataManager.swift */; };
+		0F7783C71D522461002744B0 /* icon_close_ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7783C61D522461002744B0 /* icon_close_ads.png */; };
 		0FA8B3A01CEC3FDC002595BF /* Main_Pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA8B39E1CEC3FDC002595BF /* Main_Pad.storyboard */; };
 		0FC007FD1CE8442200F61B0C /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FC1CE8442200F61B0C /* ControllerView.swift */; };
 		0FC007FF1CE844DC00F61B0C /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */; };
@@ -210,6 +211,7 @@
 		0F562D4B1CE0B6CF001F0477 /* IELTSListening-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IELTSListening-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F6ADB581CE1B594001134A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0F7747ED1CEA050B0003D71D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0F7783C61D522461002744B0 /* icon_close_ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_close_ads.png; sourceTree = "<group>"; };
 		0FA8B39F1CEC3FDC002595BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Pad.storyboard; sourceTree = "<group>"; };
 		0FC007FC1CE8442200F61B0C /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		0FC007FE1CE844DC00F61B0C /* ControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 		0F0D3CD41CE5B95100565D23 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0F7783C61D522461002744B0 /* icon_close_ads.png */,
 				0F0D3D8E1CE7127700565D23 /* download.png */,
 				0F0D3CD61CE5B95100565D23 /* back.png */,
 				0F0D3CD81CE5B95100565D23 /* bg_dialog_item.png */,
@@ -479,6 +482,7 @@
 				0F0D3D861CE5B95200565D23 /* intermediate.xml in Resources */,
 				0F0D3D5E1CE5B95200565D23 /* lesson_24.png in Resources */,
 				0F0D3D581CE5B95200565D23 /* lesson_21.png in Resources */,
+				0F7783C71D522461002744B0 /* icon_close_ads.png in Resources */,
 				0F0D3D821CE5B95200565D23 /* lesson_9_tap.png in Resources */,
 				0F0D3D5A1CE5B95200565D23 /* lesson_22.png in Resources */,
 				0F0D3D6A1CE5B95200565D23 /* lesson_2_tap.png in Resources */,
