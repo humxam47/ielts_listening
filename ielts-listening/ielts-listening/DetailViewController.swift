@@ -110,7 +110,6 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         let alertView:UIAlertController = UIAlertController.init(title: "Upgrade", message: "Buy Full Version to Remove ads and Have INTERMEDIATE LEVEL + ADVANCED LEVEL", preferredStyle: UIAlertControllerStyle.Alert)
         
         let cancelAlertAction = UIAlertAction.init(title: "Later", style: UIAlertActionStyle.Default, handler: { (alert:UIAlertAction) in
-            RatingHandler.sharedInstance.setOpenningCount(1)
         })
         let doAlertAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (alert:UIAlertAction) in
             UIApplication.sharedApplication().openURL(NSURL.init(string: Constants.URL_APPSTORE_FULL)!)
