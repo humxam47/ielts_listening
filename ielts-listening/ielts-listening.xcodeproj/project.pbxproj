@@ -437,7 +437,7 @@
 				TargetAttributes = {
 					0F562D351CE0B1D3001F0477 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UG999DM857;
+						DevelopmentTeam = 7G9W94HQ8M;
 					};
 				};
 			};
@@ -750,7 +750,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ielts-listening/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening-full";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ielts-listening/IELTSListening-Bridging-Header.h";
 			};
@@ -765,7 +765,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ielts-listening/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bile.ielts-listening-full";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ielts-listening/IELTSListening-Bridging-Header.h";
 			};

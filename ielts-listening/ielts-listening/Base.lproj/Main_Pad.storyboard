@@ -513,49 +513,15 @@
                                     <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="ahD-b3-DRR"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="934" width="768" height="90"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sND-ec-Xxq" userLabel="ads_view" customClass="GADBannerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="90"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="rootViewController" destination="E5P-JI-6BP" id="IWc-nb-LEZ"/>
-                                        </connections>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-Rn-hJq" userLabel="bg_ads_view">
-                                        <rect key="frame" x="364" y="25" width="40" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="OHL-gh-2xi"/>
-                                            <constraint firstAttribute="height" constant="40" id="TBU-7N-hY1"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAA-cW-mSi" userLabel="ads_close">
-                                        <rect key="frame" x="344" y="5" width="80" height="80"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="6NO-xx-Z9V"/>
-                                            <constraint firstAttribute="height" constant="80" id="XtD-bh-7hN"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="icon_close_ads.png"/>
-                                        <connections>
-                                            <action selector="buyFullVersion" destination="E5P-JI-6BP" eventType="touchUpInside" id="Ufb-wf-jC1"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="sND-ec-Xxq" secondAttribute="trailing" id="3Vx-s3-ZjK"/>
-                                    <constraint firstItem="cDy-Rn-hJq" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="98s-7W-P5W"/>
                                     <constraint firstAttribute="height" constant="90" id="BOr-c4-ay1"/>
-                                    <constraint firstItem="zAA-cW-mSi" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="Cbs-Ph-QfK"/>
-                                    <constraint firstAttribute="bottom" secondItem="sND-ec-Xxq" secondAttribute="bottom" id="Fbq-V3-Xt6"/>
-                                    <constraint firstItem="cDy-Rn-hJq" firstAttribute="centerX" secondItem="IWO-m5-hey" secondAttribute="centerX" id="FhI-vr-bCm"/>
-                                    <constraint firstItem="sND-ec-Xxq" firstAttribute="top" secondItem="IWO-m5-hey" secondAttribute="top" id="WSE-rt-iqH"/>
-                                    <constraint firstItem="sND-ec-Xxq" firstAttribute="leading" secondItem="IWO-m5-hey" secondAttribute="leading" id="nAU-EW-mKA"/>
-                                    <constraint firstItem="zAA-cW-mSi" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="yGy-EU-Ukx"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="rootViewController" destination="E5P-JI-6BP" id="cUe-Zz-QI6"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -582,7 +548,7 @@
                     </view>
                     <connections>
                         <outlet property="admobHeightConstraint" destination="BOr-c4-ay1" id="CJ0-fT-xA2"/>
-                        <outlet property="bannerView" destination="sND-ec-Xxq" id="Zzv-Ta-gsD"/>
+                        <outlet property="bannerView" destination="IWO-m5-hey" id="Gw1-7r-HUa"/>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>
                         <outlet property="downloadButton" destination="V8t-Iz-qNY" id="32l-BI-jaf"/>
@@ -620,7 +586,6 @@
         <image name="bg_dialog_item.png" width="1200" height="230"/>
         <image name="download.png" width="256" height="256"/>
         <image name="icon_backward.png" width="128" height="128"/>
-        <image name="icon_close_ads.png" width="128" height="128"/>
         <image name="icon_forward.png" width="128" height="128"/>
         <image name="icon_pause.png" width="128" height="128"/>
         <image name="main_bg_image.png" width="1440" height="2560"/>

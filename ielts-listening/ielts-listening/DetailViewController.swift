@@ -107,22 +107,6 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
         NSThread(target: self, selector: #selector(self.downloadAudioFile), object: nil).start()
     }
     
-    @IBAction func buyFullVersion() {
-        
-        let alertView:UIAlertController = UIAlertController.init(title: "Upgrade", message: "Buy Full Version to Remove ads and Have INTERMEDIATE LEVEL + ADVANCED LEVEL", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        let cancelAlertAction = UIAlertAction.init(title: "Later", style: UIAlertActionStyle.Default, handler: { (alert:UIAlertAction) in
-        })
-        let doAlertAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (alert:UIAlertAction) in
-            UIApplication.sharedApplication().openURL(NSURL.init(string: Constants.URL_APPSTORE_FULL)!)
-        })
-        
-        alertView.addAction(cancelAlertAction)
-        alertView.addAction(doAlertAction)
-        presentViewController(alertView, animated: true, completion: nil)
-        
-    }
-    
     func downloadAudioFile() {
         dispatch_async(dispatch_get_main_queue()) {
             self.downloadButton.enabled = false
