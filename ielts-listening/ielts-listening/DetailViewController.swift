@@ -79,21 +79,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     func initAdmob() {
-//        self.admobHeightConstraint.constant = 0.0;
-        let admobBanner = "ca-app-pub-4322965078780162/4717761535"
-        self.bannerView.adUnitID = admobBanner
-        switch UIDevice.currentDevice().userInterfaceIdiom {
-        case .Phone:
-            self.bannerView.adSize = kGADAdSizeBanner
-            break
-        case .Pad:
-            self.bannerView.adSize = kGADAdSizeLeaderboard
-            break
-        default:
-            self.bannerView.adSize = kGADAdSizeBanner
-            break
-        }
-        self.bannerView.loadRequest(GADRequest())
+        self.admobHeightConstraint.constant = 0.0;
     }
     
     @IBAction func backAction() {
