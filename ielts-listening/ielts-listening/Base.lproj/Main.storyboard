@@ -306,6 +306,75 @@
                                     <constraint firstItem="aj4-TX-MFl" firstAttribute="leading" secondItem="YIF-Ud-x8j" secondAttribute="trailing" id="tQi-qK-Kka"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-cn-PYA" userLabel="content_view">
+                                <rect key="frame" x="0.0" y="80" width="320" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpy-Ai-eFs" userLabel="conversation_view" customClass="ConversationView" customModule="ielts_listening" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m0f-mY-fLH">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL_CONVERSATION" id="mna-1k-d8a">
+                                                        <rect key="frame" x="0.0" y="28" width="320" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mna-1k-d8a" id="vQx-Gs-JNa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="bpy-Ai-eFs" id="Gkl-sv-Q8W"/>
+                                                    <outlet property="delegate" destination="bpy-Ai-eFs" id="2f0-qf-zWb"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="m0f-mY-fLH" firstAttribute="leading" secondItem="bpy-Ai-eFs" secondAttribute="leading" id="1A5-v8-4ZP"/>
+                                            <constraint firstItem="m0f-mY-fLH" firstAttribute="top" secondItem="bpy-Ai-eFs" secondAttribute="top" id="Z1b-h4-Ebj"/>
+                                            <constraint firstAttribute="bottom" secondItem="m0f-mY-fLH" secondAttribute="bottom" id="eUJ-ZG-d6P"/>
+                                            <constraint firstAttribute="trailing" secondItem="m0f-mY-fLH" secondAttribute="trailing" id="psd-iQ-sHx"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="conversationTableView" destination="m0f-mY-fLH" id="rTh-D1-qV5"/>
+                                        </connections>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-J1-7Vg" userLabel="exercise_view" customClass="ExerciseView" customModule="ielts_listening" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-DF-PSK">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="R1q-DF-PSK" secondAttribute="trailing" id="Fhc-Ch-ntR"/>
+                                            <constraint firstAttribute="bottom" secondItem="R1q-DF-PSK" secondAttribute="bottom" id="Gv8-qb-ODO"/>
+                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="top" secondItem="2Dj-J1-7Vg" secondAttribute="top" id="Xef-A5-MMV"/>
+                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="leading" secondItem="2Dj-J1-7Vg" secondAttribute="leading" id="afs-yJ-3mi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="scrollView" destination="R1q-DF-PSK" id="j07-Zs-z2J"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bpy-Ai-eFs" firstAttribute="leading" secondItem="WnA-cn-PYA" secondAttribute="leading" id="4Ws-7h-fvX"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Dj-J1-7Vg" secondAttribute="bottom" id="A9S-gO-EzM"/>
+                                    <constraint firstAttribute="trailing" secondItem="bpy-Ai-eFs" secondAttribute="trailing" id="EQk-Tz-gw9"/>
+                                    <constraint firstItem="2Dj-J1-7Vg" firstAttribute="top" secondItem="WnA-cn-PYA" secondAttribute="top" id="Iof-Sb-8gb"/>
+                                    <constraint firstItem="bpy-Ai-eFs" firstAttribute="top" secondItem="WnA-cn-PYA" secondAttribute="top" id="RMA-gc-2Ig"/>
+                                    <constraint firstItem="2Dj-J1-7Vg" firstAttribute="leading" secondItem="WnA-cn-PYA" secondAttribute="leading" id="S3Y-r5-0sN"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Dj-J1-7Vg" secondAttribute="trailing" id="qAX-Tx-4XT"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpy-Ai-eFs" secondAttribute="bottom" id="vO0-ae-96l"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-7E-bMJ" userLabel="controll_view" customClass="ControllerView" customModule="ielts_listening" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="423" width="320" height="95"/>
                                 <subviews>
@@ -434,15 +503,12 @@
                                     <outlet property="timeLabel" destination="7Gb-RK-BjQ" id="ahD-b3-DRR"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view" customClass="GADBannerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWO-m5-hey" userLabel="admob_view">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI9-Pg-HF9" userLabel="admob_ads_view" customClass="GADBannerView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="dDw-YW-Hz6"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="rootViewController" destination="E5P-JI-6BP" id="Yaw-EI-Ere"/>
                                         </connections>
@@ -481,75 +547,6 @@
                                     <constraint firstItem="mhe-tv-W5A" firstAttribute="centerY" secondItem="IWO-m5-hey" secondAttribute="centerY" id="xCU-yM-bxC"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-cn-PYA" userLabel="content_view">
-                                <rect key="frame" x="0.0" y="80" width="320" height="343"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpy-Ai-eFs" userLabel="conversation_view" customClass="ConversationView" customModule="ielts_listening" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
-                                        <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m0f-mY-fLH">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL_CONVERSATION" id="mna-1k-d8a">
-                                                        <rect key="frame" x="0.0" y="28" width="320" height="35"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mna-1k-d8a" id="vQx-Gs-JNa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </tableViewCellContentView>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </tableViewCell>
-                                                </prototypes>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="bpy-Ai-eFs" id="Gkl-sv-Q8W"/>
-                                                    <outlet property="delegate" destination="bpy-Ai-eFs" id="2f0-qf-zWb"/>
-                                                </connections>
-                                            </tableView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="m0f-mY-fLH" firstAttribute="leading" secondItem="bpy-Ai-eFs" secondAttribute="leading" id="1A5-v8-4ZP"/>
-                                            <constraint firstItem="m0f-mY-fLH" firstAttribute="top" secondItem="bpy-Ai-eFs" secondAttribute="top" id="Z1b-h4-Ebj"/>
-                                            <constraint firstAttribute="bottom" secondItem="m0f-mY-fLH" secondAttribute="bottom" id="eUJ-ZG-d6P"/>
-                                            <constraint firstAttribute="trailing" secondItem="m0f-mY-fLH" secondAttribute="trailing" id="psd-iQ-sHx"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="conversationTableView" destination="m0f-mY-fLH" id="rTh-D1-qV5"/>
-                                        </connections>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-J1-7Vg" userLabel="exercise_view" customClass="ExerciseView" customModule="ielts_listening" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
-                                        <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-DF-PSK">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
-                                            </scrollView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="R1q-DF-PSK" secondAttribute="trailing" id="Fhc-Ch-ntR"/>
-                                            <constraint firstAttribute="bottom" secondItem="R1q-DF-PSK" secondAttribute="bottom" id="Gv8-qb-ODO"/>
-                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="top" secondItem="2Dj-J1-7Vg" secondAttribute="top" id="Xef-A5-MMV"/>
-                                            <constraint firstItem="R1q-DF-PSK" firstAttribute="leading" secondItem="2Dj-J1-7Vg" secondAttribute="leading" id="afs-yJ-3mi"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="scrollView" destination="R1q-DF-PSK" id="j07-Zs-z2J"/>
-                                        </connections>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="bpy-Ai-eFs" firstAttribute="leading" secondItem="WnA-cn-PYA" secondAttribute="leading" id="4Ws-7h-fvX"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Dj-J1-7Vg" secondAttribute="bottom" id="A9S-gO-EzM"/>
-                                    <constraint firstAttribute="trailing" secondItem="bpy-Ai-eFs" secondAttribute="trailing" id="EQk-Tz-gw9"/>
-                                    <constraint firstItem="2Dj-J1-7Vg" firstAttribute="top" secondItem="WnA-cn-PYA" secondAttribute="top" id="Iof-Sb-8gb"/>
-                                    <constraint firstItem="bpy-Ai-eFs" firstAttribute="top" secondItem="WnA-cn-PYA" secondAttribute="top" id="RMA-gc-2Ig"/>
-                                    <constraint firstItem="2Dj-J1-7Vg" firstAttribute="leading" secondItem="WnA-cn-PYA" secondAttribute="leading" id="S3Y-r5-0sN"/>
-                                    <constraint firstAttribute="trailing" secondItem="2Dj-J1-7Vg" secondAttribute="trailing" id="qAX-Tx-4XT"/>
-                                    <constraint firstAttribute="bottom" secondItem="bpy-Ai-eFs" secondAttribute="bottom" id="vO0-ae-96l"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -573,6 +570,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="admobHeightConstraint" destination="hIL-He-pvt" id="Yli-Pf-unM"/>
                         <outlet property="bannerView" destination="qI9-Pg-HF9" id="dlg-9h-gb0"/>
                         <outlet property="controllerView" destination="oz6-7E-bMJ" id="h1I-cE-Qe3"/>
                         <outlet property="conversationView" destination="bpy-Ai-eFs" id="DNJ-nk-IUu"/>

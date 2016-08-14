@@ -17,6 +17,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var playButton:UIButton!
     @IBOutlet weak var downloadButton:UIButton!
     @IBOutlet weak var downloadIndicator:UIActivityIndicatorView!
+    @IBOutlet weak var admobHeightConstraint:NSLayoutConstraint!
     @IBOutlet weak var bannerView:GADBannerView!
     
     @IBOutlet weak var conversationView:ConversationView!
@@ -78,6 +79,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     }
     
     func initAdmob() {
+//        self.admobHeightConstraint.constant = 0.0;
         let admobBanner = "ca-app-pub-4322965078780162/4717761535"
         self.bannerView.adUnitID = admobBanner
         switch UIDevice.currentDevice().userInterfaceIdiom {

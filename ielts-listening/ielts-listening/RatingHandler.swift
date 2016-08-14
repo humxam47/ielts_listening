@@ -24,7 +24,6 @@ class RatingHandler {
     private func isUserRated() -> Bool {
         
         if let rateValue:Int = Constants.userDefault.integerForKey("USERDEFAULT_IS_RATED") {
-            print("isUserRated: \(rateValue)")
             if rateValue == 1 {
                 return true
             }
@@ -61,7 +60,6 @@ class RatingHandler {
         }
         
         let openCount = getOpenningCount()
-        print("isRatePopupShown openCount \(openCount)")
         if openCount == Constants.RATE_MAX_OPEN {
             return true
         }
