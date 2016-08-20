@@ -24,23 +24,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>09C1832129FAF04FAEE20E787CEFB006</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1348F1230FD81A7AA2F97A6947D9D624</string>
-				<string>FA351567F8B111FC629BC21245997B4C</string>
-				<string>F94EB2F3667E0A61683DB880750A3FA3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>MBProgressHUD</string>
-			<key>path</key>
-			<string>MBProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>0ECAD3CE95CA19E5AFE91894C857527C</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -58,7 +41,7 @@
 		<key>0F6FCF15CC1F4F05C46539443FDA2AAB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>82AE71AF0026578C88588527E05D2C7F</string>
+			<string>A83C101219E7ED4222CD65BCE24B0A5E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -93,23 +76,10 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>1348F1230FD81A7AA2F97A6947D9D624</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MBProgressHUD.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>141E9F1626FE34EE75CDC2B7581B19F3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>BC0CAC1D9545DFF9BF2468D15D41C60A</string>
+			<string>4C1EE4B97D02463CB7C4D4F85F068867</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -175,19 +145,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>164262DE846EA8D393D19FF3797F7081</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleMobileAds.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleMobileAds.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>187BF55575D388953968803FD2E53CAB</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -204,7 +161,7 @@
 		<key>1E7623B9420C3E71FAE3287C0CECA040</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1348F1230FD81A7AA2F97A6947D9D624</string>
+			<string>EA7EF56646DB1B2F653740B0FB77850B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -372,29 +329,40 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4A1AB9854F55D761FD708CBD0B5B6E5F</key>
+		<key>45F7B1ADFBAA5AD7174555013C33C5A8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>MBProgressHUD.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4D4879B911C78163232A370AB3D0615A</key>
+		<key>4C1EE4B97D02463CB7C4D4F85F068867</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>MBProgressHUD-prefix.pch</string>
+			<string>MBProgressHUD.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5836A44A75C427EBF4739C55E2315758</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9841862FE02BD09196B31E3026B4325C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -471,45 +439,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7C4CA9E4E98072AEF8263044EA47CA03</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>164262DE846EA8D393D19FF3797F7081</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>433CD3331B6C3787F473C941B61FC68F</string>
-				<string>7E41FB4329ECD70B772A5C1C3B402F0A</string>
+				<string>5836A44A75C427EBF4739C55E2315758</string>
 				<string>AEE4B7A3A23E308606602A3ED4D3DDAD</string>
 				<string>EEFA8623A4ECE1F81144EBAC26B3A094</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E41FB4329ECD70B772A5C1C3B402F0A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C9FBC8A59AFE4EB942D213A16C0065E0</string>
-				<string>09C1832129FAF04FAEE20E787CEFB006</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -541,30 +482,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>82AE71AF0026578C88588527E05D2C7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MBProgressHUD-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84E751412924582D7C7C03031BB56319</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MBProgressHUD.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>882A88D29B3FECAA808530D54520C57E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -591,7 +508,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9476BE4CE6FD116E06452AC15F551D9B</key>
+		<key>8CC88E9BB2DAE98E2B831183A06BFB8C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -600,14 +517,31 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>MBProgressHUD-dummy.m</string>
+			<string>MBProgressHUD.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9841862FE02BD09196B31E3026B4325C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EA7EF56646DB1B2F653740B0FB77850B</string>
+				<string>8CC88E9BB2DAE98E2B831183A06BFB8C</string>
+				<string>A965BDBE5FC4856535619D751B2F0F38</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MBProgressHUD</string>
+			<key>path</key>
+			<string>MBProgressHUD</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9E17CC11959A1FE5566CE528047ACDC0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FA351567F8B111FC629BC21245997B4C</string>
+			<string>8CC88E9BB2DAE98E2B831183A06BFB8C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -729,6 +663,39 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>A83C101219E7ED4222CD65BCE24B0A5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MBProgressHUD-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A965BDBE5FC4856535619D751B2F0F38</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DD71A7E2391B90C816D7330BB6B999E4</string>
+				<string>45F7B1ADFBAA5AD7174555013C33C5A8</string>
+				<string>4C1EE4B97D02463CB7C4D4F85F068867</string>
+				<string>B46DBFF3A36C2A3BFA5CD06A1960E97F</string>
+				<string>F561804416163A2E5EFC23029D9BD9A3</string>
+				<string>A83C101219E7ED4222CD65BCE24B0A5E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MBProgressHUD</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>AD04392520C2C7667C1E7E9D80BABB71</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -818,6 +785,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>B46DBFF3A36C2A3BFA5CD06A1960E97F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MBProgressHUD-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -838,37 +818,9 @@
 		<key>BB010EE04BA829E196554A00A951AA7C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9476BE4CE6FD116E06452AC15F551D9B</string>
+			<string>B46DBFF3A36C2A3BFA5CD06A1960E97F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC0CAC1D9545DFF9BF2468D15D41C60A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>MBProgressHUD.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C9FBC8A59AFE4EB942D213A16C0065E0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7C4CA9E4E98072AEF8263044EA47CA03</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Google-Mobile-Ads-SDK</string>
-			<key>path</key>
-			<string>Google-Mobile-Ads-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -936,6 +888,19 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>DD71A7E2391B90C816D7330BB6B999E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -982,6 +947,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>EA7EF56646DB1B2F653740B0FB77850B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MBProgressHUD.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>EEF01602FDF172CBD9138A15131480A4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1011,7 +989,7 @@
 		<key>EF9333AF1E81B83A4C56BE7DC73ABC82</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>BC0CAC1D9545DFF9BF2468D15D41C60A</string>
+			<string>4C1EE4B97D02463CB7C4D4F85F068867</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1064,36 +1042,16 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>F94EB2F3667E0A61683DB880750A3FA3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4A1AB9854F55D761FD708CBD0B5B6E5F</string>
-				<string>84E751412924582D7C7C03031BB56319</string>
-				<string>BC0CAC1D9545DFF9BF2468D15D41C60A</string>
-				<string>9476BE4CE6FD116E06452AC15F551D9B</string>
-				<string>4D4879B911C78163232A370AB3D0615A</string>
-				<string>82AE71AF0026578C88588527E05D2C7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/MBProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA351567F8B111FC629BC21245997B4C</key>
+		<key>F561804416163A2E5EFC23029D9BD9A3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>MBProgressHUD.m</string>
+			<string>MBProgressHUD-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
