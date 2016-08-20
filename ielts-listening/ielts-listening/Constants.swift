@@ -10,7 +10,6 @@ import Foundation
 
 struct Constants {
     static let userDefault = NSUserDefaults.standardUserDefaults()
-    static let URL_APPSTORE = "https://itunes.apple.com/app/id1116045341"
-    static let URL_APPSTORE_FULL = "https://itunes.apple.com/app/id1116045341"
+    static let URL_APPSTORE = "http://itunes.apple.com/app/id1146098154"
     static let RATE_MAX_OPEN = 5
 }
