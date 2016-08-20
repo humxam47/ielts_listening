@@ -7,7 +7,6 @@
 //
 
 import MBProgressHUD
-import GoogleMobileAds
 
 class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDelegate {
     
@@ -18,7 +17,7 @@ class DetailViewController: UIViewController, ControllerDelegate, UIAlertViewDel
     @IBOutlet weak var downloadButton:UIButton!
     @IBOutlet weak var downloadIndicator:UIActivityIndicatorView!
     @IBOutlet weak var admobHeightConstraint:NSLayoutConstraint!
-    @IBOutlet weak var bannerView:GADBannerView!
+    @IBOutlet weak var bannerView:UIView!
     
     @IBOutlet weak var conversationView:ConversationView!
     @IBOutlet weak var exerciseView:ExerciseView!
