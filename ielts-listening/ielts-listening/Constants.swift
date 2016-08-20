@@ -10,6 +10,7 @@ import Foundation
 
 struct Constants {
     static let userDefault = NSUserDefaults.standardUserDefaults()
+    static let URL_HOST = "https://raw.githubusercontent.com/humxam47/ielts_listening_data/master/"
     static let URL_APPSTORE = "http://itunes.apple.com/app/id1146098154"
     static let RATE_MAX_OPEN = 5
 }
