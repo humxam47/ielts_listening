@@ -59,6 +59,22 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         
     }
     
+    func buyFullVersion() {
+        
+        let alertView:UIAlertController = UIAlertController.init(title: "Upgrade", message: "Buy Full Version to Remove Ads and Have INTERMEDIATE LEVEL + ADVANCED LEVEL", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let cancelAlertAction = UIAlertAction.init(title: "Later", style: UIAlertActionStyle.Default, handler: { (alert:UIAlertAction) in
+        })
+        let doAlertAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (alert:UIAlertAction) in
+            UIApplication.sharedApplication().openURL(NSURL.init(string: Constants.URL_APPSTORE_FULL)!)
+        })
+        
+        alertView.addAction(cancelAlertAction)
+        alertView.addAction(doAlertAction)
+        presentViewController(alertView, animated: true, completion: nil)
+        
+    }
+    
     func isPlayed(lessonIndex:Int) -> Bool {
         
         let dictionary:NSDictionary = DataManager.sharedInstance.getLastLesson()
@@ -104,6 +120,11 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
 
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        if levelObject.levelId != "1" {
+            buyFullVersion()
+            return
+        }
         
         if RatingHandler.sharedInstance.shouldShowRatePopup() {
             self.showRatingPopup()

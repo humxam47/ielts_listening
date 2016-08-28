@@ -49,22 +49,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func buyFullVersion() {
-        
-        let alertView:UIAlertController = UIAlertController.init(title: "Upgrade", message: "Buy Full Version to Remove ads and Have INTERMEDIATE LEVEL + ADVANCED LEVEL", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        let cancelAlertAction = UIAlertAction.init(title: "Later", style: UIAlertActionStyle.Default, handler: { (alert:UIAlertAction) in
-        })
-        let doAlertAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (alert:UIAlertAction) in
-            UIApplication.sharedApplication().openURL(NSURL.init(string: Constants.URL_APPSTORE_FULL)!)
-        })
-        
-        alertView.addAction(cancelAlertAction)
-        alertView.addAction(doAlertAction)
-        presentViewController(alertView, animated: true, completion: nil)
-        
-    }
-    
     @IBAction func basicAction(sender: UIButton) {
         self.selectedAction = 1
         self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
@@ -72,16 +56,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func intermediateAction(sender: UIButton) {
-//        self.selectedAction = 2
-//        self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
-        buyFullVersion()
+        self.selectedAction = 2
+        self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
     }
     
     
     @IBAction func advancedAction(sender: UIButton) {
-//        self.selectedAction = 3
-//        self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
-        buyFullVersion()
+        self.selectedAction = 3
+        self.performSegueWithIdentifier("SEGUE_PARENT_CATEGORY", sender: sender)
     }
 
 }
